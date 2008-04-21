@@ -34,12 +34,16 @@
 				<h2><?=$pageTitle; ?></h2><br/><br/>
 				<table width="100%" align="center">
 					<tr>
-						<td align="center">
-							<a href="http://wiki.eclipse.org/Ganymede"><img src="images/wikibutton.jpg"/></a><br/>
+						<td align="right">
+							<a href="http://wiki.eclipse.org/Ganymede"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png"/></a>
+						</td>
+						<td align="left">
 							<a href="http://wiki.eclipse.org/Ganymede">Ganymede Development Wiki</a>
 						</td>
-						<td align="center">
-							<a href="http://phoenix.eclipse.org/packages/"><img src="images/milestonebutton.jpg"/></a><br/>
+						<td align="right">
+							<a href="http://phoenix.eclipse.org/packages/"><img src="http://dev.eclipse.org/huge_icons/apps/system-installer.png"/></a>
+						</td>
+						<td align="left">
 							<a href="http://phoenix.eclipse.org/packages/">Ganymede Milestone Releases</a>
 						</td>
 					</tr>
