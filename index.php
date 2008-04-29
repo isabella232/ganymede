@@ -44,7 +44,7 @@
 							<a href="http://phoenix.eclipse.org/packages/"><img src="http://dev.eclipse.org/huge_icons/apps/system-installer.png"/></a>
 						</td>
 						<td align="left">
-							<a href="http://phoenix.eclipse.org/packages/">Ganymede Milestone Releases</a>
+							<a href="http://www.eclipse.org/downloads/packages/">Ganymede Milestone Releases</a>
 						</td>
 					</tr>
 				</table>
