@@ -33,7 +33,6 @@
       type="text/javascript"></script>
    <script type="text/javascript">
     //<![CDATA[
-	function load() {
     if (GBrowserIsCompatible()) {
       // this variable will collect the html which will eventualkly be placed in the side_bar
       var side_bar_html = "";
@@ -108,9 +107,8 @@
     // http://econym.googlepages.com/index.htm
 
     //]]>
-    }
     </script>
-    <body onload="load()" onunload="GUnload()">
+    <body onunload="GUnload()">
   	 <div id="midcolumn">
   	   <table>
   	  	<tr>
