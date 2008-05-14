@@ -31,7 +31,21 @@
 	?>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA"
       type="text/javascript"></script>
-   <script type="text/javascript">
+  
+    <body onunload="GUnload()">
+  	 <div id="midcolumn">
+  	   <table>
+  	  	<tr>
+  	  		<td>
+  	  		  <div id="map" style="width: 800px; height: 500px"></div>
+  	  		</td>
+  	  		<td width="150">
+  	  			<div id="side_bar"></div>
+  	  		</td>
+  	  	</tr>
+  	  </table>
+  	 </div>
+ <script type="text/javascript">
     //<![CDATA[
     if (GBrowserIsCompatible()) {
       // this variable will collect the html which will eventualkly be placed in the side_bar
@@ -107,20 +121,7 @@
     // http://econym.googlepages.com/index.htm
 
     //]]>
-    </script>
-    <body onunload="GUnload()">
-  	 <div id="midcolumn">
-  	   <table>
-  	  	<tr>
-  	  		<td>
-  	  		  <div id="map" style="width: 800px; height: 500px"></div>
-  	  		</td>
-  	  		<td width="150">
-  	  			<div id="side_bar"></div>
-  	  		</td>
-  	  	</tr>
-  	  </table>
-  	 </div> 
+    </script>  	  
   </body>
 	<?
 	$html = ob_get_clean();
