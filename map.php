@@ -44,7 +44,16 @@
     //]]>
     </script>
     <body onload="load()" onunload="GUnload()">
-  	  <div id="map" style="width: 500px; height: 300px"></div>
+  	  <table>
+  	  	<tr>
+  	  		<td>
+  	  		  <div id="map" style="width: 500px; height: 300px"></div>
+  	  		</td>
+  	  		<td width="150">
+  	  			<div id="side_bar"></div>
+  	  		</td>
+  	  	</tr>
+  	  </table>
   	  
    <script type="text/javascript">
     //<![CDATA[
@@ -108,7 +117,7 @@
             map.addOverlay(marker);
           }
           // put the assembled side_bar_html contents into the side_bar div
-          // document.getElementById("side_bar").innerHTML = side_bar_html;
+          document.getElementById("side_bar").innerHTML = side_bar_html;
         }
       }
       request.send(null);
