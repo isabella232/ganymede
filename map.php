@@ -31,30 +31,6 @@
 	?>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA"
       type="text/javascript"></script>
-    <script type="text/javascript">
-
-    //<![CDATA[
-
-    function load() {
-      if (GBrowserIsCompatible()) {
-        var map = new GMap2(document.getElementById("map"));
-      }
-    }
-
-    //]]>
-    </script>
-    <body onload="load()" onunload="GUnload()">
-  	  <table>
-  	  	<tr>
-  	  		<td>
-  	  		  <div id="map" style="width: 500px; height: 300px"></div>
-  	  		</td>
-  	  		<td width="150">
-  	  			<div id="side_bar"></div>
-  	  		</td>
-  	  	</tr>
-  	  </table>
-  	  
    <script type="text/javascript">
     //<![CDATA[
 
@@ -133,6 +109,19 @@
 
     //]]>
     </script>
+    <body onload="load()" onunload="GUnload()">
+  	  <table>
+  	  	<tr>
+  	  		<td>
+  	  		  <div id="map" style="width: 500px; height: 300px"></div>
+  	  		</td>
+  	  		<td width="150">
+  	  			<div id="side_bar"></div>
+  	  		</td>
+  	  	</tr>
+  	  </table>
+  	  
+
     
   </body>
 	<?
