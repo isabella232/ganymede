@@ -69,7 +69,7 @@
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GLargeMapControl());
       map.addControl(new GMapTypeControl());
-      map.setCenter(new GLatLng( -1.826752, 51.179045), 10);
+      map.setCenter(new GLatLng( 43.907787,-79.359741), 9);
 
 
       // Read the data from example.xml
