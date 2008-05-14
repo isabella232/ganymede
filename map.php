@@ -38,7 +38,6 @@
     function load() {
       if (GBrowserIsCompatible()) {
         var map = new GMap2(document.getElementById("map"));
-        map.setCenter(new GLatLng(37.4419, -122.1419), 13);
       }
     }
 
@@ -85,7 +84,7 @@
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GLargeMapControl());
       map.addControl(new GMapTypeControl());
-      map.setCenter(new GLatLng( -1.826752, 51.179045), 0);
+      map.setCenter(new GLatLng( -1.826752, 51.179045), 10);
 
 
       // Read the data from example.xml
@@ -109,7 +108,7 @@
             map.addOverlay(marker);
           }
           // put the assembled side_bar_html contents into the side_bar div
-          document.getElementById("side_bar").innerHTML = side_bar_html;
+          // document.getElementById("side_bar").innerHTML = side_bar_html;
         }
       }
       request.send(null);
