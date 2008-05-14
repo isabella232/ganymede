@@ -110,7 +110,8 @@
     //]]>
     </script>
     <body onload="load()" onunload="GUnload()">
-  	  <table>
+  	 <div id="midcolumn">
+  	   <table>
   	  	<tr>
   	  		<td>
   	  		  <div id="map" style="width: 500px; height: 300px"></div>
@@ -120,9 +121,7 @@
   	  		</td>
   	  	</tr>
   	  </table>
-  	  
-
-    
+  	 </div> 
   </body>
 	<?
 	$html = ob_get_clean();
