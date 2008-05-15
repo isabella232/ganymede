@@ -70,13 +70,13 @@
 		textIcon.image = "http://dev.eclipse.org/large_icons/apps/accessories-text-editor.png";
 		textIcon.iconSize = new GSize(32, 32);
 		textIcon.iconAnchor = new GPoint(9, 34);
-		textIcon.infoWindowAnchor = new GPoint(9, 2);
+		textIcon.infoWindowAnchor = new GPoint(32, 2);
 	  
 	  	var mediaIcon = new GIcon();
 	  	mediaIcon.image = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png";
 		mediaIcon.iconSize = new GSize(32, 32);
 		mediaIcon.iconAnchor = new GPoint(9, 34);
-		mediaIcon.infoWindowAnchor = new GPoint(9, 2);
+		mediaIcon.infoWindowAnchor = new GPoint(32, 2);
 
 
       // A function to create the marker and set up the event window
@@ -126,8 +126,7 @@
 
       // create the map
       var map = new GMap2(document.getElementById("map"));
-      map.addControl(new GLargeMapControl());
-      map.addControl(new GMapTypeControl());
+      map.addControl(new GSmallMapControl());
       map.setCenter(new GLatLng( 45.345739 ,-75.765338), 5);  //Center on Eclipse Foundation HQ
 
 
