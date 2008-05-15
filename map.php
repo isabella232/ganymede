@@ -39,7 +39,7 @@
 	  	<table width="100%">
   			<tr>
   	  			<td>
-  	  			  <div id="map" style="width: 500px; height: 500px"></div>
+  	  			  <div id="map" style="width: 700px; height: 400px"></div>
   	  			</td>
   	  			<td width="300" valign="top">
   	  				<div id="filters">
