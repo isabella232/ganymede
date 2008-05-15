@@ -44,11 +44,11 @@
   	  			<td width="300" valign="top">
   	  				<div id="filters">
   	  					<h3>Filter By Type</h3>
-  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/> Video<br/>
+  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
   	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
-  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/> Image<br/>
-  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/> Blog<br/>
-  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/> Text<br/>
+  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image<br/>
+  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog<br/>
+  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text<br/>
   	  				</div>
   	  			</td>
   	  		</tr>
