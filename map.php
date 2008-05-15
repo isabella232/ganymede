@@ -96,7 +96,7 @@
         	icon = new GIcon(mediaIcon);
         	importance = 1;
         }
-        markerOptions = { icon:icon, zIndexProcess:zIndex };
+        markerOptions = { icon:icon, zIndexProcess:zOrder };
         var marker = new GMarker(point, markerOptions);
         GEvent.addListener(marker, "click", function() {
           marker.openInfoWindowHtml(html);
