@@ -82,7 +82,7 @@
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GLargeMapControl());
       map.addControl(new GMapTypeControl());
-      map.setCenter(new GLatLng( 45.345739 ,-75.765338), 9);  //Center on Eclipse Foundation HQ
+      map.setCenter(new GLatLng( 45.345739 ,-75.765338), 5);  //Center on Eclipse Foundation HQ
 
 
       // Read the data from example.xml
@@ -99,7 +99,7 @@
             var lat = parseFloat(markers[i].getAttribute("lat"));
             var lng = parseFloat(markers[i].getAttribute("lng"));
             var point = new GLatLng(lat,lng);
-            var html = markers[i].text;
+            var html = markers[i].textContent;
             var label = markers[i].getAttribute("label");
             // create the marker
             var marker = createMarker(point,label,html);
