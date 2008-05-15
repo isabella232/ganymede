@@ -8,4 +8,10 @@
  <marker lat="43.670233" lng="-79.386755"  label="Toronto, Ontario" type="text">
  	<![CDATA[Even Toronto Uses Ganymede!]]>
  </marker>
+ <marker lat="45.545447" lng="45.545447" label="Some Eclipse Guru" type="blog">
+ 	<![CDATA[<a href="http://some.eclipse.guru/blog.html">First Impressions from Ganymede</a>]]>
+ </marker>
+ <marker lat="41.879535" lng="-87.624333" label="Ganymede Podcast" type="podcast">
+ 	<![CDATA[<a href="http://ganymede.expert.com/podcast.mp3">Wayne Beaton Discusses the New Features of Ganymede</a>]]>
+ </marker>
 </markers> 

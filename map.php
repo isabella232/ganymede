@@ -44,8 +44,11 @@
   	  			<td width="300" valign="top">
   	  				<div id="filters">
   	  					<h3>Filter By Type</h3>
+  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/> Video<br/>
+  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
+  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/> Image<br/>
+  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/> Blog<br/>
   	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/> Text<br/>
-  	  					<input type="checkbox" name="media" checked onclick="toggleType('media')"/> Media<br/>
   	  				</div>
   	  			</td>
   	  		</tr>
@@ -71,11 +74,29 @@
 		textIcon.iconAnchor = new GPoint(9, 34);
 		textIcon.infoWindowAnchor = new GPoint(32, 2);
 	  
-	  	var mediaIcon = new GIcon();
+	  	var videoIcon = new GIcon();
 	  	mediaIcon.image = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png";
 		mediaIcon.iconSize = new GSize(32, 32);
 		mediaIcon.iconAnchor = new GPoint(9, 34);
 		mediaIcon.infoWindowAnchor = new GPoint(32, 2);
+		
+		var podcastIcon = new GIcon();
+	  	podcastIcon.image = "http://dev.eclipse.org/large_icons/status/audio-volume-medium.png";
+		podcastIcon.iconSize = new GSize(32, 32);
+		podcastIcon.iconAnchor = new GPoint(9, 34);
+		podcastIcon.infoWindowAnchor = new GPoint(32, 2);
+		
+		var imageIcon = new GIcon();
+	  	imageIcon.image = "http://dev.eclipse.org/large_icons/mimetypes/image-x-generic.png";
+		imageIcon.iconSize = new GSize(32, 32);
+		imageIcon.iconAnchor = new GPoint(9, 34);
+		imageIcon.infoWindowAnchor = new GPoint(32, 2);
+		
+		var blogIcon = new GIcon();
+	  	blogIcon.image = "http://dev.eclipse.org/large_icons/mimetypes/text-html.png";
+		blogIcon.iconSize = new GSize(32, 32);
+		blogIcon.iconAnchor = new GPoint(9, 34);
+		blogIcon.infoWindowAnchor = new GPoint(32, 2);				
 
 	  function zOrder (marker, b) {
 		return GOverlay.getZIndex(marker.getPoint().lat()) + marker.importance*1000000; 
@@ -92,11 +113,29 @@
         	imageLocation = 'http://dev.eclipse.org/large_icons/apps/accessories-text-editor.png';
         	importance = 0;	
         }
-        else {
+        else if (type =="image")
+        {
+            icon = new GIcon(imageIcon);
+        	imageLocation = 'http://dev.eclipse.org/large_icons/mimetypes/image-x-generic.png';
+        	importance = 1;	
+        }
+        else if (type == "blog")
+        {
+            icon = new GIcon(blogIcon);
+        	imageLocation = 'http://dev.eclipse.org/large_icons/mimetypes/text-html.png';
+        	importance = 2;	
+        }
+        else if (type == "podcast")
+        {
+        	icon = new GIcon(podcastIcon);
+        	imageLocation = 'http://dev.eclipse.org/large_icons/status/audio-volume-medium.png';
+        	importance = 3;	        
+        }
+        else if (type =="video")
         	icon = new GIcon(mediaIcon);
         	imageLocation = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png"; 
-        	importance = 1;
-        }
+        	importance = 4;
+        }        
         markerOptions = { icon:icon, zIndexProcess:zOrder };
         var marker = new GMarker(point, markerOptions);
         GEvent.addListener(marker, "click", function() {
