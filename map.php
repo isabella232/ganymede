@@ -34,24 +34,21 @@
   
     <body onunload="GUnload()">
   	 <div id="midcolumn">
-  	   <table width="100%">
-  	  	<tr>
-  	  		<td>
-  	  		  <div id="map" style="width: 800px; height: 500px"></div>
-  	  		</td>
-  	  		<td width="300" valign="top">
-  	  			<div id="filters">
-  	  				<input type="checkbox" name="text" checked onclick="toggleType('text')"/> Text<br/>
-  	  				<input type="checkbox" name="media" checked onclick="toggleType('media')"/> Media<br/>
-  	  			</div>
-  	  		</td>
-  	  	</tr>
-  	  	<tr>
-  	  		<td colspan=2>
-  	  			<div id="list"></div>
-  	  		</td>
-  	  	</tr>
-  	  </table>
+  	   <h1>Ganymede Spotting</h1>
+	  	<table width="100%">
+  			<tr>
+  	  			<td>
+  	  			  <div id="map" style="width: 800px; height: 500px"></div>
+  	  			</td>
+  	  			<td width="300" valign="top">
+  	  				<div id="filters">
+  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/> Text<br/>
+  	  					<input type="checkbox" name="media" checked onclick="toggleType('media')"/> Media<br/>
+  	  				</div>
+  	  			</td>
+  	  		</tr>
+  	  	</table>
+  	 	<div id="list"></div>
   	 </div>
  <script type="text/javascript">
     //<![CDATA[
@@ -106,7 +103,7 @@
         gmarkers[i] = marker;
         gmarkersType[i] = type;
         // add a line to the side_bar html
-        list_html += '<a href="javascript:myclick(' + i + ')">' + name + '</a><br>';
+        list_html += '<tr><td><a href="javascript:myclick(' + i + ')">' + name + '</a><td><td>' + html + '</td></tr>';
         i++;
         return marker;
       }
@@ -160,7 +157,9 @@
             map.addOverlay(marker);
           }
           // put the assembled side_bar_html contents into the side_bar div
-          document.getElementById("list").innerHTML = list_html;
+          var tablestart = "<table width='100%'>";
+          var tableend = "</table>";
+          document.getElementById("list").innerHTML = tablesstart + list_html + tableend;
         }
       }
       request.send(null);
