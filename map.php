@@ -158,7 +158,7 @@
             map.addOverlay(marker);
           }
           // put the assembled side_bar_html contents into the side_bar div
-          var tablestart = "<table width='100%' class='list'><tr class='header'><td>Name</td><td>Content</td></tr>";
+          var tablestart = "<table width='100%' cellspacing=0 cellpadding=0 class='list'><tr class='header'><td>Name</td><td>Content</td></tr>";
           var tableend = "</table>";
           document.getElementById("list").innerHTML = tablestart + list_html + tableend;
         }
