@@ -78,19 +78,23 @@
 		mediaIcon.iconAnchor = new GPoint(9, 34);
 		mediaIcon.infoWindowAnchor = new GPoint(32, 2);
 
+	  function zOrder (marker, b) {
+		return GOverlay.getZIndex(marker.getPoint().lat()) + marker.importance*1000000; 
+	  }
+
 
       // A function to create the marker and set up the event window
       function createMarker(point,name,html,type) {
       var icon = 0;
-      var zIndex = 0;
+      var importance = 0;
         if (type == "text")
         {
         	icon = new GIcon(textIcon);
-        	zIndex = 0;	
+        	importance = 0;	
         }
         else {
         	icon = new GIcon(mediaIcon);
-        	zIndex = 1;
+        	importance = 1;
         }
         markerOptions = { icon:icon, zIndexProcess:zIndex };
         var marker = new GMarker(point, markerOptions);
@@ -98,6 +102,7 @@
           marker.openInfoWindowHtml(html);
         });
         // save the info we need to use later for the side_bar
+        marker.importance = importance;
         gmarkers[i] = marker;
         gmarkersType[i] = type;
         // add a line to the side_bar html
