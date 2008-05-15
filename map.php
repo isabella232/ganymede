@@ -88,10 +88,12 @@
         if (type == "text")
         {
         	icon = new GIcon(textIcon);
+        	imageLocation = 'http://dev.eclipse.org/large_icons/apps/accessories-text-editor.png';
         	importance = 0;	
         }
         else {
         	icon = new GIcon(mediaIcon);
+        	imageLocation = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png"; 
         	importance = 1;
         }
         markerOptions = { icon:icon, zIndexProcess:zOrder };
@@ -104,7 +106,7 @@
         gmarkers[i] = marker;
         gmarkersType[i] = type;
         // add a line to the side_bar html
-        list_html += '<tr><td><a href="javascript:myclick(' + i + ')">' + name + '</a><td><td>' + html + '</td></tr>';
+        list_html += '<tr><td>' + imageLocation + '</td><td><a href="javascript:myclick(' + i + ')">' + name + '</a><td><td>' + html + '</td></tr>';
         i++;
         return marker;
       }
@@ -158,7 +160,7 @@
             map.addOverlay(marker);
           }
           // put the assembled side_bar_html contents into the side_bar div
-          var tablestart = "<table width='100%' cellspacing=0 cellpadding=0 class='list'><tr class='header'><td>Name</td><td>Content</td></tr>";
+          var tablestart = "<table width='100%' cellspacing=0 cellpadding=0 class='list'><tr class='header'><td width='36'>Type</td><td>Name</td><td>Content</td></tr>";
           var tableend = "</table>";
           document.getElementById("list").innerHTML = tablestart + list_html + tableend;
         }
