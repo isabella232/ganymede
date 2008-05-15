@@ -137,7 +137,7 @@
         	imageLocation = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png"; 
         	importance = 4;
         }        
-        markerOptions = { icon:icon, zIndexProcess:zOrder };
+        markerOptions = { zIndexProcess:zOrder };
         var marker = new GMarker(point, markerOptions);
         GEvent.addListener(marker, "click", function() {
           marker.openInfoWindowHtml(html);
