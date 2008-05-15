@@ -2,7 +2,7 @@
  <marker lat="45.289698" lng="-75.73817" label="Nathan Gervais" type="text">
  	<![CDATA[I'm using Ganymede and it Rocks!]]>
  </marker>
- <marker lat="45.345739" lng="-75.765338" label="Eclipse Foundation HQ" type="media">
+ <marker lat="45.345739" lng="-75.765338" label="Eclipse Foundation HQ" type="video">
  	<![CDATA[Eclipse.org Relases Ganymede M7 Packages. <br/> Visit <a href="http://www.eclipse.org/downloads/packages" target="_blank">http://www.eclipse.org/downloads/packages</a>]]>
  </marker>
  <marker lat="43.670233" lng="-79.386755"  label="Toronto, Ontario" type="text">
@@ -13,5 +13,8 @@
  </marker>
  <marker lat="41.879535" lng="-87.624333" label="Ganymede Podcast" type="podcast">
  	<![CDATA[<a href="http://ganymede.expert.com/podcast.mp3">Wayne Beaton Discusses the New Features of Ganymede</a>]]>
+ </marker>
+ <marker lat="45.826673" lng="-77.110851" label="Ganymede In Action" type="image">
+ 	<![CDATA[<img src="http://www.factor-x.net/avatar.gif"/><br/><br/>Ganymede is the best!]]>
  </marker>
 </markers> 
