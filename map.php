@@ -41,8 +41,8 @@
   	  		</td>
   	  		<td width="300" valign="top">
   	  			<div id="filters">
-  	  				<input type="checkbox" name="text"/> Text<br/>
-  	  				<input type="checkbox" name="media"/> Media<br/>
+  	  				<input type="checkbox" name="text" checked/> Text<br/>
+  	  				<input type="checkbox" name="media" checked/> Media<br/>
   	  			</div>
   	  		</td>
   	  	</tr>
