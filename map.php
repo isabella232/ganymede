@@ -193,7 +193,8 @@
             var lat = parseFloat(markers[i].getAttribute("lat"));
             var lng = parseFloat(markers[i].getAttribute("lng"));
             var point = new GLatLng(lat,lng);
-            var html = markers[i].textContent;
+            var author = markers[i].getAttribute("author");
+            var html = '<b>' + author + '</b><br/>' + markers[i].textContent;
             var label = markers[i].getAttribute("label");
             var type = markers[i].getAttribute("type");
             // create the marker
