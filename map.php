@@ -82,14 +82,17 @@
       // A function to create the marker and set up the event window
       function createMarker(point,name,html,type) {
       var icon = 0;
+      var zIndex = 0;
         if (type == "text")
         {
         	icon = new GIcon(textIcon);
+        	zIndex = 0;	
         }
         else {
         	icon = new GIcon(mediaIcon);
+        	zIndex = 1;
         }
-        markerOptions = { icon:icon };
+        markerOptions = { icon:icon, zIndexProcess:zIndex };
         var marker = new GMarker(point, markerOptions);
         GEvent.addListener(marker, "click", function() {
           marker.openInfoWindowHtml(html);
