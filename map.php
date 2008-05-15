@@ -159,7 +159,7 @@
           // put the assembled side_bar_html contents into the side_bar div
           var tablestart = "<table width='100%'>";
           var tableend = "</table>";
-          document.getElementById("list").innerHTML = tablesstart + list_html + tableend;
+          document.getElementById("list").innerHTML = tablestart + list_html + tableend;
         }
       }
       request.send(null);
