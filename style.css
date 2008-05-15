@@ -1,0 +1,13 @@
+table.list tr td {
+	vertical-align: top;
+	padding-bottom:5px;
+	border-bottom:1px solid grey;
+}
+
+table.list {
+	border:1px solid grey;	
+}
+
+table.list tr.header {
+	font-weight:bold;	
+}

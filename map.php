@@ -29,6 +29,7 @@
 
 	ob_start();
 	?>
+	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA"
       type="text/javascript"></script>
   
@@ -157,7 +158,7 @@
             map.addOverlay(marker);
           }
           // put the assembled side_bar_html contents into the side_bar div
-          var tablestart = "<table width='100%'>";
+          var tablestart = "<table width='100%' class='list'><tr class='header'><td>Name</td><td>Content</td>";
           var tableend = "</table>";
           document.getElementById("list").innerHTML = tablestart + list_html + tableend;
         }
