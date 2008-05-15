@@ -106,7 +106,7 @@
         gmarkers[i] = marker;
         gmarkersType[i] = type;
         // add a line to the side_bar html
-        list_html += '<tr><td>' + imageLocation + '</td><td><a href="javascript:myclick(' + i + ')">' + name + '</a><td><td>' + html + '</td></tr>';
+        list_html += '<tr><td><img src="' + imageLocation + '"/></td><td><a href="javascript:myclick(' + i + ')">' + name + '</a></td><td>' + html + '</td></tr>';
         i++;
         return marker;
       }
