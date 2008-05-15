@@ -75,10 +75,10 @@
 		textIcon.infoWindowAnchor = new GPoint(32, 2);
 	  
 	  	var videoIcon = new GIcon();
-	  	mediaIcon.image = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png";
-		mediaIcon.iconSize = new GSize(32, 32);
-		mediaIcon.iconAnchor = new GPoint(9, 34);
-		mediaIcon.infoWindowAnchor = new GPoint(32, 2);
+	  	videoIcon.image = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png";
+		videoIcon.iconSize = new GSize(32, 32);
+		videoIcon.iconAnchor = new GPoint(9, 34);
+		videoIcon.infoWindowAnchor = new GPoint(32, 2);
 		
 		var podcastIcon = new GIcon();
 	  	podcastIcon.image = "http://dev.eclipse.org/large_icons/status/audio-volume-medium.png";
