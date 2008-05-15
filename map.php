@@ -132,6 +132,7 @@
         	importance = 3;	        
         }
         else if (type =="video")
+        {
         	icon = new GIcon(mediaIcon);
         	imageLocation = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png"; 
         	importance = 4;
