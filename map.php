@@ -40,7 +40,15 @@
   	  		  <div id="map" style="width: 800px; height: 500px"></div>
   	  		</td>
   	  		<td width="300" valign="top">
-  	  			<div id="side_bar"></div>
+  	  			<div id="filters">
+  	  				<input type="checkbox" name="text"/> Text<br/>
+  	  				<input type="checkbox" name="media"/> Media<br/>
+  	  			</div>
+  	  		</td>
+  	  	</tr>
+  	  	<tr>
+  	  		<td colspan=2>
+  	  			<div id="list"></div>
   	  		</td>
   	  	</tr>
   	  </table>
@@ -49,7 +57,7 @@
     //<![CDATA[
     if (GBrowserIsCompatible()) {
       // this variable will collect the html which will eventualkly be placed in the side_bar
-      var side_bar_html = "";
+      var list_html = "";
     
       // arrays to hold copies of the markers used by the side_bar
       // because the function closure trick doesnt work there
@@ -66,7 +74,7 @@
         // save the info we need to use later for the side_bar
         gmarkers[i] = marker;
         // add a line to the side_bar html
-        side_bar_html += '<a href="javascript:myclick(' + i + ')">' + name + '</a><br>';
+        list_html += '<a href="javascript:myclick(' + i + ')">' + name + '</a><br>';
         i++;
         return marker;
       }
@@ -106,7 +114,7 @@
             map.addOverlay(marker);
           }
           // put the assembled side_bar_html contents into the side_bar div
-          document.getElementById("side_bar").innerHTML = side_bar_html;
+          document.getElementById("list").innerHTML = list_html;
         }
       }
       request.send(null);
