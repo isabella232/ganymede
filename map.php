@@ -34,7 +34,7 @@
   
     <body onunload="GUnload()">
   	 <div id="midcolumn">
-  	   <table>
+  	   <table width="100%">
   	  	<tr>
   	  		<td>
   	  		  <div id="map" style="width: 800px; height: 500px"></div>
