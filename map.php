@@ -68,19 +68,15 @@
 	  // Create Different Icons
 		var textIcon = new GIcon();
 		textIcon.image = "http://dev.eclipse.org/large_icons/apps/accessories-text-editor.png";
-		textIcon.iconSize = new GSize(20, 34);
-		textIcon.shadowSize = new GSize(37, 34);
+		textIcon.iconSize = new GSize(32, 32);
 		textIcon.iconAnchor = new GPoint(9, 34);
 		textIcon.infoWindowAnchor = new GPoint(9, 2);
-		textIcon.infoShadowAnchor = new GPoint(18, 25);
 	  
 	  	var mediaIcon = new GIcon();
 	  	mediaIcon.image = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png";
-		mediaIcon.iconSize = new GSize(20, 34);
-		mediaIcon.shadowSize = new GSize(37, 34);
+		mediaIcon.iconSize = new GSize(32, 32);
 		mediaIcon.iconAnchor = new GPoint(9, 34);
 		mediaIcon.infoWindowAnchor = new GPoint(9, 2);
-		mediaIcon.infoShadowAnchor = new GPoint(18, 25);
 
 
       // A function to create the marker and set up the event window
