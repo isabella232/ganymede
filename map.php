@@ -39,7 +39,7 @@
   	  		<td>
   	  		  <div id="map" style="width: 800px; height: 500px"></div>
   	  		</td>
-  	  		<td width="150">
+  	  		<td width="300" valign="top">
   	  			<div id="side_bar"></div>
   	  		</td>
   	  	</tr>
