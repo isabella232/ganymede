@@ -43,6 +43,7 @@
   	  			</td>
   	  			<td width="300" valign="top">
   	  				<div id="filters">
+  	  					<h3>Filter By Type</h3>
   	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/> Text<br/>
   	  					<input type="checkbox" name="media" checked onclick="toggleType('media')"/> Media<br/>
   	  				</div>
