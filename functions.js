@@ -33,7 +33,7 @@ function validateForm() {
 		return false;
 		
 	}
-	document.spotForm.submit();
+	//document.spotForm.submit();
 	return retVal;
 }
 
