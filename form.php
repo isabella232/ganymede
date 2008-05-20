@@ -129,9 +129,6 @@
 					</table>
 				</form>
 			</div>
-			<div class="homeitem">
-				<div id="map" style="width: 300px; height: 300px"></div>
-			</div>	
 		</div>
 		<script type="text/javascript">
 		    var geocoder = new GClientGeocoder();
