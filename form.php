@@ -136,8 +136,8 @@
 					</table>
 				</form>
 			</div>
-			<div id="mapHolder" class="invisible">
-				<div id="map" class="invisible" style="width: 300px; height: 300px"></div>
+			<div class="homeitem">
+				<div id="map" style="width: 300px; height: 300px"></div>
 			</div>	
 		</div>
 		<script type="text/javascript">
