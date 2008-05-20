@@ -156,9 +156,7 @@
 				var c = document.getElementById('city');
 				var s = document.getElementById('state');
 				var co = document.getElementById('country');
-				var mapdiv = document.getElementById('mapHolder');
 				
-				mapdiv.className = 'visible';
 				var address = c.value + ' ' + s.value + ' ' + co.value;
 				showAddress(address);
 			}
