@@ -160,7 +160,7 @@
 				var co = document.getElementById('country');
 				var name = document.getElementById('name');
 				var content = document.getElementById('content');
-           		var html = '<b>' + name + '</b><br/>' + content;
+           		var html = '<b>' + name.value + '</b><br/>' + content.value;
 				var address = c.value + ' ' + s.value + ' ' + co.value;
 				showAddress(address, html);
 			}
