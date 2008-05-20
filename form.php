@@ -104,13 +104,11 @@
 												}
 												elseif ($colcount == $colreset)
 												{
-													$colcount = 0;
-													?></td><?
+													$colcount = -1;
+													?></td><td><?
 												}
 												$projectInfoIterator = $projectInfoList->getItemAt($i);
-												?>
-												<input type="checkbox" name="<?$projectInfoIterator->projectShortName;?>" value=""/><?$projectInfoIterator->projectShortName;?><br/>
-												<?
+												?><input type="checkbox" name="<?$projectInfoIterator->projectShortName;?>" value=""/><?$projectInfoIterator->projectShortName;?><br/><?
 												$colcount++; 
 											} ?>
 											
