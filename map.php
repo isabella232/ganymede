@@ -198,7 +198,7 @@
             var marker = createMarker(point,label,html, type);
             map.addOverlay(marker);
           }
-
+        }
       }
       request.send(null);
     }
