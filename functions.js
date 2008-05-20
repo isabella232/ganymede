@@ -55,8 +55,8 @@ function showAddress(address, html) {
 		        var marker = new GMarker(point);
 		        var lat = document.getElementById('lat');
 		        var lng = document.getElementById('lng');
-		        lat.value = point.x;
-		        lng.value = point.y;
+		        lat.value = point.y;
+		        lng.value = point.x;
 		        //map.clearOverlays();
 		        //map.addOverlay(marker);
 		        //marker.openInfoWindowHtml(html);
