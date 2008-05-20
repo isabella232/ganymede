@@ -27,13 +27,14 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 
-	include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
-	$projectInfoList = new projectInfoList();
-	$projectInfoList->selectProjectInfoList('','simultaneous release');
-	var_dump($projectInfoList);
+	//include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
+	//$projectInfoList = new projectInfoList();
+	//$projectInfoList->selectProjectInfoList('','simultaneous release');
+	//var_dump($projectInfoList);
 	ob_start();
 	
 	?>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA" type="text/javascript"></script>
 	<script type="text/javascript" src="functions.js"></script>
 	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<body>
@@ -129,12 +130,47 @@
 							<td>&nbsp;</td>
 							<td>
 								<input type="button" value="Submit" onclick="validateForm();"/>
+								<input type="button" value="Preview" onclick=previewLocation();/>
 							</td>
 						</tr>						
 					</table>
 				</form>
+			</div>
+			<div class="homeitem">
+				<div id="map" style="width: 300px; height: 300px"></div>
 			</div>	
 		</div>
+		<script type="text/javascript">
+		    var map = new GMap2(document.getElementById("map"));
+     		map.addControl(new GSmallMapControl());
+     		
+     		function getLatLng(city,state,country) {
+			var address = city + ' ' + state + ' ' + country;
+			var geocoder = new GClientGeocoder();
+			var lat = 0;
+			var lng = 0;
+			geocoder.getLatLng(address, 
+				function pt() {
+					if (pt) {
+						map.setCenter(pt, 12);
+						var marker = new GMarker(point);
+						map.addOverlay(marker);
+						marker.openInfoWindowHtml(address);
+					}
+				}
+				);
+			}
+			
+			function previewLocation() {
+				var c = document.getElementById('city');
+				var s = document.getElementById('state');
+				var co = document.getElementById('country');
+				
+				getLatLng(c.value,s.value,co.value);
+			}
+			
+			
+		</script>
 ?>  </body>
 	<?
 	$html = ob_get_clean();
