@@ -130,7 +130,7 @@
 							<td>&nbsp;</td>
 							<td>
 								<input type="button" value="Submit" onclick="validateForm();"/>
-								<input type="button" value="Preview" onclick=previewLocation();/>
+								<input type="button" value="Preview" onclick="previewLocation();"/>
 							</td>
 						</tr>						
 					</table>
