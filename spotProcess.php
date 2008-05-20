@@ -26,7 +26,7 @@
 	#
 	
 	# Place your html content in a file called content/en_pagename.php
-	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
+	require_once("/home/data/httpd/eclipse-php-classes/system/dbconnection_rw.class.php");
 	ob_start();
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
