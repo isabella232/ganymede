@@ -43,7 +43,6 @@
   	  			</td>
   	  			<td width="300" valign="top">
   	  				<div id="filters">
-  	  					<h3>Filter By Type</h3>
   	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
   	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
   	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image<br/>
@@ -181,7 +180,7 @@
 
       // Read the data from example.xml
       var request = GXmlHttp.create();
-      request.open("GET", "mapData.xml", true);
+      request.open("GET", "mapData.php", true);
       request.onreadystatechange = function() {
         if (request.readyState == 4) {
           var xmlDoc = GXml.parse(request.responseText);
@@ -213,10 +212,6 @@
     else {
       alert("Sorry, the Google Maps API is not compatible with this browser");
     }
-    // This Javascript is based on code provided by the
-    // Blackpool Community Church Javascript Team
-    // http://www.commchurch.freeserve.co.uk/   
-    // http://econym.googlepages.com/index.htm
 
     //]]>
     </script>  	  
