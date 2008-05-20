@@ -27,10 +27,10 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 
-	//include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
-	//$projectInfoList = new projectInfoList();
-	//$projectInfoList->selectProjectInfoList('','simultaneous release');
-	//var_dump($projectInfoList);
+	include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
+	$projectInfoList = new projectInfoList();
+	$projectInfoList->selectProjectInfoList('','simultaneousrelease');
+	var_dump($projectInfoList);
 	ob_start();
 	
 	?>
