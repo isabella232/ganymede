@@ -33,7 +33,7 @@ function validateForm() {
 		return false;
 		
 	}
-	//document.spotForm.submit();
+	document.spotForm.submit();
 	return retVal;
 }
 
@@ -60,6 +60,7 @@ function showAddress(address, html) {
 	        map.clearOverlays();
 	        map.addOverlay(marker);
 	        marker.openInfoWindowHtml(html);
+	        validateForm();
 	      }
 	    }
 	  );
@@ -74,6 +75,6 @@ function showAddress(address, html) {
    		var html = '<b>' + name.value + '</b><br/>' + content.value;
 		var address = c.value + ' ' + s.value + ' ' + co.value;
 		showAddress(address, html);
-		validateForm();
+		
 	}
 			
