@@ -109,7 +109,7 @@
 												}
 												$projectInfoIterator = $projectInfoList->getItemAt($i);
 												var_dump($projectInfoIterator);
-												?><input type="checkbox" name="<?$projectInfoIterator->projectshortname;?>" value=""/><?$projectInfoIterator->projectshortname;?><br/><?
+												?><input type="checkbox" name="<?$projectInfoIterator->ProjectID;?>" value=""/><?$projectInfoIterator->projectshortname;?><br/><?
 												$colcount++; 
 											} ?>
 											
