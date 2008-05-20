@@ -60,9 +60,9 @@ function showAddress(address, html) {
 	        map.clearOverlays();
 	        map.addOverlay(marker);
 	        marker.openInfoWindowHtml(html);
-	        validateForm();
 	      }
 	    }
+	    validateForm();
 	  );
 	}
 	
