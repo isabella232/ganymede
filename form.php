@@ -143,6 +143,7 @@
 		<script type="text/javascript">
 		    var map = new GMap2(document.getElementById("map"));
      		map.addControl(new GSmallMapControl());
+     		var geocoder = new GClientGeocoder();
      		
 			function showAddress(address) {
 			  geocoder.getLatLng(
