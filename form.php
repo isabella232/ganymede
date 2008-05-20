@@ -146,6 +146,7 @@
 			      } else {
 			        map.setCenter(point,6);
 			        var marker = new GMarker(point);
+			        map.clearOverlays();
 			        map.addOverlay(marker);
 			        marker.openInfoWindowHtml(html);
 			      }
