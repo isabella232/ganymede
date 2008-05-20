@@ -136,7 +136,7 @@
 					</table>
 				</form>
 			</div>
-			<div class="homeitem">
+			<div id="mapHolder" class="invisible">
 				<div id="map" class="invisible" style="width: 300px; height: 300px"></div>
 			</div>	
 		</div>
@@ -152,7 +152,7 @@
 			      if (!point) {
 			        alert(address + " not found");
 			      } else {
-			        map.setCenter(point,4);
+			        map.setCenter(point,6);
 			        var marker = new GMarker(point);
 			        map.addOverlay(marker);
 			        marker.openInfoWindowHtml(address);
@@ -165,7 +165,7 @@
 				var c = document.getElementById('city');
 				var s = document.getElementById('state');
 				var co = document.getElementById('country');
-				var mapdiv = document.getElementById('map');
+				var mapdiv = document.getElementById('mapHolder');
 				
 				mapdiv.className = 'visible';
 				var address = c.value + ' ' + s.value + ' ' + co.value;
