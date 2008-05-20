@@ -11,12 +11,6 @@
 	#
 	#****************************************************************************
 	
-	#
-	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Ganymede Spotting";
-	$pageKeywords	= "eclipse ganymede, ganymede, ganymede spotting form";
-	$pageAuthor		= "Eclipse Foundation, Inc.";
-	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank)
 	# $Nav->addCustomNav("My Link", "mypage.php", "_self");
@@ -38,18 +32,7 @@
 	$retVal = mysql_insert_id($dbh);
 	$query = "INSERT INTO ganymede_content (id, type, content) VALUES ($retVal, '$type', '$content')";
 	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
-	?>
 
-	<script type="text/javascript" src="functions.js"></script>
-	<link type="text/css" href="style.css" rel="stylesheet"/>
-	<body>
-		Submitted Information.. Translating Location<br/>
-		
-		<?=$city?> - <?=$state?> - <?=$country?> - <?=$lat?> - <?=$lng?>
-	
-	</body>
-	<?
-	$html = ob_get_clean();
-	# Generate the web page
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+	header("Location: http://www.eclipse.org/ganymede/map.php");
+
 ?>
