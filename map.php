@@ -52,7 +52,6 @@
   	  			</td>
   	  		</tr>
   	  	</table>
-  	 	<div id="list"></div>
   	 </div>
  <script type="text/javascript">
     //<![CDATA[
@@ -146,7 +145,6 @@
         gmarkers[i] = marker;
         gmarkersType[i] = type;
         // add a line to the side_bar html
-        list_html += '<tr><td><img src="' + imageLocation + '"/></td><td><a href="javascript:myclick(' + i + ')">' + name + '</a></td><td>' + html + '</td></tr>';
         i++;
         return marker;
       }
@@ -200,11 +198,7 @@
             var marker = createMarker(point,label,html, type);
             map.addOverlay(marker);
           }
-          // put the assembled side_bar_html contents into the side_bar div
-          var tablestart = "<table width='100%' cellspacing=0 cellpadding=0 class='list'><tr class='header'><td width='36'>Type</td><td>Name</td><td>Content</td></tr>";
-          var tableend = "</table>";
-          document.getElementById("list").innerHTML = tablestart + list_html + tableend;
-        }
+
       }
       request.send(null);
     }
