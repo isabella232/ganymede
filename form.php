@@ -30,7 +30,7 @@
 	include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
 	$projectInfoList = new projectInfoList();
 	$projectInfoList->selectProjectInfoList('','simultaneousrelease', 'ganymede', 1);
-	var_dump($projectInfoList);
+	$projectInfoList->alphaSortList();
 	ob_start();
 	
 	?>
@@ -93,34 +93,27 @@
 								<div id="selectProjects" class="invisible">
 									<table width="100%">
 										<tr>
-											<td><input type="checkbox" value="BIRT"/>BIRT<br/>
-												<input type="checkbox" value="Buckminster"/>Buckminster<br/>
-												<input type="checkbox" value="CDT"/>CDT<br/>
-												<input type="checkbox" value="DLTK"/>DLTK<br/>
-												<input type="checkbox" value="DSDP-DD"/>DSDP-DD<br/>
-												<input type="checkbox" value="DSDP-NAB"/>DSDP-NAB<br/>
-											</td>
-											<td><input type="checkbox" value="DSDP-TM"/>DSDP-TM<br/>
-												<input type="checkbox" value="DTP"/>DTP<br/>
-												<input type="checkbox" value="ECF"/>ECF<br/>
-												<input type="checkbox" value="Eclipse"/>Eclipse<br/>
-												<input type="checkbox" value="EMF"/>EMF<br/>
-												<input type="checkbox" value="EMFT"/>EMFT<br/>
-											</td>
-											<td><input type="checkbox" value="EPP"/>EPP<br/>
-												<input type="checkbox" value="GEF"/>GEF<br/>
-												<input type="checkbox" value="GMF"/>GMF<br/>
-												<input type="checkbox" value="MDT"/>MDT<br/>
-												<input type="checkbox" value="M2M"/>M2M<br/>
-												<input type="checkbox" value="M2T"/>M2T<br/>
-											</td>
-											<td><input type="checkbox" value="Mylyn"/>Mylyn<br/>
-												<input type="checkbox" value="RAP"/>RAP<br/>
-												<input type="checkbox" value="STP"/>STP<br/>
-												<input type="checkbox" value="Subversive"/>Subversive<br/>
-												<input type="checkbox" value="TPTP"/>TPTP<br/>
-												<input type="checkbox" value="WTP"/>WTP<br/>
-											</td>
+											<?
+											$colreset = 6;
+											$colcount = 0; 
+											for ($i=0; $i < $projectInfoList->getCount(); $i++)
+											{
+												if ($colcount == 0)
+												{
+													?><td><?
+												}
+												elseif ($colcount == $colreset)
+												{
+													$colcount = 0;
+													?></td><?
+												}
+												$projectInfoIterator = $projectInfoList->getItemAt($i);
+												?>
+												<input type="checkbox" name="<?$projectInfoIterator->projectShortName;?>" value=""/><?$projectInfoIterator->projectShortName;?><br/>
+												<?
+												$colcount++; 
+											} ?>
+											
 										</tr>
 									</table>
 								</div>
