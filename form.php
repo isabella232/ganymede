@@ -137,7 +137,7 @@
 				</form>
 			</div>
 			<div class="homeitem">
-				<div id="map" style="width: 300px; height: 300px"></div>
+				<div id="map" class="invisible" style="width: 300px; height: 300px"></div>
 			</div>	
 		</div>
 		<script type="text/javascript">
@@ -165,7 +165,9 @@
 				var c = document.getElementById('city');
 				var s = document.getElementById('state');
 				var co = document.getElementById('country');
+				var mapdiv = document.getElementById('map');
 				
+				mapdiv.className = 'visible';
 				getLatLng(c.value,s.value,co.value);
 			}
 			
