@@ -121,8 +121,8 @@
 						<tr>	
 							<td>&nbsp;</td>
 							<td>
-								<input type="hidden" id="lat" value="0"/>
-								<input type="hidden" id="lng" value="0"/>
+								<input type="hidden" id="lat" name="lat" value="0"/>
+								<input type="hidden" id="lng" name="lng" value="0"/>
 								<input type="button" value="Submit" onclick="previewLocation();"/>
 							</td>
 						</tr>						
@@ -134,8 +134,7 @@
 			</div>	
 		</div>
 		<script type="text/javascript">
-		    var map = new GMap2(document.getElementById("map"));
-     		var geocoder = new GClientGeocoder();
+		    var geocoder = new GClientGeocoder();
 		</script>
     </body>
 	<?
