@@ -144,23 +144,20 @@
 		    var map = new GMap2(document.getElementById("map"));
      		map.addControl(new GSmallMapControl());
      		
-     		function getLatLng(city,state,country) {
-			var address = city + ' ' + state + ' ' + country;
-			var geocoder = new GClientGeocoder();
-			var lat = 0;
-			var lng = 0;
-			geocoder.getLatLng(address, 
-				function pt() {
-					if (!pt) {
-						alert(address + " not found");
-					} else {
-						map.setCenter(pt, 12);
-						var marker = new GMarker(point);
-						map.addOverlay(marker);
-						marker.openInfoWindowHtml(address);
-					}
-				}
-				);
+			function showAddress(address) {
+			  geocoder.getLatLng(
+			    address,
+			    function(point) {
+			      if (!point) {
+			        alert(address + " not found");
+			      } else {
+			        map.setCenter(point, 13);
+			        var marker = new GMarker(point);
+			        map.addOverlay(marker);
+			        marker.openInfoWindowHtml(address);
+			      }
+			    }
+			  );
 			}
 			
 			function previewLocation() {
@@ -170,7 +167,8 @@
 				var mapdiv = document.getElementById('map');
 				
 				mapdiv.className = 'visible';
-				getLatLng(c.value,s.value,co.value);
+				var address = c.value + ' ' + s.value + ' ' + co.value;
+				showAddress(address);
 			}
 			
 			
