@@ -121,6 +121,8 @@
 						<tr>	
 							<td>&nbsp;</td>
 							<td>
+								<input type="hidden" id="lat" value="0"/>
+								<input type="hidden" id="lng" value="0"/>
 								<input type="button" value="Submit" onclick="validateForm();"/>
 								<input type="button" value="Preview" onclick="previewLocation();"/>
 							</td>
@@ -146,6 +148,10 @@
 			      } else {
 			        map.setCenter(point,6);
 			        var marker = new GMarker(point);
+			        var lat = document.getElementById('lat');
+			        var lng = document.getElementById('lng');
+			        lat.value = point.x;
+			        lng.value = point.y;
 			        map.clearOverlays();
 			        map.addOverlay(marker);
 			        marker.openInfoWindowHtml(html);
