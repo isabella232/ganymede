@@ -11,3 +11,23 @@ table.list {
 table.list tr.header {
 	font-weight:bold;	
 }
+
+.required {
+	color:red;
+	text-align:right;
+}
+
+.expandProjects {
+	font-size:80%;
+}
+
+#selectProjects {
+	font-size:90%;
+}
+
+.invisible {
+display:none;
+}
+.visible {
+display:inline;
+}
