@@ -151,7 +151,9 @@
 			var lng = 0;
 			geocoder.getLatLng(address, 
 				function pt() {
-					if (pt) {
+					if (!pt) {
+						alert(address + " not found");
+					} else {
 						map.setCenter(pt, 12);
 						var marker = new GMarker(point);
 						map.addOverlay(marker);
