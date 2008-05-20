@@ -137,7 +137,7 @@
 		    var map = new GMap2(document.getElementById("map"));
      		var geocoder = new GClientGeocoder();
 		</script>
-?>  </body>
+    </body>
 	<?
 	$html = ob_get_clean();
 	# Generate the web page
