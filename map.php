@@ -39,7 +39,7 @@
 	  	<table width="100%">
   			<tr>
   	  			<td>
-  	  			  <div id="map" style="width: 700px; height: 400px"></div>
+  	  			  <div id="map" style="width:550px; height: 400px"></div>
   	  			</td>
   	  			<td width="300" valign="top">
   	  				<div id="filters">
@@ -173,7 +173,7 @@
       // create the map
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
-      map.setCenter(new GLatLng( 45.345739 ,-75.765338), 4);  //Center on Eclipse Foundation HQ
+      map.setCenter(new GLatLng( 45.345739 ,-75.765338), 7);  //Center on Eclipse Foundation HQ
 
 
       // Read the data from example.xml
