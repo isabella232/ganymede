@@ -48,21 +48,21 @@ function showAddress(address, html) {
 	  geocoder.getLatLng(
 	    address,
 	    function(point) {
-	      if (!point) {
+	    	if (!point) {
 	        //alert(address + " not found");
-	      } else {
-	        map.setCenter(point,6);
-	        var marker = new GMarker(point);
-	        var lat = document.getElementById('lat');
-	        var lng = document.getElementById('lng');
-	        lat.value = point.x;
-	        lng.value = point.y;
-	        map.clearOverlays();
-	        map.addOverlay(marker);
-	        marker.openInfoWindowHtml(html);
-	      }
+	      	} else {
+		        map.setCenter(point,6);
+		        var marker = new GMarker(point);
+		        var lat = document.getElementById('lat');
+		        var lng = document.getElementById('lng');
+		        lat.value = point.x;
+		        lng.value = point.y;
+		        map.clearOverlays();
+		        map.addOverlay(marker);
+		        marker.openInfoWindowHtml(html);
+	      	}
+			validateForm();
 	    }
-	    validateForm();
 	  );
 	}
 	
