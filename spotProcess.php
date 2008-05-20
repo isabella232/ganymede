@@ -27,9 +27,10 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
+	ob_start();
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
-	ob_start();
+
 	extract($_POST);
 	
 	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
