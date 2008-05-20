@@ -29,7 +29,7 @@
 
 	include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
 	$projectInfoList = new projectInfoList();
-	$projectInfoList->selectProjectInfoList('','simultaneousrelease');
+	$projectInfoList->selectProjectInfoList('','simultaneousrelease', 'ganymede', 1);
 	var_dump($projectInfoList);
 	ob_start();
 	
