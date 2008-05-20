@@ -173,7 +173,7 @@
       // create the map
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
-      map.setCenter(new GLatLng( 45.345739 ,-75.765338), 7);  //Center on Eclipse Foundation HQ
+      map.setCenter(new GLatLng( 45.345739 ,-75.765338), 2);  //Center on Eclipse Foundation HQ
 
 
       // Read the data from example.xml
