@@ -109,7 +109,8 @@
 												}
 												$projectInfoIterator = $projectInfoList->getItemAt($i);
 												var_dump($projectInfoIterator);
-												?><input type="checkbox" name="<?$projectInfoIterator->ProjectID;?>" value=""/><?$projectInfoIterator->projectshortname;?><br/><?
+												?><input type="checkbox" name="<?$projectInfoIterator->ProjectID;?>" value=""/><?$projectInfoIterator->projectshortname;?><br/>
+												<?
 												$colcount++; 
 											} ?>
 											
@@ -137,7 +138,7 @@
      		map.addControl(new GSmallMapControl());
      		var geocoder = new GClientGeocoder();
      		
-			function showAddress(address) {
+			function showAddress(address, html) {
 			  geocoder.getLatLng(
 			    address,
 			    function(point) {
@@ -147,7 +148,7 @@
 			        map.setCenter(point,6);
 			        var marker = new GMarker(point);
 			        map.addOverlay(marker);
-			        marker.openInfoWindowHtml(address);
+			        marker.openInfoWindowHtml(html);
 			      }
 			    }
 			  );
@@ -157,9 +158,11 @@
 				var c = document.getElementById('city');
 				var s = document.getElementById('state');
 				var co = document.getElementById('country');
-				
+				var name = document.getElementById('name');
+				var content = document.getElementById('content');
+           		var html = '<b>' + name + '</b><br/>' + content;
 				var address = c.value + ' ' + s.value + ' ' + co.value;
-				showAddress(address);
+				showAddress(address, html);
 			}
 			
 			
