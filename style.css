@@ -31,3 +31,7 @@ display:none;
 .visible {
 display:inline;
 }
+
+.infoWindow {
+   min-height: 200px;
+}
