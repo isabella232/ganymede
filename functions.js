@@ -25,7 +25,7 @@ function validateForm() {
 	}
 	if (con.value.length == 0)
 	{
-		alert("Please specify your content.");
+		alert("Please specify a message.");
 		return false;
 	}
 	if (lat.value == 0 && lng.value == 0)
