@@ -79,7 +79,10 @@
 							</td>
 						</tr>
 						<tr>
-							<td valign="top">Content<span class="required">*</span>:</td>
+							<td>Content URL:</td>
+							<td><input type="text" name="url" id="url"/></td>
+						<tr>
+							<td valign="top">Message<span class="required">*</span>:</td>
 							<td><textarea name="content" id="content"></textarea></td>
 						</tr>
 						<!--  <tr>
