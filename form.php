@@ -82,7 +82,7 @@
 							<td valign="top">Content<span class="required">*</span>:</td>
 							<td><textarea name="content" id="content"></textarea></td>
 						</tr>
-						<tr>
+						<!--  <tr>
 							<td valign="top">Ganymede Projects:</td>
 							<td>
 								<div id="projects"><a class="expandProjects" onclick="showProjects()">Click here to choose which Ganymede Projects you are using.</a></div>
@@ -93,7 +93,7 @@
 								<div id="selectProjects" class="invisible">
 									<table width="100%">
 										<tr>
-											<?
+											<?/*
 											$colreset = 6;
 											$colcount = 0; 
 											for ($i=0; $i < $projectInfoList->getCount(); $i++)
@@ -111,13 +111,13 @@
 												?><input type="checkbox" name="<?$projectInfoIterator->ProjectID;?>" value=""/><?$projectInfoIterator->projectshortname;?><br/>
 												<?
 												$colcount++; 
-											} ?>
+											}*/?>
 											
 										</tr>
 									</table>
 								</div>
 							</td>
-						</tr>
+						</tr> -->
 						<tr>	
 							<td>&nbsp;</td>
 							<td>
