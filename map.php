@@ -79,7 +79,7 @@
       var icon = 0;
       var importance = 0;
        
-        var marker = new GMarker(point, markerOptions);
+        var marker = new GMarker(point);
         GEvent.addListener(marker, "click", function() {
           marker.openInfoWindowHtml(html);
         });
