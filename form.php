@@ -69,7 +69,7 @@
 						<tr>
 							<td>Content Type<span class="required">*</span>:</td>
 							<td>
-								<select name="type" id="type">
+								<select name="type" id="type" onchange="showURL(this)">
 									<option value="video" selected>Video</option>
 									<option value="podcast">Podcast</option>
 									<option value="blog">Blog</option>
@@ -79,9 +79,10 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Content URL:</td>
-							<td><input type="text" name="url" id="url"/></td>
+							<td><div id="urlDiv">Content URL<span class="required">*</span>:</div></td>
+							<td><div id="urlDiv2"><input type="text" name="url" id="url"/></div></td>
 						<tr>
+						</div>
 							<td valign="top">Message<span class="required">*</span>:</td>
 							<td><textarea name="content" id="content"></textarea></td>
 						</tr>
