@@ -53,6 +53,12 @@
   	  		</tr>
   	  	</table>
   	 </div>
+  	 <div id="rightcolumn">
+  	 	<div class="sideitem">
+  	 		<h6>Ganymeded Spotting</h6>
+  	 		<ul><li><a href="form.php">Add a Marker</a></li></ul>
+  	 	</div>
+  	 </div>
  <script type="text/javascript">
     //<![CDATA[
     if (GBrowserIsCompatible()) {
