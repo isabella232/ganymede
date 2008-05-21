@@ -30,7 +30,7 @@
 	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
 	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
 	$retVal = mysql_insert_id($dbh);
-	$query = "INSERT INTO ganymede_content (id, type, content) VALUES ($retVal, '$type', '$content')";
+	$query = "INSERT INTO ganymede_content (id, type, content, url) VALUES ($retVal, '$type', '$content', '$url')";
 	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
 
 	header("Location: http://www.eclipse.org/ganymede/map.php");
