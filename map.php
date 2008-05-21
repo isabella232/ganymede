@@ -75,19 +75,14 @@
 
 
       // A function to create the marker and set up the event window
-      function createMarker(point,name,html,type) {
-      var icon = 0;
-      var importance = 0;
+      function createMarker(point,html,type) {
        
         var marker = new GMarker(point);
         GEvent.addListener(marker, "click", function() {
           marker.openInfoWindowHtml(html);
         });
-        // save the info we need to use later for the side_bar
-        marker.importance = importance;
         gmarkers[i] = marker;
         gmarkersType[i] = type;
-        // add a line to the side_bar html
         i++;
         return marker;
       }
@@ -138,7 +133,7 @@
             var label = markers[i].getAttribute("label");
             var type = markers[i].getAttribute("type");
             // create the marker
-            var marker = createMarker(point,label,html, type);
+            var marker = createMarker(point, html, type);
             map.addOverlay(marker);
           }
         }
