@@ -41,7 +41,7 @@
   	  			<td>
   	  			  <div id="map" style="width:550px; height: 400px"></div>
   	  			</td>
-  	  			<td width="300" valign="top">
+  	  			<td valign="top">
   	  				<div id="filters">
   	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
   	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
