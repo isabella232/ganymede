@@ -71,77 +71,14 @@
       var gmarkersType = [];
       var i = 0;
 
-	  // Create Different Icons
-		var textIcon = new GIcon();
-		textIcon.image = "http://dev.eclipse.org/large_icons/apps/accessories-text-editor.png";
-		textIcon.iconSize = new GSize(32, 32);
-		textIcon.iconAnchor = new GPoint(9, 34);
-		textIcon.infoWindowAnchor = new GPoint(32, 2);
-	  
-	  	var videoIcon = new GIcon();
-	  	videoIcon.image = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png";
-		videoIcon.iconSize = new GSize(32, 32);
-		videoIcon.iconAnchor = new GPoint(9, 34);
-		videoIcon.infoWindowAnchor = new GPoint(32, 2);
-		
-		var podcastIcon = new GIcon();
-	  	podcastIcon.image = "http://dev.eclipse.org/large_icons/status/audio-volume-medium.png";
-		podcastIcon.iconSize = new GSize(32, 32);
-		podcastIcon.iconAnchor = new GPoint(9, 34);
-		podcastIcon.infoWindowAnchor = new GPoint(32, 2);
-		
-		var imageIcon = new GIcon();
-	  	imageIcon.image = "http://dev.eclipse.org/large_icons/mimetypes/image-x-generic.png";
-		imageIcon.iconSize = new GSize(32, 32);
-		imageIcon.iconAnchor = new GPoint(9, 34);
-		imageIcon.infoWindowAnchor = new GPoint(32, 2);
-		
-		var blogIcon = new GIcon();
-	  	blogIcon.image = "http://dev.eclipse.org/large_icons/mimetypes/text-html.png";
-		blogIcon.iconSize = new GSize(32, 32);
-		blogIcon.iconAnchor = new GPoint(9, 34);
-		blogIcon.infoWindowAnchor = new GPoint(32, 2);				
 
-	  function zOrder (marker, b) {
-		return GOverlay.getZIndex(marker.getPoint().lat()) + marker.importance*1000000; 
-	  }
 
 
       // A function to create the marker and set up the event window
       function createMarker(point,name,html,type) {
       var icon = 0;
       var importance = 0;
-        if (type == "text")
-        {
-        	icon = new GIcon(textIcon);
-        	imageLocation = 'http://dev.eclipse.org/large_icons/apps/accessories-text-editor.png';
-        	importance = 0;	
-        }
-        else if (type =="image")
-        {
-            icon = new GIcon(imageIcon);
-        	imageLocation = 'http://dev.eclipse.org/large_icons/mimetypes/image-x-generic.png';
-        	importance = 1;	
-        }
-        else if (type == "blog")
-        {
-            icon = new GIcon(blogIcon);
-        	imageLocation = 'http://dev.eclipse.org/large_icons/mimetypes/text-html.png';
-        	importance = 2;	
-        }
-        else if (type == "podcast")
-        {
-        	icon = new GIcon(podcastIcon);
-        	imageLocation = 'http://dev.eclipse.org/large_icons/status/audio-volume-medium.png';
-        	importance = 3;	        
-        }
-        else if (type =="video")
-        {
-        	icon = new GIcon(videoIcon);
-        	imageLocation = "http://dev.eclipse.org/large_icons/categories/applications-multimedia.png"; 
-        	importance = 4;
-        }        
-        markerOptions = { zIndexProcess:zOrder };
+       
         var marker = new GMarker(point, markerOptions);
         GEvent.addListener(marker, "click", function() {
           marker.openInfoWindowHtml(html);
