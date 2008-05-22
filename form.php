@@ -35,7 +35,7 @@
 	?>	<script type="text/javascript">
 		    var geocoder = new GClientGeocoder();
 		</script>
-			<div class="homeitem">
+			<div class="form">
 				<h3>Spot Ganymede</h3>
 					<form action="spotProcess.php" method="POST" name="spotForm">
 					<table>

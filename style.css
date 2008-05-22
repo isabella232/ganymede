@@ -42,7 +42,11 @@ display:inline;
 }
 
 .mapDiv {
-	width:800px;	
+	width:900px;	
+}
+
+.form {
+	width:280px;	
 }
 
 ///////////////////////////////////////////////////////
