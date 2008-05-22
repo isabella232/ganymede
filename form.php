@@ -88,7 +88,10 @@
 						<tr>
 							<td>Email:</td>
 							<td><input type="text" name="email" id="email"/></td>
-						</tr>						
+						</tr>
+						<tr>
+							<td colspan="2">Please provide your email address if you wish to participate it contest.</td>
+						</tr>
 						<!--  <tr>
 							<td valign="top">Ganymede Projects:</td>
 							<td>

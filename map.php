@@ -75,10 +75,11 @@
 			</div>
  			<div class="b"><div></div></div>
 		</div>
-		</div> 		  	  	
+		</div>
+		<div class="geoIP">GeoIP Lookup provided by <a href="http://www.maxmind.com/">http://www.maxmind.com/</a></div> 		  	  	
   	 </div>
 	<hr class="clearer"/><br/><br/><br/><br/>
-	<hr class="clearer"/><span class="small">GeoIP Lookup provided by <a href="http://www.maxmind.com/">http://www.maxmind.com/</a></span>
+	<hr class="clearer"/>
 
  <script type="text/javascript">
     //<![CDATA[
