@@ -37,6 +37,7 @@
     <body onunload="GUnload()">
   	 <div id="midcolumn">
   	   <h1>Ganymede Spotting</h1>
+  	   <div class="mapDiv">
  		<div class="dialog">
  		<div class="dialogContent">
   			<div class="t"></div>
@@ -53,6 +54,7 @@
 	  	  	</table>
 			</div>
  			<div class="b"><div></div></div>
+		</div>
 		</div> 		  	  	
   	 </div>
 	  	  				<div id="filters">
