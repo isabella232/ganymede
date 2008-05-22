@@ -78,7 +78,7 @@
 		</div> 		  	  	
   	 </div>
 	<hr class="clearer"/><br/><br/><br/><br/>
-	<hr class="clearer"/>
+	<hr class="clearer"/><span class="small">GeoIP Lookup provided by <a href="http://www.maxmind.com/">http://www.maxmind.com/</a></span>
 
  <script type="text/javascript">
     //<![CDATA[
