@@ -36,6 +36,11 @@ display:inline;
    min-height: 200px;
 }
 
+#map {
+	border:1px solid grey;
+	padding:15px;	
+}
+
 ///////////////////////////////////////////////////////
 
 .dialog {
