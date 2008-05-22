@@ -130,10 +130,10 @@
 
       // create the map
       
-      var map = new GMap2(document.getElementById("map"), { mapTypes : 'G_HYBRID_MAP' } );
+      var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
       map.setCenter(new GLatLng( 37.345739 ,-75.765338), 1);  //Center on Eclipse Foundation HQ
-
+	  map.setMapType(G_HYBRID_MAP);
 
       // Read the data from example.xml
       var request = GXmlHttp.create();
