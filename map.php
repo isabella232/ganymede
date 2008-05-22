@@ -36,29 +36,31 @@
     <body onunload="GUnload()">
   	 <div id="midcolumn">
   	   <h1>Ganymede Spotting</h1>
-	  	<table width="100%">
-  			<tr>
-  	  			<td>
-  	  			  <div id="map" style="width:550px; height: 400px"></div>
-  	  			</td>
-  	  			<td valign="top">
-  	  				<div id="filters">
-  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
-  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
-  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image<br/>
-  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog<br/>
-  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text<br/>
-  	  				</div>
-  	  			</td>
-  	  		</tr>
-  	  	</table>
+ 		<div class="dialog">
+ 		<div class="dialogContent">
+  			<div class="t"></div>
+  			<!-- Your content goes here -->
+		  	<table width="100%">
+	  			<tr>
+	  	  			<td>
+	  	  			  <div id="map" style="width:550px; height: 400px"></div>
+	  	  			</td>
+	  	  			<td valign="top">
+	  	  				<div id="filters">
+	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
+	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
+	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image<br/>
+	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog<br/>
+	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text<br/>
+	  	  				</div>
+	  	  			</td>
+	  	  		</tr>
+	  	  	</table>
+			</div>
+ 			<div class="b"><div></div></div>
+		</div> 		  	  	
   	 </div>
-  	 <div id="rightcolumn">
-  	 	<div class="sideitem">
-  	 		<h6>Ganymeded Spotting</h6>
-  	 		<ul><li><a href="form.php">Add a Marker</a></li></ul>
-  	 	</div>
-  	 </div>
+
  <script type="text/javascript">
     //<![CDATA[
     if (GBrowserIsCompatible()) {
