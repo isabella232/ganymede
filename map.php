@@ -31,6 +31,7 @@
 	?>
 	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<script type="text/javascript" src="functions.js"></script>
+	<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA"
       type="text/javascript"></script>
   
@@ -133,20 +134,9 @@
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
       
-      var locateUserRequest = GXmlHttp.create();
-      locateUserRequest.open("GET", "getGeoIP.php", true)
-      locateUserRequest.onreadystatechange = function () {
-      	if (locateUserRequest.readystate = 4) {
-      	var xmlData = GXml.parse(locateUserRequest.responseText);
-      	var coords = xmlData.documentElement.getElementsByTagName("gml:coordinates");
-      	var latlng = coords.textContext;
-      	latlng.split(',');
-      	alert(latlng);
-      	}
-      }
-      locateUserRequest.send(null);
+	
       	
-      map.setCenter(new GLatLng( 37.345739 ,-75.765338), 1);  //Center on Eclipse Foundation HQ
+      map.setCenter(new GLatLng( geoip_latitude() , geoip_longitute()), 1);  //Center on Eclipse Foundation HQ
 	  map.setMapType(G_HYBRID_MAP);
 
       // Read the data from example.xml
