@@ -136,7 +136,7 @@
       
 	
       	
-      map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 1);  //Center on Eclipse Foundation HQ
+      map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 3);  //Center on Eclipse Foundation HQ
 	  map.setMapType(G_HYBRID_MAP);
 
       // Read the data from example.xml
