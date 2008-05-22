@@ -133,7 +133,7 @@
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
       
-      var userIP = <?$_SERVER['REMOTE_ADDR'];?>;
+      var userIP = <?=$_SERVER['REMOTE_ADDR'];?>;
       var locateUserRequest = GXmlHttp.create();
       locateUserRequest.open("GET", "http://api.hostip.info/?ip=" + userIP, true)
       locateUserRequest.onreadystatechange = function () {
