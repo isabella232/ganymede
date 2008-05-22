@@ -141,6 +141,7 @@
       	var xmlData = GXml.parse(locateUserRequest.responseText);
       	var coords = xmlData.documentElement.getElementsByTagName("gml:coordinates");
       	var latlng = coords.textContext;
+      	latlng.split(',');
       	alert(latlng);
       	}
       }
