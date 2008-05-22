@@ -31,17 +31,10 @@
 	$projectInfoList = new projectInfoList();
 	$projectInfoList->selectProjectInfoList('','simultaneousrelease', 'ganymede', 1);
 	$projectInfoList->alphaSortList();
-	ob_start();
 	
-	?>
-	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA" type="text/javascript"></script>
-	<script type="text/javascript" src="functions.js"></script>
-	<link type="text/css" href="style.css" rel="stylesheet"/>
-	<body>
-		<div id="midcolumn">
-			<h1><?=$pageTitle;?></h1>
-			
-			<div>Using Ganymede?  Post your information here to be included in our Mashup!</div><br/>
+	?>	<script type="text/javascript">
+		    var geocoder = new GClientGeocoder();
+		</script>
 			<div class="homeitem">
 				<h3>Spot Ganymede</h3>
 					<form action="spotProcess.php" method="POST" name="spotForm">
@@ -133,13 +126,3 @@
 					</table>
 				</form>
 			</div>
-		</div>
-		<script type="text/javascript">
-		    var geocoder = new GClientGeocoder();
-		</script>
-    </body>
-	<?
-	$html = ob_get_clean();
-	# Generate the web page
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
-?>
