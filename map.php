@@ -132,6 +132,20 @@
       
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
+      
+      var userIP = <?$_SERVER['REMOTE_ADDR'];?>;
+      var locateUserRequest = GXmlHttp.create();
+      locateUserRequest.open("GET", "http://api.hostip.info/?ip=" + userIP, true)
+      locateUserRequest.onreadystatechange = function () {
+      	if (locateUserRequest.readystate = 4) {
+      	var xmlData = GXml.parse(locateUserRequest.responseText);
+      	var coords = xmlData.documentElement.getElementsByTagName("gml:coordinates");
+      	var latlng = coords.textContext;
+      	alert(latlng);
+      	}
+      }
+      locateUserRequest.send(null);
+      	
       map.setCenter(new GLatLng( 37.345739 ,-75.765338), 1);  //Center on Eclipse Foundation HQ
 	  map.setMapType(G_HYBRID_MAP);
 
