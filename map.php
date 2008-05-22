@@ -40,7 +40,7 @@
  		<div class="dialogContent">
   			<div class="t"></div>
   			<!-- Your content goes here -->
-		  	<table width="100%">
+		  	<table width="700">
 	  			<tr>
 	  	  			<td>
 	  	  			  <div id="map" style="width:550px; height: 400px"></div>
