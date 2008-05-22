@@ -36,16 +36,17 @@
 		    var geocoder = new GClientGeocoder();
 		</script>
 			<div class="form">
-				<h3>Spot Ganymede</h3>
 					<form action="spotProcess.php" method="POST" name="spotForm">
-					<table>
+					<table width="300" class="formBox">
+						<tr>
+							<td colspan="2"><h5>Who are you?</h5></td>
+						</tr>
 						<tr>
 							<td width="280">Name<span class="required">*</span>:</td>
 							<td><input type="text" name="name" id="name"/></td>
 						</tr>
 						<tr>
-							<td>Email:</td>
-							<td><input type="text" name="email" id="email"/></td>
+							<td colspan="2"><br/><h5>Where are you?</h5></td>
 						</tr>
 						<tr>
 							<td>City<span class="required">*</span>:</td>
@@ -60,6 +61,8 @@
 							<td><input type="text" name="country" id="country"/></td>
 						</tr>
 						<tr>
+							<td colspan="2"><br/><h5>How are you using Ganymede?</h5></td>
+						</tr>
 							<td>Content Type<span class="required">*</span>:</td>
 							<td>
 								<select name="type" id="type" onchange="showURL(this)">
@@ -78,7 +81,14 @@
 						</div>
 							<td valign="top">Message<span class="required">*</span>:</td>
 							<td><textarea name="content" id="content"></textarea></td>
+						</tr>						
+						<tr>
+							<td colspan="2"><br/></td>
 						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" name="email" id="email"/></td>
+						</tr>						
 						<!--  <tr>
 							<td valign="top">Ganymede Projects:</td>
 							<td>

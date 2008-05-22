@@ -36,19 +36,38 @@
   
     <body onunload="GUnload()">
   	 <div id="midcolumn">
-  	   <h1>Ganymede Spotting</h1>
+
   	   <div class="mapDiv">
  		<div class="dialog">
  		<div class="dialogContent">
   			<div class="t"></div>
   			<!-- Your content goes here -->
-		  	<table width="700">
+		  	<table class="dialogTable">
 	  			<tr>
 	  	  			<td>
+	  	  			  <h2>Ganymede Around the World</h2>
+	  	  			</td>
+	  	  			<td>
+	  	  			  <h2>Tell us how you're using Ganymede</h2>
+	  	  			</td>
+	  	  		</tr>
+	  	  		<tr>
+	  	  			<td valign="top">
 	  	  			  <div id="map" style="width:550px; height: 400px"></div>
 	  	  			</td>
 	  	  			<td valign="top">
 	  	  				<? include ('form.php') ?>
+	  	  			</td>
+	  	  		</tr>
+	  	  		<tr>
+	  	  			<td align="center">
+	  	  				<div id="filters">
+	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video 
+	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast 
+	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image 
+	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog  
+	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text 
+	  	  				</div>
 	  	  			</td>
 	  	  		</tr>
 	  	  	</table>
@@ -57,13 +76,7 @@
 		</div>
 		</div> 		  	  	
   	 </div>
-	  	  				<div id="filters">
-	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
-	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
-	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image<br/>
-	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog<br/>
-	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text<br/>
-	  	  				</div>
+
 
  <script type="text/javascript">
     //<![CDATA[

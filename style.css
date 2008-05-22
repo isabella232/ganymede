@@ -38,15 +38,31 @@ display:inline;
 
 #map {
 	border:1px solid grey;
-	margin:15px;	
+	margin:0 15px 15px;	
 }
 
 .mapDiv {
 	width:900px;	
 }
+.formBox {
+	border:1px solid grey;
+	background:#DDD;
+	font-size:90%;		
+}
+
+.dialogTable h2 {
+	color:#FFFFFF;	
+}
 
 .form {
-	width:280px;	
+	width:280px;
+}
+
+.form h5 {
+	margin-top:10px;
+	font-size:100%;
+	color:#000000;
+	display:inline;	
 }
 
 ///////////////////////////////////////////////////////
