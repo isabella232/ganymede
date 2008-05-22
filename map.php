@@ -30,6 +30,7 @@
 	ob_start();
 	?>
 	<link type="text/css" href="style.css" rel="stylesheet"/>
+	<script type="text/javascript" src="functions.js"></script>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA"
       type="text/javascript"></script>
   
@@ -46,13 +47,7 @@
 	  	  			  <div id="map" style="width:550px; height: 400px"></div>
 	  	  			</td>
 	  	  			<td valign="top">
-	  	  				<div id="filters">
-	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
-	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
-	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image<br/>
-	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog<br/>
-	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text<br/>
-	  	  				</div>
+	  	  				<? include ('form.php') ?>
 	  	  			</td>
 	  	  		</tr>
 	  	  	</table>
@@ -60,6 +55,13 @@
  			<div class="b"><div></div></div>
 		</div> 		  	  	
   	 </div>
+	  	  				<div id="filters">
+	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video<br/>
+	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast<br/>
+	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image<br/>
+	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog<br/>
+	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text<br/>
+	  	  				</div>
 
  <script type="text/javascript">
     //<![CDATA[
