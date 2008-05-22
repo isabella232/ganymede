@@ -35,3 +35,65 @@ display:inline;
 .infoWindow {
    min-height: 200px;
 }
+
+///////////////////////////////////////////////////////
+
+.dialog {
+color:#FFFFFF;
+margin:0px auto 0.5em 12px;
+max-width:760px;
+min-width:8em;
+position:relative;
+z-index:1;
+}
+.dialog .dialogContent, .dialog .t, .dialog .b, .dialog .b div {
+background:transparent url('/ganymede/images/dialog.png') no-repeat scroll right top;
+}
+
+.dialog .dialogContent {
+padding:0px 12px 0px 0px;
+position:relative;
+}
+.dialog .t {
+background-position:left top;
+height:100%;
+left:0px;
+margin-left:-12px;
+position:absolute;
+top:0px;
+width:12px;
+}
+.dialog .b {
+position:relative;
+width:100%;
+}
+.dialog .b, .dialog .b div {
+font-size:1px;
+height:15px;
+}
+.dialog .b {
+background-position:right bottom;
+}
+.dialog .b div {
+background-position:left bottom;
+margin-left:-12px;
+position:relative;
+width:12px;
+}
+.dialog .hd, .dialog .bd, .dialog .ft {
+position:relative;
+}
+.dialog .wrapper {
+max-height:1000px;
+overflow:auto;
+position:static;
+}
+.dialog h1, .dialog p {
+margin:0px;
+padding:0.5em 0px;
+}
+.dialog h1 {
+padding-bottom:0px;
+}
+
+
