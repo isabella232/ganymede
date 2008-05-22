@@ -129,9 +129,8 @@
 
 
       // create the map
-      var mapOptions = new GMapOptions();
-      mapOptions = { mapTypes : G_HYBRID_MAP };
-      var map = new GMap2(document.getElementById("map"), mapOptions );
+      
+      var map = new GMap2(document.getElementById("map"), { mapTypes : 'G_HYBRID_MAP' } );
       map.addControl(new GSmallMapControl());
       map.setCenter(new GLatLng( 37.345739 ,-75.765338), 1);  //Center on Eclipse Foundation HQ
 
