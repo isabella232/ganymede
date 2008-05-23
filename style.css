@@ -46,7 +46,7 @@ display:inline;
 }
 .formBox {
 	border:1px solid grey;
-	background:#DDD;
+	background:#EEE;
 	font-size:90%;		
 }
 
@@ -71,6 +71,13 @@ display:inline;
 	font-size:80%;	
 }
 
+.left {
+
+}
+
+.right {
+	padding-left:5px;	
+}
 ///////////////////////////////////////////////////////
 
 .dialog {
