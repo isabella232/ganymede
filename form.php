@@ -13,7 +13,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Ganymede Spotting";
+	$pageTitle 		= "Ganymede Around the World";
 	$pageKeywords	= "eclipse ganymede, ganymede, ganymede spotting form";
 	$pageAuthor		= "Eclipse Foundation, Inc.";
 	
