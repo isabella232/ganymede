@@ -45,23 +45,23 @@
   			<!-- Your content goes here -->
 		  	<table class="dialogTable" cellspacing=0 cellpadding=0>
 	  			<tr>
-	  	  			<td class="right">
+	  	  			<td class="left">
 	  	  			  <h2>Ganymede Around the World</h2>
 	  	  			</td>
-	  	  			<td style="padding:5px;">
+	  	  			<td class="right">
 	  	  			  <h2>Tell us how you're using Ganymede</h2>
 	  	  			</td>
 	  	  		</tr>
 	  	  		<tr>
-	  	  			<td valign="top" class="right">
+	  	  			<td valign="top" class="left">
 	  	  			  <div id="map" style="width:550px; height: 400px"></div>
 	  	  			</td>
-	  	  			<td valign="top" style="border-left:1px solid grey">
+	  	  			<td valign="top" class="right">
 	  	  				<? include ('form.php') ?>
 	  	  			</td>
 	  	  		</tr>
 	  	  		<tr>
-	  	  			<td align="center" class="right">
+	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
 	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video 
 	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast 
@@ -70,7 +70,7 @@
 	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text 
 	  	  				</div>
 	  	  			</td>
-	  	  			<td>&nbsp;</td>
+	  	  			<td class="right">&nbsp;</td>
 	  	  		</tr>
 	  	  	</table>
 			</div>
