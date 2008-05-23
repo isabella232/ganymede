@@ -27,10 +27,10 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 
-	include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
-	$projectInfoList = new projectInfoList();
-	$projectInfoList->selectProjectInfoList('','simultaneousrelease', 'ganymede', 1);
-	$projectInfoList->alphaSortList();
+	//include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
+	//$projectInfoList = new projectInfoList();
+	//$projectInfoList->selectProjectInfoList('','simultaneousrelease', 'ganymede', 1);
+	//$projectInfoList->alphaSortList();
 	
 	?>	<script type="text/javascript">
 		    var geocoder = new GClientGeocoder();
