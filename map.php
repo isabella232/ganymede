@@ -13,9 +13,9 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Ganymede Release Train";
-	$pageKeywords	= "eclipse ganymede, ganymede, ganymede release train";
-	$pageAuthor		= "Eclipse Foundation, Inc.";
+	$pageTitle 		= "Ganymede Around the World";
+	$pageKeywords	= "eclipse ganymede, ganymede, ganymede around the world";
+	$pageAuthor		= "Nathan Gervais";
 	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank)
@@ -65,7 +65,7 @@
 	  	  		<tr>
 	  	  			<td valign="top" class="left">
 	  	  			  <div id="map" style="width:550px; height: 400px"></div><br/>
-	  	  			  <div class='geoIP'><a href="mapList.php">See a list of all the entries.</a></div>
+	  	  			  <div style="font-size:80%;text-align:right;"><a href="mapList.php">See a list of all the entries.</a></div>
 	  	  			</td>
 	  	  			<td valign="top" class="right">
 	  	  				<? include ('form.php') ?>
