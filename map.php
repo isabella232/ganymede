@@ -26,7 +26,17 @@
 	#
 	
 	# Place your html content in a file called content/en_pagename.php
-
+	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
+	$dbc = new DBConnection();
+	$dbh = $dbc->connect();
+	
+	function getTypeCount($_type) {
+		$sql = "SELECT count(*) as count from ganymede_content where type='$_type'";
+		$result = mysql_query($sql);
+		$retVal = mysql_fetch_array($result);
+		return $retVal['count'];
+	}
+	
 	ob_start();
 	?>
 	<link type="text/css" href="style.css" rel="stylesheet"/>
@@ -63,11 +73,11 @@
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video 
-	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast 
-	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image 
-	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog  
-	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text 
+	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video (<?=$getTypeCount('video');?>)
+	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast (<?=$getTypeCount('podcast');?>)
+	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image (<?=$getTypeCount('image');?>)
+	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog (<?=$getTypeCount('blog');?>) 
+	  	  					<input type="checkbox" name="text" checked onclick="toggleType('text')"/>Text (<?=$getTypeCount('text');?>)
 	  	  				</div>
 	  	  			</td>
 	  	  			<td class="right">&nbsp;</td>
