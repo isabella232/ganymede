@@ -64,8 +64,8 @@
 	  	  		</tr>
 	  	  		<tr>
 	  	  			<td valign="top" class="left">
-	  	  			  <div id="map" style="width:550px; height: 400px"></div><br/>
-	  	  			  <div style="font-size:80%;text-align:right;"><a href="mapList.php">See a list of all the entries.</a></div>
+	  	  			  <div id="map" style="width:550px; height: 400px"></div>
+	  	  			  <div style="font-size:80%;text-align:right;padding-right:5px;"><a href="mapList.php">See a list of all the entries.</a></div>
 	  	  			</td>
 	  	  			<td valign="top" class="right">
 	  	  				<? include ('form.php') ?>
