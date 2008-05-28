@@ -61,10 +61,10 @@
 		 	<ul>
 		 		<li>You can submit multiple reviews but only one shirt per person will be sent.</li>		 		
 				<li>The EclipseCon or Eclipse Summit Europe pass only covers the conference registration.
-				It does not include any travel expenses. The pass is non-transferable, non-refundable and it
-				has no cash value. So if you can&#147;t go to either conference or you received a free pass
-				some other way (such as a speaker pass), you won&#147;t be able to take advantage of the prize.</li>
-				<li>Informed, insightful, educated reviews — postitive and negative — are always welcome.
+				It does not include any travel expenses. The pass is non-transferable, non-refundable and
+				has no cash value. So if you can&#146;t go to either conference or you received a free pass
+				some other way (such as a speaker pass), you won&#146;t be able to take advantage of the prize.</li>
+				<li>Informed, insightful, educated reviews &#150; postitive and negative &#150; are always welcome.
 				However, FUD-spewers, propogandists and mean-spirited curmudgeons need not apply.</li>
 			</ul>
 		</p>
