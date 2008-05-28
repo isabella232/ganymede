@@ -38,21 +38,23 @@
 		<h1>$pageTitle</h1>
 	
 		<p>We want to hear how you and the rest of the Eclipse community are using the Eclipse projects being released as part of
-		Ganymede. You&#146;re invited to post a video, podcast or blog review.  All reviews will be added to our
-		"Ganymede Around the World" map and will receive an Eclipse shirt.  The top 3 reviews will win an Eclipse jacket and the best
-		review will win their choice of a pass to EclipseCon 2009 or Eclipse Summit Europe 2008!</p>
+		<a href="http://www.eclipse.org/ganymede/">Ganymede</a>. You&#146;re invited to post a video, podcast or blog review.  All
+		reviews will be added to our <a href="map.php">Ganymede Around the World map</a> and will receive an Eclipse shirt.  The top 3
+		reviews will win an Eclipse jacket and the best review will win their choice of a pass to
+		 <a href="http://www.eclipsecon.org/2009/">EclipseCon 2009</a> or
+		 <a href="http://eclipsesummit.org/summiteurope2008/">Eclipse Summit Europe 2008</a>!</p>
 		
 		<p>To enter the contest, record or write a review about one or more of the projects that are part of the Eclipse
-		Ganymede release and submit your review with the Around the World contest form.  Anyone is welcome to write a review, and recognizing
-		that Eclipse is a global community, you can write the review in your native language.  A review will earn an Eclipse shirt if its
-		content has a reasonable amount of technical information.  Long essays aren&#146;
+		Ganymede release and submit your review with the <a href="map.php">Around the World contest form</a>.  Anyone is welcome to
+		write a review, and recognizing that Eclipse is a global community, you can write the review in your native language.  A review
+		will earn an Eclipse shirt if its content has a reasonable amount of technical information.  Long essays aren&#146;
 		necessary, but as a guideline, include 3-5 points of what you like or don&#146;t like about the Ganymede projects.</p>
 
-		 <p>If you want to join in the fun but don&#146;t have the time to submit a review, you can send us a brief message or photo
-		 instead.  You&#146;ll be added to our Ganymede Around the World map and all messages and images will be eligible to win
+		 <p>If you want to join in the fun but don&#146;t have the time to submit a review, you can <a href="map.php">send us a brief
+		 message or photo</a> instead.  You&#146;ll be added to our Ganymede Around the World map and all messages and images will be eligible to win
 		 an Eclipse shirt in a random draw.</p>
 		 
-		 <p>The deadline for submissions to the contest is July 31, 2008.  The top 3 and best reviews will be selected by a panel of
+		 <p>The deadline for submissions to the contest is <b>July 31, 2008</b>.  The top 3 and best reviews will be selected by a panel of
 		 judges.
 
 		 <p>Imporant Details:
@@ -66,6 +68,8 @@
 				However, FUD-spewers, propogandists and mean-spirited curmudgeons need not apply.</li>
 			</ul>
 		</p>
+		
+		<br><br>
 
 	</div>
 </div>
