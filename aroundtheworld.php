@@ -47,7 +47,7 @@
 		<p>To enter the contest, record or write a review about one or more of the projects that are part of the Eclipse
 		Ganymede release and submit your review with the <a href="map.php">Around the World contest form</a>.  Anyone is welcome to
 		write a review, and recognizing that Eclipse is a global community, you can write the review in your native language.  A review
-		will earn an Eclipse shirt if its content has a reasonable amount of technical information.  Long essays aren&#146;
+		will earn an Eclipse shirt if its content has a reasonable amount of technical information.  Long essays aren&#146;t
 		necessary, but as a guideline, include 3-5 points of what you like or don&#146;t like about the Ganymede projects.</p>
 
 		 <p>If you want to join in the fun but don&#146;t have the time to submit a review, you can <a href="map.php">send us a brief
@@ -57,15 +57,15 @@
 		 <p>The deadline for submissions to the contest is <b>July 31, 2008</b>.  The top 3 and best reviews will be selected by a panel of
 		 judges.
 
-		 <p>Imporant Details:
+		 <p>Important Details:
 		 	<ul>
 		 		<li>You can submit multiple reviews but only one shirt per person will be sent.</li>		 		
 				<li>The EclipseCon or Eclipse Summit Europe pass only covers the conference registration.
 				It does not include any travel expenses. The pass is non-transferable, non-refundable and
 				has no cash value. So if you can&#146;t go to either conference or you received a free pass
 				some other way (such as a speaker pass), you won&#146;t be able to take advantage of the prize.</li>
-				<li>Informed, insightful, educated reviews &#150; postitive and negative &#150; are always welcome.
-				However, FUD-spewers, propogandists and mean-spirited curmudgeons need not apply.</li>
+				<li>Informed, insightful, educated reviews &#150; positive and negative &#150; are always welcome.
+				However, FUD-spewers, propagandists and mean-spirited curmudgeons need not apply.</li>
 			</ul>
 		</p>
 		
