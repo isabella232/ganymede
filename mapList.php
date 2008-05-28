@@ -38,7 +38,8 @@
 	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<body>
 		<div id="midcolumn">
-			<table cellspacing=0 cellpadding=0 class="list">
+			<h1><?=$pageTitle;?></h1>
+			<table cellspacing=0 cellpadding=0 class="list" width="750">
 				<tr class="header">	
 					<td>Name</td>
 					<td>Type</td>
