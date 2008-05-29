@@ -18,7 +18,7 @@
 		$location_lat = $rr['location_lat'];
 		$location_lng = $rr['location_lng'];
 		$email = $rr['email'];
-		$type = $rr['type'];
+		$type = ucfist($rr['type']);
 		if ($type != "message")
 		{	$url = $rr['url']; }
 		
