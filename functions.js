@@ -68,9 +68,19 @@ function showURL(element) {
 
 function setAddress(address) {
 	  var geocoder = new GClientGeocoder();
-	  geocoder.getLatLng( address,
-	  	 function(point) {
-	  	 	setTimeout()
+	  
+	        // ====== Array for decoding the failure codes ======
+      var reasons=[];
+      reasons[G_GEO_SUCCESS]            = "Success";
+      reasons[G_GEO_MISSING_ADDRESS]    = "Missing Address: The address was either missing or had no value.";
+      reasons[G_GEO_UNKNOWN_ADDRESS]    = "Unknown Address:  No corresponding geographic location could be found for the specified address.";
+      reasons[G_GEO_UNAVAILABLE_ADDRESS]= "Unavailable Address:  The geocode for the given address cannot be returned due to legal or contractual reasons.";
+      reasons[G_GEO_BAD_KEY]            = "Bad Key: The API key is either invalid or does not match the domain for which it was given";
+      reasons[G_GEO_TOO_MANY_QUERIES]   = "Too Many Queries: The daily geocoding quota for this site has been exceeded.";
+      reasons[G_GEO_SERVER_ERROR]       = "Server error: The geocoding request could not be successfully processed.";
+      
+	  geocoder.getLocations( address,
+	  	 function(result) {
 	    	if (!point) {
 	        //alert(address + " not found");
 	      	} else {
