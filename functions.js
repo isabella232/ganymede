@@ -81,6 +81,14 @@ function setAddress(address) {
       
 	  geocoder.getLocations( address,
 	  	 function(result) {
+	  	 	if (result.Status.code == 200)
+	  	 	{
+		      	var lat = document.getElementById('lat');
+		        var lng = document.getElementById('lng');
+		        lat.value = result.Placeholder[i].y;
+		        lng.value = result.Placehodler[i].x;
+	  	 		
+	  	 	}
 	  	 	alert("Google Return:" + result.Status.code);
 //	    	if (!point) {
 //	        //alert(address + " not found");
