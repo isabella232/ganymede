@@ -36,8 +36,10 @@ function validateForm() {
 	if (type.value != "message")
 	{
 		if (url.value.length == 0)
-		alert("Please provide a url for your content.");
-		return false;
+		{ 
+			alert("Please provide a url for your content.");
+			return false;
+		}
 	}	
 	document.spotForm.submit();
 	return retVal;
