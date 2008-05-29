@@ -85,8 +85,8 @@ function setAddress(address) {
 	  	 	{
 		      	var lat = document.getElementById('lat');
 		        var lng = document.getElementById('lng');
-		        lat.value = result.Placeholder[i].y;
-		        lng.value = result.Placehodler[i].x;
+		        lat.value = result.Placemark[0].Point.coordinates[0];
+		        lng.value = result.Placemark[0].Point.coordinates[1];
 	  	 		
 	  	 	}
 	  	 	else {
