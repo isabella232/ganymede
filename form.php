@@ -88,7 +88,7 @@
 							<td><input type="text" name="email" id="email"/></td>
 						</tr>
 						<tr>
-							<td colspan="2" style="font-size:80%;">Please provide your email address if you wish to participate in the contest.<br/></td>
+							<td colspan="2" style="font-size:80%;">We want to hear how you and the rest of the Eclipse community are using the Eclipse projects being released as part of <a href="/ganymede/">Ganymede</a>.  All submissions will be included in our Around the World map.  Video, podcast and blog reviews will receive an Eclipse shirt (see <a href="./aroundtheworld.php">full contest details</a>) and messages and images will be eligible to win Eclipse wear in a random draw.  Anyone is welcome to participate and all languages are welcome.  Contest closes July 31, 2008.<br/></td>
 						</tr>
 						<!--  <tr>
 							<td valign="top">Ganymede Projects:</td>
