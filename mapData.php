@@ -23,7 +23,7 @@
 		{	$url = $rr['url']; }
 		
 		$content = $rr['content'];
-		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" author="<?=$name;?>" type="<?=$type;?>" <? if (isset($url) { ?>url="<?=$url;?>" <? } ?>>
+		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" author="<?=$name;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
 			<![CDATA[<?=$content;?>]]>
 		</marker> 
 		<?
