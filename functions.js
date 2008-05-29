@@ -71,7 +71,7 @@ function setAddress(address, html) {
 	    address,
 	    function(point) {
 	    	if (!point) {
-	        //alert(address + " not found");
+	        alert(address + " not found");
 	      	} else {
 		        //map.setCenter(point,6);
 		        var marker = new GMarker(point);
