@@ -170,7 +170,8 @@
             var lng = parseFloat(markers[i].getAttribute("lng"));
             var point = new GLatLng(lat,lng);
             var author = markers[i].getAttribute("author");
-            var html = '<div class="infoWindow"><b>' + author + '</b><br/>' + markers[i].textContent + '</div>';
+            var url = markers[i].getAttribute("url");
+            var html = '<div class="infoWindow"><b>' + author + '</b><br/><a href="' + url + '" target="_blank"><br/>' + markers[i].textContent + '</div>';
             var label = markers[i].getAttribute("label");
             var type = markers[i].getAttribute("type");
             // create the marker

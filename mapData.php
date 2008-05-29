@@ -19,8 +19,11 @@
 		$location_lng = $rr['location_lng'];
 		$email = $rr['email'];
 		$type = $rr['type'];
+		if ($type != "message")
+		{	$url = $rr['url']; }
+		
 		$content = $rr['content'];
-		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" author="<?=$name;?>" type="<?=$type;?>">
+		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" author="<?=$name;?>" type="<?=$type;?>" <? if (isset($url) { ?>url="<?=$url;?>" <? } ?>>
 			<![CDATA[<?=$content;?>]]>
 		</marker> 
 		<?
