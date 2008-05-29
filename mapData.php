@@ -17,13 +17,14 @@
 		$location_country = $rr['location_country'];
 		$location_lat = $rr['location_lat'];
 		$location_lng = $rr['location_lng'];
+		$location = $location_city . ' ' . $location_country;
 		$email = $rr['email'];
 		$type = ucfirst($rr['type']);
 		if ($type != "message")
 		{	$url = $rr['url']; }
 		
 		$content = $rr['content'];
-		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" author="<?=$name;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
+		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" location="<?=$location;?>" author="<?=$name;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
 			<![CDATA[<?=$content;?>]]>
 		</marker> 
 		<?
