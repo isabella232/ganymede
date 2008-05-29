@@ -66,7 +66,7 @@ function showURL(element) {
 	
 }
 
-function showAddress(address, html) {
+function setAddress(address, html) {
 	  geocoder.getLatLng(
 	    address,
 	    function(point) {
@@ -88,7 +88,7 @@ function showAddress(address, html) {
 	  );
 	}
 	
-	function previewLocation() {
+	function fetchLocation() {
 		var c = document.getElementById('city');
 		var s = document.getElementById('state');
 		var co = document.getElementById('country');
@@ -96,7 +96,6 @@ function showAddress(address, html) {
 		var content = document.getElementById('content');
    		var html = '<b>' + name.value + '</b><br/>' + content.value;
 		var address = c.value + ' ' + s.value + ' ' + co.value;
-		showAddress(address, html);
-		
+		setAddress(address, html);
 	}
 			

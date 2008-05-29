@@ -133,7 +133,7 @@
 							<td>
 								<input type="hidden" id="lat" name="lat" value="0"/>
 								<input type="hidden" id="lng" name="lng" value="0"/>
-								<input type="button" value="Submit" onclick="previewLocation();"/>
+								<input type="button" value="Submit" onclick="fetchLocation();"/>
 							</td>
 						</tr>						
 					</table>
