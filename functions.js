@@ -89,7 +89,10 @@ function setAddress(address) {
 		        lng.value = result.Placehodler[i].x;
 	  	 		
 	  	 	}
-	  	 	alert("Google Return:" + result.Status.code);
+	  	 	else {
+	  	 		alert("Google Return:" + result.Status.code);	
+	  	 	}
+	  	 	
 //	    	if (!point) {
 //	        //alert(address + " not found");
 //	      	} else {
