@@ -17,7 +17,7 @@
 		$location_country = $rr['location_country'];
 		$location_lat = $rr['location_lat'];
 		$location_lng = $rr['location_lng'];
-		$location = $location_city . ' ' . $location_country;
+		$location = $location_city . ', ' . $location_country;
 		$email = $rr['email'];
 		$type = ucfirst($rr['type']);
 		if ($type != "message")
