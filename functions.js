@@ -92,7 +92,7 @@ function setAddress(address) {
 //		        lat.value = point.y;
 //		        lng.value = point.x;
 //	      	}
-		//	validateForm();
+			validateForm();
 	    }
 	  );
 	}
