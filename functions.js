@@ -81,17 +81,18 @@ function setAddress(address) {
       
 	  geocoder.getLocations( address,
 	  	 function(result) {
-	    	if (!point) {
-	        //alert(address + " not found");
-	      	} else {
-		        //map.setCenter(point,6);
-		        var marker = new GMarker(point);
-		        var lat = document.getElementById('lat');
-		        var lng = document.getElementById('lng');
-		        lat.value = point.y;
-		        lng.value = point.x;
-	      	}
-			validateForm();
+	  	 	alert("Google Return:" + result.Status.code);
+//	    	if (!point) {
+//	        //alert(address + " not found");
+//	      	} else {
+//		        //map.setCenter(point,6);
+//		        var marker = new GMarker(point);
+//		        var lat = document.getElementById('lat');
+//		        var lng = document.getElementById('lng');
+//		        lat.value = point.y;
+//		        lng.value = point.x;
+//	      	}
+		//	validateForm();
 	    }
 	  );
 	}
