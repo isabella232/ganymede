@@ -32,9 +32,7 @@
 	//$projectInfoList->selectProjectInfoList('','simultaneousrelease', 'ganymede', 1);
 	//$projectInfoList->alphaSortList();
 	
-	?>	<script type="text/javascript">
-		    var geocoder = new GClientGeocoder();
-		</script>
+	?>
 			<div class="form">
 					<form action="spotProcess.php" method="POST" name="spotForm">
 					<table width="300" class="formBox">

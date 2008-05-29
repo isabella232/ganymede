@@ -67,6 +67,7 @@ function showURL(element) {
 }
 
 function setAddress(address, html) {
+	  var geocoder = new GClientGeocoder();
 	  geocoder.getLatLng(
 	    address,
 	    function(point) {
