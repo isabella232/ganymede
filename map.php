@@ -70,7 +70,7 @@
 	  	  			  <div style="font-size:80%;text-align:right;padding-right:5px;"><a href="mapList.php">See a list of all the entries.</a></div>
 	  	  			</td>
 	  	  			<td valign="top" class="right">
-	  	  				<h2>Tell us how you're using Ganymede</h2>
+	  	  				<h2 style="margin-top:0px;">Tell us how you're using Ganymede</h2>
 	  	  				<? include ('form.php') ?>
 	  	  			</td>
 	  	  		</tr>
