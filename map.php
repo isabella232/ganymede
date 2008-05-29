@@ -56,14 +56,14 @@
 		  	<table class="dialogTable" cellspacing=0 cellpadding=0>
 	  			<tr>
 	  	  			<td class="left">
-	  	  			  <h2>Ganymede Around the World</h2>
+	  	  			  <h2><u>Ganymede Around the World</u></h2>
 	  	  			</td>
 	  	  			<td class="right">
 	  	  			  
 	  	  			</td>
 	  	  		</tr>
 				<tr>
-					<td colspan="2" style="font-size:90%;width:90%;">We want to hear how you and the rest of the Eclipse community are using the Eclipse projects being released as part of <a href="/ganymede/">Ganymede</a>.  All submissions will be included in our Around the World map.  Video, podcast and blog reviews will receive an Eclipse shirt (see <a href="./aroundtheworld.php">full contest details</a>) and messages and images will be eligible to win Eclipse wear in a random draw.  Anyone is welcome to participate and all languages are welcome.  Contest closes July 31, 2008.<br/></td>
+					<td colspan="2" class="contestText">We want to hear how you and the rest of the Eclipse community are using the Eclipse projects being released as part of <a href="/ganymede/">Ganymede</a>.  All submissions will be included in our Around the World map.  Video, podcast and blog reviews will receive an Eclipse shirt (see <a href="./aroundtheworld.php">full contest details</a>) and messages and images will be eligible to win Eclipse wear in a random draw.  Anyone is welcome to participate and all languages are welcome.  Contest closes July 31, 2008.<br/></td>
 				</tr>
 	  	  			<td valign="top" class="left">
 	  	  			  <div id="map" style="width:550px; height: 400px"></div>
