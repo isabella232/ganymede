@@ -171,7 +171,6 @@
             var point = new GLatLng(lat,lng);
             var author = markers[i].getAttribute("author");
             var url = markers[i].getAttribute("url");
-            var label = markers[i].getAttribute("label");
             var type = markers[i].getAttribute("type");            
             var html = '<div class="infoWindow"><b>' + author + '</b> - ' + type + '<br/><a href="' + url + '" target="_blank"><br/>' + markers[i].textContent + '</div>';
             // create the marker
