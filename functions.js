@@ -66,13 +66,13 @@ function showURL(element) {
 	
 }
 
-function setAddress(address, html) {
+function setAddress(address) {
 	  var geocoder = new GClientGeocoder();
-	  geocoder.getLatLng(
-	    address,
-	    function(point) {
+	  geocoder.getLatLng( address,
+	  	 function(point) {
+	  	 	setTimeout()
 	    	if (!point) {
-	        alert(address + " not found");
+	        //alert(address + " not found");
 	      	} else {
 		        //map.setCenter(point,6);
 		        var marker = new GMarker(point);
@@ -80,9 +80,6 @@ function setAddress(address, html) {
 		        var lng = document.getElementById('lng');
 		        lat.value = point.y;
 		        lng.value = point.x;
-		        //map.clearOverlays();
-		        //map.addOverlay(marker);
-		        //marker.openInfoWindowHtml(html);
 	      	}
 			validateForm();
 	    }
@@ -97,6 +94,6 @@ function setAddress(address, html) {
 		var content = document.getElementById('content');
    		var html = '<b>' + name.value + '</b><br/>' + content.value;
 		var address = c.value + ' ' + s.value + ' ' + co.value;
-		setAddress(address, html);
+		setAddress(address);
 	}
 			
