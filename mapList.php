@@ -61,7 +61,6 @@
 					</table><br/><br/>
 				</div>
  				<div class="b"><div></div></div>
-			</div>
 		</div>
  	</body>
 	<?
