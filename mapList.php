@@ -54,7 +54,7 @@
 					<td><?=$rr['content']; ?></td>
 				</tr>
 				<? } ?>	
-			</table>
+			</table><br/><br/>
 		</div>
  	</body>
 	<?
