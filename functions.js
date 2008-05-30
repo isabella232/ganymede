@@ -69,31 +69,18 @@ function showURL(element) {
 }
 
 function setAddress(address) {
+	  var lat = document.getElementById('lat');
+	  var lng = document.getElementById('lng');	
+	  lat.value = 0;
+	  lng.value = 0;
 	  var geocoder = new GClientGeocoder();
 	  geocoder.getLocations( address,
 	  	 function(result) {
 	  	 	if (result.Status.code == 200)
 	  	 	{
-		      	var lat = document.getElementById('lat');
-		        var lng = document.getElementById('lng');
 		        lat.value = result.Placemark[0].Point.coordinates[1];
 		        lng.value = result.Placemark[0].Point.coordinates[0];
-	  	 		
 	  	 	}
-	  	 	else {
-	  	 		alert("Google Return:" + result.Status.code);	
-	  	 	}
-	  	 	
-//	    	if (!point) {
-//	        //alert(address + " not found");
-//	      	} else {
-//		        //map.setCenter(point,6);
-//		        var marker = new GMarker(point);
-//		        var lat = document.getElementById('lat');
-//		        var lng = document.getElementById('lng');
-//		        lat.value = point.y;
-//		        lng.value = point.x;
-//	      	}
 			validateForm();
 	    }
 	  );
