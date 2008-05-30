@@ -39,29 +39,28 @@
 	<body>
 		<div id="midcolumn">
 			<h1><?=$pageTitle;?></h1>
-				<div class="dialog">
- 					<div class="dialogContent">
-  						<div class="t"></div>
-  						<!-- Your content goes here -->
-						<table cellspacing=0 cellpadding=0 class="list" width="750">
-							<tr class="header">	
-								<td>Name</td>
-								<td>Type</td>
-								<td>Location</td>
-								<td>Content</td>
-							</tr>
-							<? while ($rr = mysql_fetch_array($result)) { ?>
-							<tr>
-								<td><?=$rr['name']; ?></td>
-								<td><?=$rr['type']; ?></td>
-								<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
-								<td><?=$rr['content']; ?></td>
-							</tr>
-							<? } ?>	
-						</table><br/><br/>
-					</div>
- 					<div class="b"><div></div></div>
+			<div class="dialog">
+ 				<div class="dialogContent">
+  					<div class="t"></div>
+  					<!-- Your content goes here -->
+					<table cellspacing=0 cellpadding=0 class="list" width="750">
+						<tr class="header">	
+							<td>Name</td>
+							<td>Type</td>
+							<td>Location</td>
+							<td>Content</td>
+						</tr>
+						<? while ($rr = mysql_fetch_array($result)) { ?>
+						<tr>
+							<td><?=$rr['name']; ?></td>
+							<td><?=$rr['type']; ?></td>
+							<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
+							<td><?=$rr['content']; ?></td>
+						</tr>
+						<? } ?>	
+					</table><br/><br/>
 				</div>
+ 				<div class="b"><div></div></div>
 			</div>
 		</div>
  	</body>
