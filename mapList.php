@@ -30,7 +30,13 @@
 	$dbc = new DBConnection();
 	$dbh = $dbc->connect();
 	
-	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id";
+	if ($isset($_POST['sort'])) {
+		$sortBy = " ORDER BY " . $_POST['sort'];
+	}
+	else 
+		$sortBy = "";
+	
+	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id" . $sortBy;
 	$result = mysql_query($sql);
 	
 	ob_start();
@@ -47,9 +53,9 @@
 	  					<h1><?=$pageTitle;?></h1><br/>
 						<table cellspacing=0 cellpadding=0 class="list" width="850">
 							<tr class="header">	
-								<td>Name</td>
-								<td>Type</td>
-								<td>Location</td>
+								<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
+								<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
+								<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
 								<td>Content</td>
 							</tr>
 							<? while ($rr = mysql_fetch_array($result)) { ?>
