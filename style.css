@@ -26,10 +26,10 @@ table.list tr.header {
 }
 
 .invisible {
-display:none;
+	display:none;
 }
 .visible {
-display:inline;
+	display:inline;
 }
 
 .infoWindow {
