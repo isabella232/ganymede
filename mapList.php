@@ -30,8 +30,8 @@
 	$dbc = new DBConnection();
 	$dbh = $dbc->connect();
 	
-	if (isset($_POST['sort'])) {
-		$sortBy = " ORDER BY " . $_POST['sort'] . " DESC";
+	if (isset($_GET['sort'])) {
+		$sortBy = " ORDER BY " . $_GET['sort'] . " DESC";
 	}
 	else 
 		$sortBy = "";
