@@ -31,7 +31,7 @@
 	$dbh = $dbc->connect();
 	
 	if (isset($_POST['sort'])) {
-		$sortBy = " ORDER BY " . $_POST['sort'];
+		$sortBy = " ORDER BY " . $_POST['sort'] . " DESC";
 	}
 	else 
 		$sortBy = "";
