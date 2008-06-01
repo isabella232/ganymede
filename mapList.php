@@ -36,7 +36,7 @@
 	else 
 		$sortBy = "";
 	
-	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id" . $sortBy;
+	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id" . $sortBy . " LIMIT 25";
 	$result = mysql_query($sql);
 	
 	ob_start();
