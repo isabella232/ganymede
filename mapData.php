@@ -15,8 +15,10 @@
 		$location_city = $rr['location_city'];
 		$location_state = $rr['location_state'];
 		$location_country = $rr['location_country'];
-		$location_lat = $rr['location_lat'];
-		$location_lng = $rr['location_lng'];
+		$randLat = rand (-99, 99) / 100;
+		$randLng = rand (-99, 99) / 100;
+		$location_lat = $rr['location_lat'] + $randLat;
+		$location_lng = $rr['location_lng'] + $randLng;
 		$location = $location_city . ', ' . $location_country;
 		$email = $rr['email'];
 		$type = ucfirst($rr['type']);
