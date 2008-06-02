@@ -124,20 +124,7 @@
         return marker;
       }
 	
-	  function toggleType(type)
-	  {
-	  	for (i=0; i<gmarkers.length; i++)
-	  	{
-	  		if (gmarkersType[i] == type)
-	  			if (gmarkers[i].isHidden())
-	  			{
-	  				gmarkers[i].show();
-	  			}
-	  			else {
-	  				gmarkers[i].hide();
-	  			}
-	  	}
-	  }
+
 
       // This function picks up the click and opens the corresponding info window
       function myclick(i) {
