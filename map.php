@@ -63,7 +63,7 @@
 	  	  			</td>
 	  	  		</tr>
 				<tr>
-					<td colspan="2" class="contestText">We want to hear how you and the rest of the Eclipse community are using the Eclipse projects being released as part of <a href="/ganymede/">Ganymede</a>.  All submissions will be included in our Around the World map.  Video, podcast and blog reviews will receive an Eclipse shirt (see <a href="./aroundtheworld.php">full contest details</a>) and messages and images will be eligible to win Eclipse wear in a random draw.  Anyone is welcome to participate and all languages are welcome.  Contest closes July 31, 2008.<br/></td>
+					<td colspan="2" class="contestText">Join the Eclipse global community.  Tell us how you are using the new Eclipse Ganymede release and have an opportunity to win cool Eclipse stuff.  <br/></td>
 				</tr>
 	  	  			<td valign="top" class="left">
 	  	  			  <div id="map" style="width:550px; height: 400px"></div>
