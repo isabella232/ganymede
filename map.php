@@ -159,15 +159,15 @@
             var author = markers[i].getAttribute("author");
             var location = markers[i].getAttribute("location");
             var url = markers[i].getAttribute("url");
-            
-            var type = markers[i].getAttribute("type");    
+            var type = markers[i].getAttribute("type");
+            var typeText = type;    
             if (type != "message")
             {
-            	type = '<a href"' + url + '" target=_"blank">' + type + '</a>';    
+            	typeText = '<a href"' + url + '" target=_"blank">' + type + '</a>';    
             }
-            var html = '<div class="infoWindow"><b>' + author + '</b> - ' + location + '<br/>' + type + '<br/><br/>' + markers[i].textContent + '</div>';
+            var html = '<div class="infoWindow"><b>' + author + '</b> - ' + location + '<br/>' + typeText + '<br/><br/>' + markers[i].textContent + '</div>';
             // create the marker
-            var marker = createMarker(point, html, markers[i].getAttribute("type") );
+            var marker = createMarker(point, html,type );
             map.addOverlay(marker);
           }
         }
