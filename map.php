@@ -77,11 +77,11 @@
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" name="media" checked onclick="toggleType('video')"/>Video (<?=getTypeCount('video');?>)
-	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
-	  	  					<input type="checkbox" name="image" checked onclick="toggleType('image')"/>Image (<?=getTypeCount('image');?>)
-	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('blog')"/>Blog (<?=getTypeCount('blog');?>) 
-	  	  					<input type="checkbox" name="message" checked onclick="toggleType('message')"/>Message (<?=getTypeCount('message');?>)
+	  	  					<input type="checkbox" name="media" checked onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
+	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
+	  	  					<input type="checkbox" name="image" checked onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
+	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
+	  	  					<input type="checkbox" name="message" checked onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
 	  	  				</div>
 	  	  			</td>
 	  	  			<td class="right">&nbsp;</td>
