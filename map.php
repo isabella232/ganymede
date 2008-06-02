@@ -167,7 +167,7 @@
             }
             var html = '<div class="infoWindow"><b>' + author + '</b> - ' + location + '<br/>' + type + '<br/><br/>' + markers[i].textContent + '</div>';
             // create the marker
-            var marker = createMarker(point, html, type);
+            var marker = createMarker(point, html, markers[i].getAttribute("type"); );
             map.addOverlay(marker);
           }
         }
