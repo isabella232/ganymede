@@ -161,7 +161,7 @@
             var url = markers[i].getAttribute("url");
             var type = markers[i].getAttribute("type");
             var typeText = type;    
-            if (type != "message")
+            if (type != "Message")
             {
             	typeText = '<a href"' + url + '" target=_"blank">' + type + '</a>';    
             }
