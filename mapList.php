@@ -77,7 +77,7 @@
 		</div>
 		<div id="rightcolumn">
 			<div class="sideitem">
-				<h6>Ganymede Around the world</h6>
+				<h6>Ganymede Around the World</h6>
 					<ul>
 						<li><a href="./map.php">Ganymede Around the World</a></li>
 						<li><a href="./aroundthwworld.php">Contest Details</a></li>
