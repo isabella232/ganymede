@@ -15,8 +15,8 @@
 		$location_city = $rr['location_city'];
 		$location_state = $rr['location_state'];
 		$location_country = $rr['location_country'];
-		$randLat = rand (-99, 99) / 100;
-		$randLng = rand (-99, 99) / 100;
+		$randLat = rand (-99, 99) / 1000;
+		$randLng = rand (-99, 99) / 1000;
 		$location_lat = $rr['location_lat'] + $randLat;
 		$location_lng = $rr['location_lng'] + $randLng;
 		$location = $location_city . ', ' . $location_country;
