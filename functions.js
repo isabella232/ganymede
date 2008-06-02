@@ -96,4 +96,19 @@ function setAddress(address) {
 		var address = c.value + ' ' + s.value + ' ' + co.value;
 		setAddress(address);
 	}
+	
+function toggleType(type)
+  {
+  	for (i=0; i<gmarkers.length; i++)
+  	{
+  		if (gmarkersType[i] == type)
+  			if (gmarkers[i].isHidden())
+  			{
+  				gmarkers[i].show();
+  			}
+  			else {
+  				gmarkers[i].hide();
+  			}
+  	}
+  }
 			
