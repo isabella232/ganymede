@@ -51,8 +51,8 @@
 		necessary, but as a guideline, include 3-5 points of what you like or don&#146;t like about the Ganymede projects.</p>
 
 		 <p>If you want to join in the fun but don&#146;t have the time to prepare a review, you can <a href="map.php">send us a brief
-		 message or photo</a> instead.  You&#146;ll be added to our Ganymede Around the World map and all messages and images will be eligible to win
-		 an Eclipse shirt in a random draw.</p>
+		 message or photo</a> instead.  You&#146;ll be added to our Ganymede Around the World map and will have a chance to win a prize.
+		 All messages and images will be entered in a random draw for 5 Eclipse shirts.</p>
 		 
 		 <p>The deadline for submissions to the contest is <b>July 31, 2008</b>.  The top 3 and best reviews will be selected by a panel of
 		 judges.
