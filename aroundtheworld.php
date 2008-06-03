@@ -60,7 +60,7 @@
 		 <p>Important Details:
 		 	<ul>
 		 		<li>You can submit multiple reviews but only one shirt per person will be sent.</li>
-		 		<li>Shirt quantities are limited and shirts will be distributed to reviewers on a first come, first served basis.</li>		 		
+		 		<li>Shirt quantities are limited so shirts will be distributed to reviewers on a first come, first served basis.</li>		 		
 				<li>The EclipseCon or Eclipse Summit Europe pass only covers the conference registration.
 				It does not include any travel expenses. The pass is non-transferable, non-refundable and
 				has no cash value. So if you can&#146;t go to either conference or you received a free pass
