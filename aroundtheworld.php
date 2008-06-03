@@ -73,6 +73,18 @@
 		<br><br>
 
 	</div>
+
+	<!-- remove the entire <div> tag to omit the right column!  -->
+	<div id="rightcolumn">
+		<div class="sideitem">
+			<h6>Related Links</h6>
+			<ul>
+				<li><a href="map.php">Around the World Map</a></li>
+			</ul>
+		</div>
+	</div>	
+	
+	
 </div>
 
 	
