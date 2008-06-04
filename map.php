@@ -89,7 +89,6 @@
  			<div class="b"><div></div></div>
 		</div>
 		</div>
-		<div class="geoIP">GeoIP Lookup provided by <a href="http://www.maxmind.com/">http://www.maxmind.com/</a></div> 		  	  	
   	 </div>
 	<hr class="clearer"/><br/><br/><br/><br/>
 	<hr class="clearer"/>
