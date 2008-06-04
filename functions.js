@@ -23,10 +23,17 @@ function validateForm() {
 		alert("Please specify a country name");
 		return false;
 	}
-	if (con.value.length == 0)
+	if (con.value.length > 256)
 	{
-		alert("Please specify a message.");
-		return false;
+		con.value = con.value.substring(0, 255);
+	}
+	if (type.value == "message")
+	{
+		if (con.value.length == 0)
+		{
+			alert("Please specify a message.");
+			return false;
+		}
 	}
 	if (lat.value == 0 && lng.value == 0)
 	{
@@ -40,7 +47,8 @@ function validateForm() {
 			alert("Please provide a url for your content.");
 			return false;
 		}
-	}	
+	}
+	alert("Thank you for supporting Gaymede Around the World");	
 	document.spotForm.submit();
 	return retVal;
 }
@@ -55,15 +63,21 @@ function showProjects() {
 function showURL(element) {
 	var e = document.getElementById('urlDiv');
 	var f = document.getElementById('urlDiv2');
+	var g = document.getElementById('messageDiv');
+	var h = document.getElementById('messageDiv2');
 	if (element.value != "message")
 	{
 		e.className = "visible";
 		f.className = "visible";
+		g.className = "invisible";
+		h.className = "invisible";
 	}
 	else 
 	{
 		e.className = "invisible";
 		f.className = "invisible";
+		g.className = "visible";
+		h.className = "visible";
 	}
 	
 }
@@ -93,7 +107,7 @@ function setAddress(address) {
 		var name = document.getElementById('name');
 		var content = document.getElementById('content');
    		var html = '<b>' + name.value + '</b><br/>' + content.value;
-		var address = c.value + ' ' + s.value + ' ' + co.value;
+		var address = c.value + ', ' + s.value + ', ' + co.value;
 		setAddress(address);
 	}
 	

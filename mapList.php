@@ -34,7 +34,7 @@
 		$sortBy = " ORDER BY " . $_GET['sort'] . " ASC";
 	}
 	else 
-		$sortBy = "";
+		$sortBy = " ORDER BY GS.id DESC";
 	
 	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id" . $sortBy . " LIMIT 25";
 	$result = mysql_query($sql);
@@ -44,43 +44,37 @@
 	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<body>
 		<div id="midcolumn">
-			<div class="mapDiv">
-
-				<div class="dialog">
-	 				<div class="dialogContent">
-	  					<div class="t"></div>
-	  					<!-- Your content goes here -->
-	  					<h1><?=$pageTitle;?></h1><br/>
-						<table cellspacing=0 cellpadding=0 class="list" width="850">
-							<tr class="header">	
-								<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
-								<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
-								<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
-								<td>Content</td>
-							</tr>
-							<? while ($rr = mysql_fetch_array($result)) { ?>
-							<tr>
-								<td><?=$rr['name']; ?></td>
-								<td><?=$rr['type']; ?></td>
-								<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
-								<td>
-									<? if ($rr['url'] != "") { ?><a href="<?=$rr['url'];?>" target="_blank"><?=$rr['url'];?></a><br/><? } ?>
-									<?=$rr['content']; ?>
-								</td>
-							</tr>
-							<? } ?>	
-						</table><br/><br/>
-					</div>
-	 				<div class="b"><div></div></div>
-				</div>
-			</div>
+  			<h1><?=$pageTitle;?></h1><br/>
+			<table cellspacing=0 cellpadding=0 class="list" width="850">
+				<tr class="header">	
+					<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
+					<td width="150"><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
+					<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
+					<td>Content</td>
+				</tr>
+				<? while ($rr = mysql_fetch_array($result)) { ?>
+				<tr>
+					<td><?=$rr['name']; ?></td>
+					<td><?=ucfirst($rr['type']); ?></td>
+					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
+					<td>
+						<? if ($rr['type'] != "Message") 
+							{ ?>
+							<a href="<?=$rr['url'];?>" target="_blank"><?=$rr['url'];?></a>
+						<? } 
+						else { ?>
+							<?=$rr['content']; }?>
+					</td>
+				</tr>
+				<? } ?>	
+			</table><br/><br/>
 		</div>
 		<div id="rightcolumn">
 			<div class="sideitem">
 				<h6>Ganymede Around the World</h6>
 					<ul>
 						<li><a href="./map.php">Ganymede Around the World</a></li>
-						<li><a href="./aroundthwworld.php">Contest Details</a></li>
+						<li><a href="./aroundtheworld.php">Contest Details</a></li>
 					</ul>
 			</div>
 		</div>

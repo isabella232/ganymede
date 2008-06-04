@@ -26,6 +26,7 @@
 	#
 	
 	# Place your html content in a file called content/en_pagename.php
+	header("Cache-control: no-cache");
 	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
 	$dbc = new DBConnection();
 	$dbh = $dbc->connect();
@@ -55,33 +56,30 @@
   			<!-- Your content goes here -->
 		  	<table class="dialogTable" cellspacing=0 cellpadding=0>
 	  			<tr>
-	  	  			<td class="left">
-	  	  			  <h2><u>Ganymede Around the World</u></h2>
-	  	  			</td>
-	  	  			<td class="right">
-	  	  			  
+	  	  			<td style="text-align:center;font-size:120%" colspan="2">
+	  	  			  <h1><u>Ganymede Around the World</u></h1>
+	  	  			  <div align="center" style="width:100%"><p class="contestText">Join the Eclipse global community.  Tell us how you are using the new Eclipse Ganymede release and have an opportunity to win cool Eclipse stuff.</p> </div>
 	  	  			</td>
 	  	  		</tr>
-				<tr>
-					<td colspan="2" class="contestText">Join the Eclipse global community.  Tell us how you are using the new Eclipse Ganymede release and have an opportunity to win cool Eclipse stuff.  <br/></td>
+				<tr>	
+					<td colspan="2"> <br/></td>
 				</tr>
 	  	  			<td valign="top" class="left">
-	  	  			  <div id="map" style="width:550px; height: 400px"></div>
+	  	  			  <div id="map" style="width:610px; height: 400px"></div>
 	  	  			  <div style="font-size:80%;text-align:right;padding-right:5px;"><a href="mapList.php">See a list of all the entries.</a></div>
 	  	  			</td>
 	  	  			<td valign="top" class="right">
-	  	  				<h2 style="margin-top:0px;">Tell us how you're using Ganymede</h2>
 	  	  				<? include ('form.php') ?>
 	  	  			</td>
 	  	  		</tr>
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" name="media" checked onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
-	  	  					<input type="checkbox" name="podcast" checked onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
-	  	  					<input type="checkbox" name="image" checked onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
-	  	  					<input type="checkbox" name="blog" checked onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
-	  	  					<input type="checkbox" name="message" checked onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
+	  	  					<input type="checkbox" name="media" checked="true" onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
+	  	  					<input type="checkbox" name="podcast" checked="true" onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
+	  	  					<input type="checkbox" name="image" checked="true" onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
+	  	  					<input type="checkbox" name="blog" checked="true" onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
+	  	  					<input type="checkbox" name="message" checked="true" onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
 	  	  				</div>
 	  	  			</td>
 	  	  			<td class="right">&nbsp;</td>
@@ -139,7 +137,7 @@
       
 	
       	
-      map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 3);  //Center on Eclipse Foundation HQ
+      map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 1);  //Center on Eclipse Foundation HQ
 	  map.setMapType(G_HYBRID_MAP);
 
       // Read the data from example.xml

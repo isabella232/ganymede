@@ -1,4 +1,5 @@
 <?php
+	header("Cache-control: no-cache");
 	header('Content-type: application/xml; charset="utf-8"',true);
 	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
 	$dbc = new DBConnection();
@@ -22,12 +23,19 @@
 		$location = $location_city . ', ' . $location_country;
 		$email = $rr['email'];
 		$type = ucfirst($rr['type']);
-		if ($type != "message")
-		{	$url = $rr['url']; }
+		if ($type != "Message")
+		{
+			$url = $rr['url']; 
+			if (strpos($url, "http://") == FALSE) 
+			{
+				$url = "http://" . $url;
+			}
+			
+		}
 		
 		$content = $rr['content'];
 		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" location="<?=$location;?>" author="<?=$name;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
-			<![CDATA[<?=$content;?>]]>
+			<? if ($type == "Message") { ?><![CDATA[<?=$content;?>]]> <? } ?>
 		</marker> 
 		<?
 	} ?>

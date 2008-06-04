@@ -35,23 +35,17 @@
 	?>
 			<div class="form">
 					<form action="spotProcess.php" method="POST" name="spotForm">
-					<table width="300" class="formBox">
+					<table width="240" class="formBox">
 						<tr>
-							<td colspan="2"><h5>Who are you?</h5></td>
-						</tr>
-						<tr>
-							<td width="280">Name<span class="required">*</span>:</td>
+							<td>Name<span class="required">*</span>:</td>
 							<td><input type="text" name="name" id="name"/></td>
-						</tr>
-						<tr>
-							<td colspan="2"><br/><h5>Where are you?</h5></td>
 						</tr>
 						<tr>
 							<td>City<span class="required">*</span>:</td>
 							<td><input type="text" name="city" id="city"/></td>
 						</tr>
 						<tr>
-							<td>State or Province:</td>
+							<td>State/Prov:</td>
 							<td><input type="text" name="state" id="state"/></td>
 						</tr>
 						<tr>
@@ -59,9 +53,7 @@
 							<td><input type="text" name="country" id="country"/></td>
 						</tr>
 						<tr>
-							<td colspan="2"><br/><h5>How are you using Ganymede?</h5></td>
-						</tr>
-							<td>Content Type<span class="required">*</span>:</td>
+							<td>Type<span class="required">*</span>:</td>
 							<td>
 								<select name="type" id="type" onchange="showURL(this)">
 									<option value="video" selected>Video</option>
@@ -73,12 +65,11 @@
 							</td>
 						</tr>
 						<tr>
-							<td><div id="urlDiv">Content URL<span class="required">*</span>:</div></td>
-							<td><div id="urlDiv2"><input type="text" name="url" id="url"/></div></td>
+							<td><div id="urlDiv">URL<span class="required">*</span>:</div></td>
+							<td><div id="urlDiv2"><input type="text" name="url" id="url" value="http://"/></div></td>
 						<tr>
-						</div>
-							<td valign="top">Message<span class="required">*</span>:</td>
-							<td><textarea name="content" id="content"></textarea></td>
+							<td valign="top"><div id="messageDiv" class="invisible">Message<span class="required">*</span>:</div></td>
+							<td><div id="messageDiv2" class="invisible"><textarea name="content" id="content"></textarea></div></td>
 						</tr>						
 						<tr>
 							<td colspan="2"><br/></td>
