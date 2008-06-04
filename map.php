@@ -140,7 +140,7 @@
             var typeText = type;    
             if (type != "Message")
             {
-            	typeText = '<a href"' + url + '" target=_"blank">' + type + '</a>';    
+            	typeText = '<a href="' + url + '" target=_"blank">' + type + '</a>';    
             }
             var html = '<div class="infoWindow"><b>' + author + '</b> - ' + location + '<br/>' + typeText + '<br/><br/>' + markers[i].textContent + '</div>';
             // create the marker
