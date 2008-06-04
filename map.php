@@ -97,21 +97,13 @@
  <script type="text/javascript">
     //<![CDATA[
     if (GBrowserIsCompatible()) {
-      // this variable will collect the html which will eventualkly be placed in the side_bar
-      var list_html = "";
-    
       // arrays to hold copies of the markers used by the side_bar
       // because the function closure trick doesnt work there
       var gmarkers = [];
       var gmarkersType = [];
       var i = 0;
-
-
-
-
       // A function to create the marker and set up the event window
       function createMarker(point,html,type) {
-       
         var marker = new GMarker(point);
         GEvent.addListener(marker, "click", function() {
           marker.openInfoWindowHtml(html);
@@ -121,25 +113,15 @@
         i++;
         return marker;
       }
-	
-
-
       // This function picks up the click and opens the corresponding info window
       function myclick(i) {
         GEvent.trigger(gmarkers[i], "click");
       }
-
-
       // create the map
-      
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
-      
-	
-      	
-      map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 1);  //Center on Eclipse Foundation HQ
-	  map.setMapType(G_HYBRID_MAP);
-
+      //map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 1);  //Center on Eclipse Foundation HQ
+	  //map.setMapType(G_HYBRID_MAP);
       // Read the data from example.xml
       var request = GXmlHttp.create();
       request.open("GET", "mapData.php", true);
@@ -148,7 +130,6 @@
           var xmlDoc = GXml.parse(request.responseText);
           // obtain the array of markers and loop through it
           var markers = xmlDoc.documentElement.getElementsByTagName("marker");
-          
           for (var i = 0; i < markers.length; i++) {
             // obtain the attribues of each marker
             var lat = parseFloat(markers[i].getAttribute("lat"));
