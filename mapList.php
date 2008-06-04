@@ -60,7 +60,7 @@
 					<td>
 						<? if ($rr['type'] != "Message") 
 							{ ?>
-							<a href="<?=$rr['url'];?>" target="_blank"><?=$rr['url'];?></a>
+							<a href="<? if (strpos($rr['url'], 'http://') == FALSE) echo "http://";?><?=$rr['url'];?>" target="_blank"><?=$rr['url'];?></a>
 						<? } 
 						else { ?>
 							<?=$rr['content']; }?>
