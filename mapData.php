@@ -26,7 +26,7 @@
 		if ($type != "Message")
 		{
 			$url = $rr['url']; 
-			if (strpos($url, "http://") == FALSE) 
+			if (strpos($url, "http://") === FALSE) 
 			{
 				$url = "http://" . $url;
 			}
