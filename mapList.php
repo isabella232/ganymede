@@ -58,8 +58,8 @@
 					<td><?=ucfirst($rr['type']); ?></td>
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
 					<td>
-						<? $url = $rr['url'];
-							if ($rr['type'] != "Message") 
+						<?	 $url = $rr['url'];
+							if ($rr['type'] != "message") 
 							{ ?>
 							<a href="<? if (strpos($url, 'http://') == FALSE) $url = "http://" . $url;?><?=$url;?>" target="_blank"><?=$url;?></a>
 						<? } 
