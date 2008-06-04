@@ -47,9 +47,9 @@
   			<h1><?=$pageTitle;?></h1><br/>
 			<table cellspacing=0 cellpadding=0 class="list" width="850">
 				<tr class="header">	
-					<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
+					<td width="300"><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
 					<td width="150"><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
-					<td><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
+					<td width="150"><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
 					<td>Content</td>
 				</tr>
 				<? while ($rr = mysql_fetch_array($result)) { ?>
