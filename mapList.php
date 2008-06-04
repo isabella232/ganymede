@@ -61,7 +61,7 @@
 						<?	 $url = $rr['url'];
 							if ($rr['type'] != "message") 
 							{ ?>
-							<a href="<? if (strpos($url, 'http://') == FALSE) $url = "http://" . $url;?><?=$url;?>" target="_blank"><?=$url;?></a>
+							<a href="<? if (strpos($url, 'http://') == -1) $url = "http://" . $url;?><?=$url;?>" target="_blank"><?=$url;?></a>
 						<? } 
 						else { ?>
 							<?=$rr['content']; }?>
