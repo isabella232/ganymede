@@ -94,7 +94,6 @@
 	<hr class="clearer"/>
 
  <script type="text/javascript">
-    //<![CDATA[
     if (GBrowserIsCompatible()) {
       // arrays to hold copies of the markers used by the side_bar
       // because the function closure trick doesnt work there
@@ -152,12 +151,9 @@
       }
       request.send(null);
     }
-
     else {
       alert("Sorry, the Google Maps API is not compatible with this browser");
     }
-
-    //]]>
     </script>  	  
   </body>
 	<?
