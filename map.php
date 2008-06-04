@@ -120,7 +120,7 @@
       // create the map
       var map = new GMap2(document.getElementById("map"));
       map.addControl(new GSmallMapControl());
-      //map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 1);  //Center on Eclipse Foundation HQ
+      map.setCenter(new GLatLng( geoip_latitude() , geoip_longitude()), 1);  //Center on Eclipse Foundation HQ
 	  //map.setMapType(G_HYBRID_MAP);
       // Read the data from example.xml
       var request = GXmlHttp.create();
