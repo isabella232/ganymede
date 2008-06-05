@@ -16,7 +16,7 @@
 	$pageTitle 		= "Ganymede Around the World";
 	$pageKeywords	= "eclipse ganymede, ganymede, ganymede around the world";
 	$pageAuthor		= "Nathan Gervais";
-	
+	header("Cache-control: no-cache");
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank)
 	# $Nav->addCustomNav("My Link", "mypage.php", "_self");
@@ -24,6 +24,39 @@
 
 	# End: page-specific settings
 	#
+	function displayPager($_start, $_pageValue, $_pageCount)
+	{
+		ob_start();
+		?>
+		<table class="pager">
+				<tr>
+					<td align="left">
+				<?
+					if ($_start >= $_pageValue)
+					{
+						?><a href="mapList.php?start=<?=$_start-$_pageValue;?>"><< Previous Page</a><?
+					}
+				?>&nbsp;</td>
+					<td align="right">
+				<?
+					if (($_start + $_pageValue) < $_pageCount)
+					{
+						?><a href="mapList.php?start=<?=$_start+$_pageValue;?>">Next Page >></a><?
+					}
+				?>
+					</td>
+				</tr>
+			</table>
+		<?
+		return ob_get_clean();
+	}	
+
+	$start = $_GET['start'];
+	$pageValue = 25;
+	if (!$start)
+		$start = 0;
+		
+	$pager = " LIMIT $start, $pageValue";
 	
 	# Place your html content in a file called content/en_pagename.php
 	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
@@ -36,7 +69,11 @@
 	else 
 		$sortBy = " ORDER BY GS.id DESC";
 	
-	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id" . $sortBy . " LIMIT 25";
+	$sql = "SELECT count(*) AS count FROM ganymede_spots";
+	$result = mysql_fetch_array(mysql_query($sql));
+	$count = $result['count'];
+		
+	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id" . $sortBy . $pager;
 	$result = mysql_query($sql);
 	
 	ob_start();
@@ -69,6 +106,7 @@
 				</tr>
 				<? } ?>	
 			</table><br/><br/>
+			<?=displayPager($start, $pageValue, $count);?>
 		</div>
 		<div id="rightcolumn">
 			<div class="sideitem">
