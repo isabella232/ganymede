@@ -37,39 +37,38 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 	
-		<p>We want to hear how you are using the Eclipse projects in the <a href="http://www.eclipse.org/ganymede/">Ganymede</a> release. 
-		Write a blog post telling people what you like and dislike, create a screencast/video showing people what you dig or record a podcast 
-		telling the world what is great about Ganymede.  For your efforts we will even send you an Eclipse shirt.</p>
+		<p>We want to hear how you&#146;re using the Eclipse projects in the <a href="http://www.eclipse.org/ganymede/">Ganymede</a> release. 
+		Write a blog post, create a screencast/video, or record a podcast telling the world what&#146;s great or what you dislike
+		about Ganymede.  For your efforts, we&#146;ll send you an Eclipse shirt.</p>
 		
-		<p> Once you have posted your review, then add it to the <a href="map.php">Ganymede Around the World map</a>.  Eclipse is a global community, so
-		would encourage people to create their reviews in your native language.  </p>
+		<p> Once you have posted your review, add it to the <a href="map.php">Ganymede Around the World map</a>.  Eclipse is a global
+		community, so we encourage you to create your review in your native language.  </p>
 		
-	 <p>If you want to show your support but don&#146;t have the time to prepare a review, you can still add yourself to the <a href="map.php">Ganymede Around the World map</a>.  
-	 Just enter your name, address and a short message or image about how you use Eclipse.  
-     Everyone who enters their name will be entered into a random draw for 5 Eclipse jackets.  </p>		
-		
+	 	<p>If you want to show your support but don&#146;t have the time to prepare a review, you can still add yourself to the
+	 	<a href="map.php">Ganymede Around the World map</a>.  Just enter your name, address and a short message or image about how you
+	 	use Eclipse. Everyone who adds their name will be entered into a random draw for 5 Eclipse jackets.  </p>		
 		
 		<p>To enter the contest, a review must be of sufficient technical content. Long essays aren&#146;t
-		necessary, but as a guideline, you need to include at least 3-5 points of what you like or don&#146;t like about the Ganymede projects. The top 3 
-		reviews will win an Eclipse jacket and the best entry will win their choice of a pass to
+		necessary, but as a guideline, include 3 to 5 points of what you like or don&#146;t like about the Ganymede projects.
+		The top 3 reviews will win an Eclipse jacket and the best entry will win their choice of a pass to
 		 <a href="http://www.eclipsecon.org/2009/">EclipseCon 2009</a> or
-		 <a href="http://eclipsesummit.org/summiteurope2008/">Eclipse Summit Europe 2008</a>!</p></p>
-
+		 <a href="http://eclipsesummit.org/summiteurope2008/">Eclipse Summit Europe 2008</a>!</p>
 		 
-		 <p>The deadline for submissions to the contest is <b>July 31, 2008</b>.  The top 3 and best reviews will be selected by a panel of
-		 judges.
+		 <p>The deadline for submissions to the contest is <b>July 31, 2008</b>.  The top 3 and best reviews will be selected by a
+		 panel of judges.</p>
 
-		 <p>Important Details:
+		 <p><b>Important Details:</b>
 		 	<ul>
 		 		<li>You can submit multiple reviews but only one shirt per person will be sent.</li>
 		 		<li>Shirt quantities are limited so shirts will be distributed to reviewers on a first come, first served basis.</li>		 		
 				<li>The EclipseCon or Eclipse Summit Europe pass only covers the conference registration.
 				It does not include any travel expenses. The pass is non-transferable, non-refundable and
-				has no cash value. So if you can&#146;t go to either conference or you received a free pass
+				has no cash value. If you can&#146;t go to either conference or you receive a free pass
 				some other way (such as a speaker pass), you won&#146;t be able to take advantage of the prize.</li>
 				<li>Informed, insightful, educated reviews &#150; positive and negative &#150; are always welcome.
 				However, FUD-spewers, propagandists and mean-spirited curmudgeons need not apply.</li>
-				<li>A review needs to be submitted to the <a href="map.php">Ganymede Around the World </a>map to participate in the contest.</li>
+				<li>A review needs to be submitted to the <a href="map.php">Ganymede Around the World </a>map with an email address
+				to participate in the contest.</li>
 			</ul>
 		</p>
 		
