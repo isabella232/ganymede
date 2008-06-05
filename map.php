@@ -56,7 +56,7 @@
 		  	<table class="dialogTable" cellspacing=0 cellpadding=0>
 	  			<tr>
 	  	  			<td style="text-align:center;font-size:120%" colspan="2">
-	  	  			  <h1><u>Ganymede Around the World</u></h1>
+	  	  			  <h1>Ganymede Around the World</h1>
 	  	  			  <div align="center" style="width:100%"><p class="contestText">Join the Eclipse global community.  Tell us how you are using the new Eclipse Ganymede release and have an opportunity to <a href="./aroundtheworld.php">win cool Eclipse stuff.</a></p> </div>
 	  	  			</td>
 	  	  		</tr>
