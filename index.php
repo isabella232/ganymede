@@ -55,7 +55,7 @@
 							<a href="map.php">Ganymede Around the World</a>
 						</td>
 						<td align="right">
-							<a href="friends.php"><img src="apps/system-users.png"/></a>
+							<a href="friends.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png"/></a>
 						</td>
 						<td align="left">
 							<a href="friends.php">Friends of Ganymede</a>
