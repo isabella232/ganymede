@@ -42,7 +42,7 @@
 		about Ganymede.  For your efforts, we&#146;ll send you an Eclipse shirt.</p>
 		
 		<p> Once you have posted your review, add it to the <a href="map.php">Ganymede Around the World map</a>.  Eclipse is a global
-		community, so we encourage you to create your review in your native language.  </p>
+		community, so we encourage you to create a review in your native language.  </p>
 		
 	 	<p>If you want to show your support but don&#146;t have the time to prepare a review, you can still add yourself to the
 	 	<a href="map.php">Ganymede Around the World map</a>.  Just enter your name, address and a short message or image about how you
