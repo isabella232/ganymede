@@ -56,11 +56,11 @@
 							<td>Type<span class="required">*</span>:</td>
 							<td>
 								<select name="type" id="type" onchange="showURL(this)">
-									<option value="video" selected>Video</option>
-									<option value="podcast">Podcast</option>
 									<option value="blog">Blog</option>
 									<option value="image">Image</option>
+									<option value="podcast">Podcast</option>
 									<option value="message">Message</option>
+									<option value="video" selected>Video</option>
 								</select>
 							</td>
 						</tr>
