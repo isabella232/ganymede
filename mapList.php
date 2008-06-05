@@ -74,7 +74,8 @@
 			<div class="sideitem">
 				<h6>Ganymede Around the World</h6>
 					<ul>
-						<li><a href="./map.php">Ganymede Around the World</a></li>
+						<li><a href="./">Ganymede</a></li>
+						<li><a href="./map.php">Ganymede Map</a></li>
 						<li><a href="./aroundtheworld.php">Contest Details</a></li>
 					</ul>
 			</div>
