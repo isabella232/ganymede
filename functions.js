@@ -133,7 +133,7 @@ function checkVisibility(type)
 	for (i=0; i<gmarkers.length; i++)
   	{
   		if (gmarkersType[i] == type) {
-			if (e.value == "on")
+			if (e.checked == true)
 				{ gmarkers[i].show(); }
   			else {	gmarkers[i].hide(); }
   		}
