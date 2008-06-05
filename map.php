@@ -147,11 +147,11 @@
             map.addOverlay(marker);
           }
           // Markers have all been added, lets check to see if they should be visible
-          checkVisibility('video');
-          checkVisibility('podcast');
-          checkVisibility('image');
-          checkVisibility('blog');
-          checkVisibility('message');
+          checkVisibility('Video');
+          checkVisibility('Podcast');
+          checkVisibility('Image');
+          checkVisibility('Blog');
+          checkVisibility('Message');
         }
       }
       request.send(null);
