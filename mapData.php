@@ -25,7 +25,7 @@
 		$type = ucfirst($rr['type']);
 		if ($type != "Message")
 		{
-			$url = $rr['url']; 
+			$url = $rr['url'];
 			if (strpos($url, "http://") === FALSE) 
 			{
 				$url = "http://" . $url;
