@@ -28,7 +28,7 @@
 	{
 		ob_start();
 		?>
-		<table class="pager">
+		<table width="700">
 				<tr>
 					<td align="left">
 				<?
