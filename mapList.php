@@ -82,6 +82,7 @@
 	<body>
 		<div id="midcolumn">
   			<h1><?=$pageTitle;?></h1><br/>
+  			<?=displayPager($start, $pageValue, $count);?>
 			<table cellspacing=0 cellpadding=0 class="list" width="700">
 				<tr class="header">	
 					<td width="300"><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
