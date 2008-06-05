@@ -23,10 +23,9 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 	require_once("/home/data/httpd/eclipse-php-classes/system/dbconnection_rw.class.php");
-	ob_start();
+	
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
-
 	extract($_POST);
 	
 	if ($type == "message")
@@ -37,7 +36,7 @@
 	$retVal = mysql_insert_id($dbh);
 	$query = "INSERT INTO ganymede_content (id, type, content, url) VALUES ($retVal, '$type', '$content', '$url')";
 	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
-	
+	ob_start();
 	?>
 	<div id="midcolumn">
 		<p>Thank you for supporting Ganymede Around the World.  You will be brought back to the map in 5 seconds. Click <a href="map.php">here</a> if you are not forwarded.</p>
