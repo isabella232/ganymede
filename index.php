@@ -1,4 +1,4 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();	   # All on the same line to unclutter the user's desktop'
+<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();	$theme = "Phoenix";   # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
@@ -13,7 +13,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Ganymede Release Train";
+	$pageTitle 		= "Ganymede Release";
 	$pageKeywords	= "eclipse ganymede, ganymede, ganymede release train";
 	$pageAuthor		= "Eclipse Foundation, Inc.";
 	
@@ -41,10 +41,24 @@
 							<a href="http://wiki.eclipse.org/Ganymede">Ganymede Development Wiki</a>
 						</td>
 						<td align="right">
-							<a href="http://phoenix.eclipse.org/packages/"><img src="http://dev.eclipse.org/huge_icons/apps/system-installer.png"/></a>
+							<a href="/downloads/packages/"><img src="http://dev.eclipse.org/huge_icons/apps/system-installer.png"/></a>
 						</td>
 						<td align="left">
-							<a href="http://www.eclipse.org/downloads/packages/">Ganymede Milestone Releases</a>
+							<a href="/downloads/packages/">Ganymede Milestone Releases</a>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<a href="map.php"><img src="images/map.png"/></a>
+						</td>
+						<td align="left">
+							<a href="map.php">Ganymede Around the World</a>
+						</td>
+						<td align="right">
+							<a href="friends.php"><img src="apps/system-users.png"/></a>
+						</td>
+						<td align="left">
+							<a href="friends.php">Friends of Ganymede</a>
 						</td>
 					</tr>
 				</table>
