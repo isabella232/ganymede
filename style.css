@@ -86,6 +86,10 @@ table.list tr.header {
 	width:700px;
 	padding-bottom:10px;	
 }
+
+table.list tr td {
+	padding-left:5px;	
+}
 ///////////////////////////////////////////////////////
 
 .dialog {
