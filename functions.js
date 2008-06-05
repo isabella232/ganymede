@@ -126,7 +126,7 @@ function toggleType(type)
   	}
   }
   
-function CheckVisibility(type)
+function checkVisibility(type)
 {
 	var e = document.getElementById(type);
 
