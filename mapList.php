@@ -45,7 +45,7 @@
 	<body>
 		<div id="midcolumn">
   			<h1><?=$pageTitle;?></h1><br/>
-			<table cellspacing=0 cellpadding=0 class="list" width="850">
+			<table cellspacing=0 cellpadding=0 class="list" width="700">
 				<tr class="header">	
 					<td width="300"><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
 					<td width="150"><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
