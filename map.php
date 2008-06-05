@@ -74,7 +74,7 @@
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" id="media" checked="true" onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
+	  	  					<input type="checkbox" id="video" checked="true" onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
 	  	  					<input type="checkbox" id="podcast" checked="true" onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
 	  	  					<input type="checkbox" id="image" checked="true" onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
 	  	  					<input type="checkbox" id="blog" checked="true" onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
