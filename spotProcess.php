@@ -27,12 +27,21 @@
 
 	extract($_POST);
 	
+	if ($type == "message")
+		$url = "";
+	
 	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
 	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
 	$retVal = mysql_insert_id($dbh);
 	$query = "INSERT INTO ganymede_content (id, type, content, url) VALUES ($retVal, '$type', '$content', '$url')";
 	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
-
-	header("Location: http://www.eclipse.org/ganymede/map.php");
-
-?>
+	$App->AddExtraHtmlHeader('<META HTTP-EQUIV="Refresh" CONTENT="5; URL=map.php">');
+	?>
+	<div id="midcolumn">
+		<p>Thank you for supporting Ganymede Around the World.  You will be brought back to the map in 5 seconds. Click <a href="map.php">here</a> if you are not forwarded.</p>
+	</div>
+	<?
+	$html = ob_get_contents();
+	# Generate the web page
+	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+?>	
