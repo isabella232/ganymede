@@ -42,7 +42,6 @@
 	?>
 	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<script type="text/javascript" src="functions.js"></script>
-	<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA85Ct-u89MRBL6KQDW1oYFRRVZIdxFKFwDr3XyDwet7lo3BxWzRQ-OiA6LG0_IUfBnGsh0fZU1lolWA"
       type="text/javascript"></script>
   
