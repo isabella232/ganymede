@@ -151,7 +151,7 @@
           checkVisibility('podcast');
           checkVisibility('image');
           checkVisibility('blog');
-          checkVisibility('message);
+          checkVisibility('message');
         }
       }
       request.send(null);
