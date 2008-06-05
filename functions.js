@@ -48,7 +48,6 @@ function validateForm() {
 			return false;
 		}
 	}
-	alert("Thank you for supporting Gaymede Around the World");	
 	document.spotForm.submit();
 	return retVal;
 }
