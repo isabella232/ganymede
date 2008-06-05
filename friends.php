@@ -48,7 +48,7 @@
 			<h2>Ganymede Wallpapers</h2>
 				<img border=0 alt="Ganymede Wallpaper" src="images/wallpaperThumb.jpg"><br/><br/>
 				Decorate your Desktop with one of these Ganymede Wallpapers.<br/>
-				<a href="images/wallpaper1024.jpg">1024x768</a> - <a href="images/wallpaper1280.jpg">1280x960</a> - <a href="images/wallpaper1600.jpg">1600x1200</a><br/><br/>
+				<a href="images/wallpaper1024.jpg">1024x768</a> - <a href="images/wallpaper1280.jpg">1280x960</a> - <a href="images/wallpaper1600.jpg">1600x1200</a> - <a href="images/wallpaper1680.jpg">1680x1050</a><br/><br/>
 			</div>
 	    </div>
 </div>
