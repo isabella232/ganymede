@@ -74,11 +74,11 @@
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" id="video" checked="true" onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
-	  	  					<input type="checkbox" id="podcast" checked="true" onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
-	  	  					<input type="checkbox" id="image" checked="true" onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
-	  	  					<input type="checkbox" id="blog" checked="true" onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
-	  	  					<input type="checkbox" id="message" checked="true" onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
+	  	  					<input type="checkbox" id="Video" checked onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
+	  	  					<input type="checkbox" id="Podcast" checked onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
+	  	  					<input type="checkbox" id="Image" checked onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
+	  	  					<input type="checkbox" id="Blog" checked onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
+	  	  					<input type="checkbox" id="Message" checked onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
 	  	  				</div>
 	  	  			</td>
 	  	  			<td class="right">&nbsp;</td>
