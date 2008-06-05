@@ -69,7 +69,7 @@
 							<td><div id="urlDiv2"><input type="text" name="url" id="url" value="http://"/></div></td>
 						<tr>
 							<td valign="top"><div id="messageDiv" class="invisible">Message<span class="required">*</span>:</div></td>
-							<td><div id="messageDiv2" class="invisible"><textarea name="content" id="content"></textarea></div></td>
+							<td><div id="messageDiv2" class="invisible"><textarea cols=15 name="content" id="content"></textarea></div></td>
 						</tr>						
 						<tr>
 							<td colspan="2"><br/></td>
