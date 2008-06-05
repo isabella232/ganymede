@@ -32,13 +32,14 @@
 		$url = "";
 	
 	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
-	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
+	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
 	$retVal = mysql_insert_id($dbh);
 	$query = "INSERT INTO ganymede_content (id, type, content, url) VALUES ($retVal, '$type', '$content', '$url')";
-	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
+	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
 	ob_start();
 	?>
 	<div id="midcolumn">
+		<h1>Ganymede Around the World</h1>
 		<p>Thank you for supporting Ganymede Around the World.  You will be brought back to the map in 5 seconds. Click <a href="map.php">here</a> if you are not forwarded.</p>
 	</div>
 	<?
