@@ -79,7 +79,7 @@
 							<td><input type="text" name="email" id="email"/></td>
 						</tr>
 						<tr>
-							<td colspan="2" style="font-size:80%;">To be included in the Ganymede Around the World Contest be sure to provide us with your email address.</td>
+							<td colspan="2" style="font-size:80%;">To be included in the <a href="./aroundtheworld.php">Ganymede Around the World Contest</a> be sure to provide us with your email address.</td>
 						</tr>
 						<!--  <tr>
 							<td valign="top">Ganymede Projects:</td>

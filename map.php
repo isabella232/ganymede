@@ -57,7 +57,7 @@
 	  			<tr>
 	  	  			<td style="text-align:center;font-size:120%" colspan="2">
 	  	  			  <h1><u>Ganymede Around the World</u></h1>
-	  	  			  <div align="center" style="width:100%"><p class="contestText">Join the Eclipse global community.  Tell us how you are using the new Eclipse Ganymede release and have an opportunity to win cool Eclipse stuff.</p> </div>
+	  	  			  <div align="center" style="width:100%"><p class="contestText">Join the Eclipse global community.  Tell us how you are using the new Eclipse Ganymede release and have an opportunity to <a href="./aroundtheworld.php">win cool Eclipse stuff.</a></p> </div>
 	  	  			</td>
 	  	  		</tr>
 				<tr>	
@@ -141,7 +141,7 @@
             {
             	typeText = '<a href="' + url + '" target=_"blank">' + type + '</a>';    
             }
-            var html = '<div class="infoWindow"><b>' + author + '</b> - ' + location + '<br/>' + typeText + '<br/><br/>' + markers[i].textContent + '</div>';
+            var html = '<div class="infoWindow"><b>' + author + '</b><br/>' + location + '<br/>' + typeText + '<br/><br/>' + markers[i].textContent + '</div>';
             // create the marker
             var marker = createMarker(point, html,type );
             map.addOverlay(marker);
