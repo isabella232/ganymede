@@ -74,11 +74,11 @@
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" name="media" checked="true" onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
-	  	  					<input type="checkbox" name="podcast" checked="true" onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
-	  	  					<input type="checkbox" name="image" checked="true" onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
-	  	  					<input type="checkbox" name="blog" checked="true" onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
-	  	  					<input type="checkbox" name="message" checked="true" onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
+	  	  					<input type="checkbox" id="media" checked="true" onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
+	  	  					<input type="checkbox" id="podcast" checked="true" onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
+	  	  					<input type="checkbox" id="image" checked="true" onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
+	  	  					<input type="checkbox" id="blog" checked="true" onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
+	  	  					<input type="checkbox" id="message" checked="true" onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
 	  	  				</div>
 	  	  			</td>
 	  	  			<td class="right">&nbsp;</td>
@@ -107,6 +107,10 @@
         });
         gmarkers[i] = marker;
         gmarkersType[i] = type;
+        var e = document.getElementById(type);
+        if (e.value == 1)
+        { gmarkers[i].show(); }
+        else { gmarkers[i].hide(); }
         i++;
         return marker;
       }
