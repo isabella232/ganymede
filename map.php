@@ -107,10 +107,6 @@
         });
         gmarkers[i] = marker;
         gmarkersType[i] = type;
-        var e = document.getElementById(type);
-        if (e.value == 1)
-        { gmarkers[i].show(); }
-        else { gmarkers[i].hide(); }
         i++;
         return marker;
       }
