@@ -146,6 +146,12 @@
             var marker = createMarker(point, html,type );
             map.addOverlay(marker);
           }
+          // Markers have all been added, lets check to see if they should be visible
+          checkVisibility('video');
+          checkVisibility('podcast');
+          checkVisibility('image');
+          checkVisibility('blog');
+          checkVisibility('message);
         }
       }
       request.send(null);

@@ -125,4 +125,20 @@ function toggleType(type)
   			}
   	}
   }
+  
+function CheckVisibility(type)
+{
+	var e = document.getElementById(type);
+
+	for (i=0; i<gmarkers.length; i++)
+  	{
+  		if (gmarkersType[i] == type) {
+			if (e.value == "On")
+				{ gmarkers[i].show(); }
+  			else {	gmarkers[i].hide(); }
+  		}
+  	}
+}
+  
+  
 			
