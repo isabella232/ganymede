@@ -15,7 +15,9 @@
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank)
 	# $Nav->addCustomNav("My Link", "mypage.php", "_self");
 	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank");
-
+	$pageTitle 		= "Ganymede Around the World";
+	$pageKeywords	= "eclipse ganymede, ganymede, ganymede around the world";
+	$pageAuthor		= "Nathan Gervais";
 	# End: page-specific settings
 	#
 	
@@ -35,13 +37,14 @@
 	$retVal = mysql_insert_id($dbh);
 	$query = "INSERT INTO ganymede_content (id, type, content, url) VALUES ($retVal, '$type', '$content', '$url')";
 	mysql_query($query, $dbh) or die($query . " - " .mysql_error());
-	$App->AddExtraHtmlHeader('<META HTTP-EQUIV="Refresh" CONTENT="5; URL=map.php">');
+	
 	?>
 	<div id="midcolumn">
 		<p>Thank you for supporting Ganymede Around the World.  You will be brought back to the map in 5 seconds. Click <a href="map.php">here</a> if you are not forwarded.</p>
 	</div>
 	<?
 	$html = ob_get_contents();
+	$App->AddExtraHtmlHeader('<META HTTP-EQUIV="Refresh" CONTENT="5; URL=map.php">');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>	
