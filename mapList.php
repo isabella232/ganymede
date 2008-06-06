@@ -96,24 +96,23 @@
 					<td>
 						<? echo ucfirst($rr['type']) . " ";
 						$url = $rr['url'];
-						$titleStart = "- ";
-						$titleEnd = "";
 						if ($url != "") {
 							if (strpos($url, 'http://') === FALSE) {
 								$url = "http://" . $url;
 							}
-							$titleStart .= '<a href="'.$url.'" target="_blank">';
-							$titleEnd = '</a>'; 
 						}
-						if ($rr['title'] != "") {  
-							$title = $titleStart . $rr['title'] . $titleEnd;
-						} 
-						else { 
-							$title = $titleStart . $url . $titleEnd;
+						
+						if (($rr['title'] != "") && ($url != "")) { //We have no title or URL -> Break
+							echo "<br/>";
 						}
-						if ($title != "- ")
-						{
-							echo $title . '<br/>';		
+						elseif ($url != "") { // We have no url field -> echo Title 
+							echo " - " . $rr['title'];
+						}
+						elseif ($rr['title'] != "") { // We have no title field -> echo URL
+							echo ' - <a href="'.$url.'" target="_blank">' .$url. '</a><br/>'; 								
+						}
+						else { //We must have both.
+							echo ' - <a href="'.$url.'" target="_blank">' .$rr['title']. '</a><br/>'; 
 						}
 						echo $rr['content'];
 						?>
