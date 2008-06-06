@@ -27,7 +27,7 @@ function validateForm() {
 	{
 		con.value = con.value.substring(0, 255);
 	}
-	if (type.value == "message")
+	if (type.value == "Message")
 	{
 		if (con.value.length == 0)
 		{
@@ -40,7 +40,7 @@ function validateForm() {
 		alert("Correct Lattitude and Longitude for your location could not be calculated. Please check your location information and resubmit.");
 		return false;
 	}
-	if (type.value != "message")
+	if (type.value != "Message")
 	{
 		if (url.value.length == 0)
 		{ 
