@@ -42,9 +42,14 @@ function validateForm() {
 	}
 	if (type[1].checked == false)
 	{
-		if ( (url.value.length == 0) || (url.value.search('/^http\:\/\//') != -1) )
+		if (url.value.length == 0) 
 		{ 
-			alert("Please provide a url for your content.");
+			alert("Please provide a URL for your content.");
+			return false;
+		}
+		if (url.value.search('/^http\:\/\//') != -1)
+		{
+			alert("The URL provided does not contain http://");
 			return false;
 		}
 	}
