@@ -136,10 +136,21 @@
             var url = markers[i].getAttribute("url");
             var type = markers[i].getAttribute("type");
             var typeText = type;    
-            if (type != "Message")
-            {
-            	typeText = type + ' - <a href="' + url + '" target=_"blank">' + url.substring(7) + '</a>';    
+            var title = markers[i].getAttribute('title');
+
+           	if ((title.length == 0) && (url.length > 0) // No title supplied so just display URL
+           	{
+           		typeText = type + ' - <a href="' + url + '" target=_"blank">' + url.substring(7) + '</a>';    		
+			}
+			elseif ((title.length > 0) && (url.length == 0) // No URL supplied so just display the title;
+			{
+				typeText = type + ' - ' + title;
+			}
+			elseif ((title.lenght >0) && (url.length > 0) // We have both lets display both.
+			{			            
+            	typeText = type + ' - <a href="' + url + '" target=_"blank">' + title + '</a>';    
             }
+            
             var html = '<div class="infoWindow"><b>' + author + '</b><br/>' + location + '<br/>' + typeText + '<br/><br/>' + markers[i].textContent + '</div>';
             // create the marker
             var marker = createMarker(point, html,type );
