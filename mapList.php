@@ -96,18 +96,22 @@
 					<td>
 						<? echo ucfirst($rr['url']);
 						$url = $rr['url'];
+						$titleStart = "";
+						$titleEnd = "";
 						if ($url != "") {
-							if (strpos($url, 'http://') === FALSE) 
-							{$url = "http://" . $url;}
+							if (strpos($url, 'http://') === FALSE) {
+								$url = "http://" . $url;
+							}
+							$titleStart = '<a href="'.$url.'" target="_blank">';
+							$titleEnd = '</a>'; 
 						}
-						echo '<a href="$url" target="_blank">';
 						if ($rr['title'] != "") {  
-							echo $rr['title'];
+							$title = $titleStart . $rr['title'] . $titleEnd;
 						} 
 						else { 
-							echo $url;
+							$title = $titleStart . $url . $titleEnd;
 						}
-						echo '</a><br/>' . $rr['content'];
+						echo $title . '<br/>' . $rr['content'];
 						?>
 					</td>
 				</tr>
