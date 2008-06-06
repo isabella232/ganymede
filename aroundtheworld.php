@@ -81,7 +81,8 @@
 		<div class="sideitem">
 			<h6>Ganymede Around the World</h6>
 			<ul>
-				<li><a href="map.php">Ganymede Around the World</a></li>
+				<li><a href="http://www.eclipse.org/ganymede/">Ganymede</a></li>
+				<li><a href="map.php">Ganymede Map</a></li>
 			</ul>
 		</div>
 	</div>	
