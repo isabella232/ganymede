@@ -88,6 +88,7 @@
 					<td width="200"><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
 					<td width="200"><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
 					<td width="300">Content</td>
+					<td width="25">Delete</td>
 				</tr>
 				<? while ($rr = mysql_fetch_array($result)) { ?>
 				<tr>
@@ -120,6 +121,7 @@
 						echo $rr['content'];
 						?>
 					</td>
+					<td><a href="deleteMapItem.php?id=<?=$rr['GS.id'];?>">X</a></td>
 				</tr>
 				<? } ?>	
 			</table>
