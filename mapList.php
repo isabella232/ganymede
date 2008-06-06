@@ -101,7 +101,7 @@
 								<? } else { ?>
 								 <?=$url;}?>
 							</a><br/>
-							<?=$rr['content']; }?>
+							<?=$rr['content']; ?>
 					</td>
 				</tr>
 				<? } ?>	
