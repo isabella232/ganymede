@@ -116,8 +116,8 @@
 					</td>
 				</tr>
 				<? } ?>	
-			</table><br/><br/>
-			<?=displayPager($start, $pageValue, $count);?>
+			</table>
+			<?=displayPager($start, $pageValue, $count);?><br/><br/>
 		</div>
 		<div id="rightcolumn">
 			<div class="sideitem">
