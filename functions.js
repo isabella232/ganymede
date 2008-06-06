@@ -52,33 +52,38 @@ function validateForm() {
 	return retVal;
 }
 
-function showProjects() {
-	var e = document.getElementById('selectProjects');
-	var f = document.getElementById('projects');
-	e.className = "visible";
-	f.className = "invisible";
-}
 
-function showURL(element) {
-	var e = document.getElementById('urlDiv');
-	var f = document.getElementById('urlDiv2');
-	var g = document.getElementById('messageDiv');
-	var h = document.getElementById('messageDiv2');
-	if (element.value != "message")
+function checkReq(element) {
+	var messageReq = document.getElementById('messageReq');
+	var urlReq = document.getElementById('urlReq');
+	if (element == '')
 	{
-		e.className = "visible";
-		f.className = "visible";
-		g.className = "invisible";
-		h.className = "invisible";
+		//if blank then were calling to resync the form.
+		var b = document.getElementById('Blog');
+		var m = document.getElementById('Message');
+		var r = document.getElementById('Recording');
+		if (b.checked == TRUE)
+		{ element = 'Blog';}
+		if (m.checked == TRUE)
+		{ element = 'Message';}
+		if (r.checked == TRUE)
+		{ element = 'Recording';}
 	}
-	else 
+	if (element == 'Blog')
 	{
-		e.className = "invisible";
-		f.className = "invisible";
-		g.className = "visible";
-		h.className = "visible";
+		messageReq.className = "required invisible";
+		urlReq.className = "required visible";	
 	}
-	
+	if(element == 'Message')
+	{
+		messageReq.className = "required visible";
+		urlReq.className = "required invisible";
+	}	
+	if(element == 'Recording')
+	{
+		messageReq.className = "required invisible";
+		urlReq.className = "required visible";	
+	}
 }
 
 function setAddress(address) {
