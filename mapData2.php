@@ -1,6 +1,6 @@
 <?php
 	header("Cache-control: no-cache");
-	header('Content-type: application/xml;charset=UTF-8;',true);
+	header('Content-type: application/xml;charset=iso-8859-1;',true);
 	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
 	$dbc = new DBConnection();
 	$dbh = $dbc->connect();
