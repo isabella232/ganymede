@@ -91,6 +91,7 @@
 	<hr class="clearer"/>
 
  <script type="text/javascript">
+    checkReq('');
     if (GBrowserIsCompatible()) {
       // arrays to hold copies of the markers used by the side_bar
       // because the function closure trick doesnt work there
@@ -145,7 +146,7 @@
             map.addOverlay(marker);
           }
           // Markers have all been added, lets check to see if they should be visible
-          checkReq('');
+
           checkVisibility('Blog');
           checkVisibility('Message');
           checkVisibility('Recording');

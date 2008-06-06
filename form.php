@@ -54,9 +54,9 @@
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input name="type" type="radio" id="Blog" checked onclick="checkReq('Blog');"/>Blog
-								<input name="type" type="radio" id="Message" onclick="checkReq('Message');"/>Message
-								<input name="type" type="radio" id="Recording" onclick="checkReq('Recording');"/>Recording
+								<input name="type" type="radio" value="Blog" id="Blog" checked onclick="checkReq('Blog');"/>Blog
+								<input name="type" type="radio" value="Message" id="Message" onclick="checkReq('Message');"/>Message
+								<input name="type" type="radio" value="Recording" id="Recording" onclick="checkReq('Recording');"/>Recording
 							</td>
 						</tr>
 						<tr>

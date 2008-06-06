@@ -88,7 +88,7 @@
 					<td width="300"><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
 					<td width="200"><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
 					<td width="150"><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
-x					<td>Content</td>
+					<td>Content</td>
 				</tr>
 				<? while ($rr = mysql_fetch_array($result)) { ?>
 				<tr>
