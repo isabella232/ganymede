@@ -39,7 +39,7 @@
 		
 		<p>
 		<table align="top">
-			<tr>
+			<tr height="250">
 				<td valign="top" width="260"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" height="200" width="250" border="0"></a><br>
 				<b>Closer than you Might Imagine</b></p></td>
 				<td valign="top" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" height="200" width="141" border="0"></a><br>
@@ -51,7 +51,7 @@
 			</tr>
 		</table>
 		<table>
-			<tr>
+			<tr height="250">
 				<td valign="top" width="278"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103138" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103138" height="200" width="268" border="0"></a><br>
 				<b>Gene Simmons Never Had Ganymede</b></td>	
 				<td valign="top" width="167"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" height="200" width="157" border="0"></a><br>
@@ -63,7 +63,7 @@
 			</tr>
 		</table>
 		<table>
-			<tr>	
+			<tr height="250">	
 				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" height="200" width="135" border="0"></a><br>
 				<b>Ratatouille</b></td>				
 				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" height="200" width="135" border="0"></a><br>
@@ -74,7 +74,7 @@
 				<b>Train to Catch</b></td>
 			</tr>
 		<table>
-			<tr>
+			<tr height="250">
 				<td valign="top" width="163"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103391" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103391" height="200" width="153" border="0"></a><br>
 				<b>Transformers</b></td>
 				<td valign="top" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102974" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102974" height="200" width="141" border="0"></a><br>
