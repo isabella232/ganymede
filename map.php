@@ -142,11 +142,11 @@
            	{
            		typeText = type + ' - <a href="' + url + '" target=_"blank">' + url.substring(7) + '</a>';    		
 			}
-			elseif ((title.length > 0) && (url.length == 0)) // No URL supplied so just display the title;
+			else if ((title.length > 0) && (url.length == 0)) // No URL supplied so just display the title;
 			{
 				typeText = type + ' - ' + title;
 			}
-			elseif ((title.lenght >0) && (url.length > 0)) // We have both lets display both.
+			else if ((title.lenght >0) && (url.length > 0)) // We have both lets display both.
 			{			            
             	typeText = type + ' - <a href="' + url + '" target=_"blank">' + title + '</a>';    
             }
