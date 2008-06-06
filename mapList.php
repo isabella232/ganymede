@@ -106,7 +106,7 @@
 							echo "<br/>";
 						}
 						elseif ($url != "") { // We have no url field -> echo Title 
-							echo " - " . $rr['title'];
+							echo " - " . $rr['title']. '<br/>';
 						}
 						elseif ($rr['title'] != "") { // We have no title field -> echo URL
 							echo ' - <a href="'.$url.'" target="_blank">' .$url. '</a><br/>'; 								
