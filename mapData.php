@@ -7,6 +7,7 @@
 	$query = "SELECT * from ganymede_spots as GS INNER JOIN ganymede_content as GC on GS.id = GC.id";
 	$result = mysql_query ($query) or die ($query . mysql_error());
 ?>
+<?xml version="1.0" ?>
 <markers>
 <?
 	while ($rr = mysql_fetch_array($result))
