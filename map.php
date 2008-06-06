@@ -146,7 +146,7 @@
 			{
 				typeText = type + ' - ' + title;
 			}
-			else if ((title.lenght >0) && (url.length > 0)) // We have both lets display both.
+			else if ((title.length > 0) && (url.length > 0)) // We have both lets display both.
 			{			            
             	typeText = type + ' - <a href="' + url + '" target=_"blank">' + title + '</a>';    
             }
