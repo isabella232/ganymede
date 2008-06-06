@@ -102,13 +102,13 @@
 							}
 						}
 						
-						if (($rr['title'] != "") && ($url != "")) { //We have no title or URL -> Break
+						if (($rr['title'] == "") && ($url == "")) { //We have no title or URL -> Break
 							echo "<br/>";
 						}
-						elseif ($url != "") { // We have no url field -> echo Title 
+						elseif ($url == "") { // We have no url field -> echo Title 
 							echo " - " . $rr['title']. '<br/>';
 						}
-						elseif ($rr['title'] != "") { // We have no title field -> echo URL
+						elseif ($rr['title'] == "") { // We have no title field -> echo URL
 							echo ' - <a href="'.$url.'" target="_blank">' .$url. '</a><br/>'; 								
 						}
 						else { //We must have both.
