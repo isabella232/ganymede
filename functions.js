@@ -62,11 +62,11 @@ function checkReq(element) {
 		var b = document.getElementById('Blog');
 		var m = document.getElementById('Message');
 		var r = document.getElementById('Recording');
-		if (b.checked == TRUE)
+		if (b.checked == "on")
 		{ element = 'Blog';}
-		if (m.checked == TRUE)
+		if (m.checked == "on")
 		{ element = 'Message';}
-		if (r.checked == TRUE)
+		if (r.checked == "on")
 		{ element = 'Recording';}
 	}
 	if (element == 'Blog')
