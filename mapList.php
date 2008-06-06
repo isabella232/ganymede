@@ -96,6 +96,7 @@
 					<td>
 						<? echo ucfirst($rr['type']);
 						$url = $rr['url'];
+						var_dump ($url);
 						$titleStart = " - ";
 						$titleEnd = "";
 						if ($url != "") {
