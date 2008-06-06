@@ -40,13 +40,13 @@
 		<p>
 		<table align="top">
 			<tr>
-				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" height="200" border="0"></a><br>
+				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" height="200" width="250" border="0"></a><br>
 				<b>Closer than you Might Imagine</b></p></td>
-				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" height="200" border="0"></a><br>
+				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" height="200" width="141" border="0"></a><br>
 				<b>Community created... Ganymede!</b></td>
-				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103205" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103205" height="200" border="0"></a><br>
+				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103205" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103205" height="200" width="135" border="0"></a><br>
 				<b>Enchanted</b></td>
-				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103024" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103024" height="200" border="0"></a><br>
+				<td valign="top" width="200"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103024" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103024" height="200" width="170" border="0"></a><br>
 				<b>Ganymede Train</b></td>
 			</tr>
 		</table>
@@ -64,13 +64,13 @@
 		</table>
 		<table>
 			<tr>	
-				<td valign="top" halign="center" width="260"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" height="200" width="250" border="0"></a><br>
+				<td valign="top" halign="center" width="260"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" height="200" border="0"></a><br>
 				<b>Ratatouille</b></td>				
-				<td valign="top" halign="center" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" height="200" width="141" border="0"></a><br>
+				<td valign="top" halign="center" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" height="200" border="0"></a><br>
 				<b>Sunshine</b></td>				
-				<td valign="top" halign="center" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" height="200" width="135" border="0"></a><br>
+				<td valign="top" halign="center" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" height="200" border="0"></a><br>
 				<b>Train about to Leave</b></td>
-				<td valign="top" halign="center" width="180"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" height="200" width="170" border="0"></a><br>
+				<td valign="top" halign="center" width="180"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" targer="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" height="200" border="0"></a><br>
 				<b>Train to Catch</b></td>
 			</tr>
 		<table>
