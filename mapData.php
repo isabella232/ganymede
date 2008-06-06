@@ -36,7 +36,7 @@
 		
 		$content = $rr['content'];
 		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" location="<?=$location;?>" author="<?=$name;?>" title="<?=$title;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
-			<? if ($type == "Message") { ?><![CDATA[<?=$content;?>]]> <? } ?>
+			<![CDATA[<?=$content;?>]]>
 		</marker> 
 		<?
 	} ?>
