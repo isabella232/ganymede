@@ -22,6 +22,7 @@
 		$location_lng = $rr['location_lng'] + $randLng;
 		$location = $location_city . ', ' . $location_country;
 		$email = $rr['email'];
+		$title = $rr['title'];
 		$type = ucfirst($rr['type']);
 		if ($type != "Message")
 		{
@@ -34,7 +35,7 @@
 		}
 		
 		$content = $rr['content'];
-		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" location="<?=$location;?>" author="<?=$name;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
+		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" location="<?=$location;?>" author="<?=$name;?>" title="<?=$title;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
 			<? if ($type == "Message") { ?><![CDATA[<?=$content;?>]]> <? } ?>
 		</marker> 
 		<?
