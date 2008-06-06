@@ -42,7 +42,7 @@ function validateForm() {
 	}
 	if (type[1].checked == false)
 	{
-		if ( (url.value.length == 0) || (url.value.search('/^http\:\/\//') != -1)
+		if ( (url.value.length == 0) || (url.value.search('/^http\:\/\//') != -1) )
 		{ 
 			alert("Please provide a url for your content.");
 			return false;
