@@ -45,6 +45,6 @@
 </markers>
 
 <? $xml = ob_get_clean();
-	mb_convert_encoding($xml, "iso-8859-1");
+	mb_convert_encoding($xml, "UTF-8");
 	echo $xml;
 ?>
