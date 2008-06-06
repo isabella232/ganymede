@@ -23,10 +23,10 @@
 		$location = $location_city . ', ' . $location_country;
 		$email = $rr['email'];
 		$title = $rr['title'];
+		$url = $rr['url'];
 		$type = ucfirst($rr['type']);
 		if ($type != "Message")
 		{
-			$url = $rr['url'];
 			if (strpos($url, "http://") === FALSE) 
 			{
 				$url = "http://" . $url;
