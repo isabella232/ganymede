@@ -147,6 +147,7 @@
             map.addOverlay(marker);
           }
           // Markers have all been added, lets check to see if they should be visible
+          checkReq('');
           checkVisibility('Video');
           checkVisibility('Podcast');
           checkVisibility('Image');

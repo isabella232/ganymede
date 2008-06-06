@@ -53,23 +53,23 @@
 							<td><input type="text" name="country" id="country"/></td>
 						</tr>
 						<tr>
-							<td>Type<span class="required">*</span>:</td>
-							<td>
-								<select name="type" id="type" onchange="showURL(this)">
-									<option value="blog">Blog</option>
-									<option value="image">Image</option>
-									<option value="podcast">Podcast</option>
-									<option value="message">Message</option>
-									<option value="video" selected>Video</option>
-								</select>
+							<td colspan="2">
+								<input name="type" type="radio" id="Blog" checked onclick="checkReq('Blog');"/>Blog
+								<input name="type" type="radio" id="Message" onclick="checkReq('Message');"/>Message
+								<input name="type" type="radio" id="Recording" onclick="checkReq('Recording');"/>Recording
 							</td>
 						</tr>
 						<tr>
-							<td><div id="urlDiv">URL<span class="required">*</span>:</div></td>
-							<td><div id="urlDiv2"><input type="text" name="url" id="url" value="http://"/></div></td>
+							<td><div id="">Title:</div></td>
+							<td><div id=""><input type="text" name="title" id="title" value=""/></div></td>
+						</tr>
 						<tr>
-							<td valign="top"><div id="messageDiv" class="invisible">Message<span class="required">*</span>:</div></td>
-							<td><div id="messageDiv2" class="invisible"><textarea cols=15 name="content" id="content"></textarea></div></td>
+							<td>URL<span id="urlReq"class="required">*</span>:</td>
+							<td><input type="text" name="url" id="url" value="http://"/></td>
+						</tr>
+						<tr>
+							<td valign="top">Message<span id="messageReq" class="required invisible">*</span>:</td>
+							<td valign="top"><textarea cols=15 name="content" id="content"></textarea><br/><span style="font-size:80%;">(256 Character Max)</span></td>
 						</tr>						
 						<tr>
 							<td colspan="2"><br/></td>
