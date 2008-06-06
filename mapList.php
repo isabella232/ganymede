@@ -98,7 +98,7 @@
 						if (strpos($url, 'http://') === FALSE) 
 							$url = "http://" . $url;
 						?>
-							<?=$rr['type'];?> - 
+							<?=ucfirst($rr['type']);?> -
 							<a href="<?=$url;?>" target="_blank">
 								<? if ($rr['title'] != "") {  echo $rr['title'];
 								 } else { 
