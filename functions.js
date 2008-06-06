@@ -7,7 +7,7 @@ function validateForm() {
 	var lat = document.getElementById('lat');
 	var lng = document.getElementById('lng');
  	var url = document.getElementById('url');
- 	var type = document.getElementById('type');
+ 	var type = document.getElementsByName('type');
  	if (n.value.length == 0)
  	{
  		alert("Please specify your name.");
