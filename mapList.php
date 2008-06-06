@@ -94,19 +94,21 @@
 					<td><?=$rr['name']; ?></td>
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
 					<td>
-						<? $url = $rr['url']; 
+						<? echo ucfirst($rr['url']);
+						$url = $rr['url'];
 						if ($url != "") {
 							if (strpos($url, 'http://') === FALSE) 
 							{$url = "http://" . $url;}
 						}
+						echo '<a href="$url" target="_blank">';
+						if ($rr['title'] != "") {  
+							echo $rr['title'];
+						} 
+						else { 
+							echo $url;
+						}
+						echo '</a><br/>' . $rr['content'];
 						?>
-							<?=ucfirst($rr['type']);?> -
-							<a href="<?=$url;?>" target="_blank">
-								<? if ($rr['title'] != "") {  echo $rr['title'];
-								 } else { 
-								 echo $url; ?>
-							</a><br/>
-							<?=$rr['content']; ?>
 					</td>
 				</tr>
 				<? } ?>	
