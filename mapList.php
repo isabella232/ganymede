@@ -50,11 +50,10 @@
 		<?
 		return ob_get_clean();
 	}	
-
+	$start = 0;
 	$start = $_GET['start'];
 	$pageValue = 25;
-	if (!$start)
-		$start = 0;
+	
 		
 	$pager = " LIMIT $start, $pageValue";
 	
