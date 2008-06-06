@@ -111,7 +111,7 @@
 						else { 
 							$title = $titleStart . $url . $titleEnd;
 						}
-						if ($title != " - ")
+						if ($title != "- ")
 						{
 							echo $title . '<br/>';		
 						}
