@@ -137,7 +137,10 @@
             var type = markers[i].getAttribute("type");
             var typeText = type;    
             var title = markers[i].getAttribute('title');
-
+			if (url == "http://")
+			{
+				url = "";
+			}
            	if ((title.length == 0) && (url.length > 0)) // No title supplied so just display URL
            	{
            		typeText = type + ' - <a href="' + url + '" target=_"blank">' + url.substring(7) + '</a>';    		
