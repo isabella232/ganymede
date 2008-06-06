@@ -25,13 +25,9 @@
 		$title = $rr['title'];
 		$url = $rr['url'];
 		$type = ucfirst($rr['type']);
-		if ($type != "Message")
+		if (strpos($url, "http://") === FALSE) 
 		{
-			if (strpos($url, "http://") === FALSE) 
-			{
-				$url = "http://" . $url;
-			}
-			
+			$url = "http://" . $url;
 		}
 		
 		$content = $rr['content'];
