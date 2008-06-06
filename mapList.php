@@ -111,7 +111,11 @@
 						else { 
 							$title = $titleStart . $url . $titleEnd;
 						}
-						echo $title . '<br/>' . $rr['content'];
+						if ($title != " - ")
+						{
+							echo $title . '<br/>';		
+						}
+						echo $rr['content'];
 						?>
 					</td>
 				</tr>
