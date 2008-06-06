@@ -45,6 +45,6 @@
 </markers>
 
 <? $xml = ob_get_clean();
-	mb_convert_encoding($xml, 'HTML_ENTITIES');
+	mb_convert_encoding($xml, "HTML-ENTITIES");
 	echo $xml;
 ?>
