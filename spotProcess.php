@@ -27,10 +27,6 @@
 	require_once("/home/data/httpd/eclipse-php-classes/system/dbconnection_rw.class.php");
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
-
-	
-	if ($type == "Message")
-		$url = "";
 	
 	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
 	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
