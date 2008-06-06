@@ -57,7 +57,7 @@
 	  			<tr>
 	  	  			<td style="text-align:center;font-size:120%" colspan="2">
 	  	  			  <h1>Ganymede Around the World</h1>
-	  	  			  <div align="center" style="width:100%"><p class="contestText">Join the Eclipse global community.  Tell us how you are using the new Eclipse Ganymede release and have an opportunity to <a href="./aroundtheworld.php">win cool Eclipse stuff.</a></p> </div>
+	  	  			  <div align="center" style="width:100%"><p class="contestText">Join the Eclipse global community.  Write a blog, record a video/podcast, or leave a message on how you are using the new Ganymede release and have an opportunity to <b>win cool Eclipse stuff</b>. <a href="./aroundtheworld.php">Full details here</a>.</p> </div>
 	  	  			</td>
 	  	  		</tr>
 				<tr>	

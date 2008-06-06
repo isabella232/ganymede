@@ -86,15 +86,15 @@
 			<table cellspacing=0 cellpadding=0 class="list" width="700">
 				<tr class="header">	
 					<td width="300"><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
-					<td width="150"><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
 					<td width="200"><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
-					<td>Content</td>
+					<td width="150"><a href="<?$_SERVER['PHP_SELF'];?>?sort=type">Type</a></td>
+x					<td>Content</td>
 				</tr>
 				<? while ($rr = mysql_fetch_array($result)) { ?>
 				<tr>
 					<td><?=$rr['name']; ?></td>
-					<td><?=ucfirst($rr['type']); ?></td>
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
+					<td><?=ucfirst($rr['type']); ?></td>
 					<td>
 						<?	 $url = $rr['url'];
 							if ($rr['type'] != "message") 
