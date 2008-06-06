@@ -52,9 +52,9 @@
 	}	
 	if (isset($_GET['start']))
 		$start = $_GET['start'];
-	$pageValue = 25;
-	if (isset($start))
+	else 
 		$start = 0;
+	$pageValue = 25;
 		
 	$pager = " LIMIT $start, $pageValue";
 	
