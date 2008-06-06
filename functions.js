@@ -137,6 +137,7 @@ function toggleType(type)
   
 function checkVisibility(type)
 {
+	typeFilter = type + 'Filter';
 	var e = document.getElementById(type);
 
 	for (i=0; i<gmarkers.length; i++)
