@@ -74,9 +74,9 @@
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" id="Blog" checked onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
-	  	  					<input type="checkbox" id="Message" checked onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
-	  	  					<input type="checkbox" id="Recording" checked onclick="toggleType('Recording')"/>Recording (<?=getTypeCount('recording');?>)
+	  	  					<input type="checkbox" id="BlogFilter" checked onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
+	  	  					<input type="checkbox" id="MessageFilter" checked onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
+	  	  					<input type="checkbox" id="RecordingFilter" checked onclick="toggleType('Recording')"/>Recording (<?=getTypeCount('recording');?>)
 	  	  				</div>
 	  	  			</td>
 	  	  			<td class="right">&nbsp;</td>
