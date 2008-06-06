@@ -138,17 +138,21 @@
             var typeText = type;    
             var title = markers[i].getAttribute('title');
 
-           	if ((title.length == 0) && (url.length > 0) // No title supplied so just display URL
+           	if ((title.length == 0) && (url.length > 0)) // No title supplied so just display URL
            	{
            		typeText = type + ' - <a href="' + url + '" target=_"blank">' + url.substring(7) + '</a>';    		
 			}
-			elseif ((title.length > 0) && (url.length == 0) // No URL supplied so just display the title;
+			elseif ((title.length > 0) && (url.length == 0)) // No URL supplied so just display the title;
 			{
 				typeText = type + ' - ' + title;
 			}
-			elseif ((title.lenght >0) && (url.length > 0) // We have both lets display both.
+			elseif ((title.lenght >0) && (url.length > 0)) // We have both lets display both.
 			{			            
             	typeText = type + ' - <a href="' + url + '" target=_"blank">' + title + '</a>';    
+            }
+            else 
+            {
+            	typeText = type;
             }
             
             var html = '<div class="infoWindow"><b>' + author + '</b><br/>' + location + '<br/>' + typeText + '<br/><br/>' + markers[i].textContent + '</div>';
