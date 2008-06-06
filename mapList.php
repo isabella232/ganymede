@@ -95,8 +95,10 @@
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
 					<td>
 						<? $url = $rr['url']; 
-						if (strpos($url, 'http://') === FALSE) 
-							$url = "http://" . $url;
+						if ($url != "") {
+							if (strpos($url, 'http://') === FALSE) 
+							{$url = "http://" . $url;}
+						}
 						?>
 							<?=ucfirst($rr['type']);?> -
 							<a href="<?=$url;?>" target="_blank">
