@@ -20,21 +20,22 @@
 	$pageAuthor		= "Nathan Gervais";
 	# End: page-specific settings
 	#
+
+	extract($_POST);
 	
 	# Place your html content in a file called content/en_pagename.php
 	require_once("/home/data/httpd/eclipse-php-classes/system/dbconnection_rw.class.php");
-	
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
-	extract($_POST);
+
 	
-	if ($type == "message")
+	if ($type == "Message")
 		$url = "";
 	
 	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
 	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
 	$retVal = mysql_insert_id($dbh);
-	$query = "INSERT INTO ganymede_content (id, type, content, url) VALUES ($retVal, '$type', '$content', '$url')";
+	$query = "INSERT INTO ganymede_content (id, type, content, url, title) VALUES ($retVal, '$type', '$content', '$url', '$title')";
 	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
 	ob_start();
 	?>
