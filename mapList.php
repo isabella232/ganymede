@@ -94,17 +94,13 @@
 					<td><?=$rr['name']; ?></td>
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
 					<td>
-						<?	 $url = $rr['url'];
-							if ($rr['type'] != "message") 
-							{ ?>
-							<?=$rr['type'];?>
+						<? $url = $rr['url']; ?>
+							<?=$rr['type'];?> - 
 							<a href="<? if (strpos($url, 'http://') === FALSE) $url = "http://" . $url;?><?=$url;?>" target="_blank">
 								<? if ($rr['title'] != "") { ?><?=$rr['title'];?>
 								<? } else { ?>
 								 <?=$url;}?>
-							</a>
-						<? } 
-						else { ?>
+							</a><br/>
 							<?=$rr['content']; }?>
 					</td>
 				</tr>
