@@ -96,6 +96,9 @@
 					<td>
 						<? echo ucfirst($rr['type']) . " ";
 						$url = $rr['url'];
+						if ($url == "http://") {
+							$url = "";	
+						}
 						if ($url != "") {
 							if (strpos($url, 'http://') === FALSE) {
 								$url = "http://" . $url;
