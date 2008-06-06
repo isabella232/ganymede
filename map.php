@@ -74,11 +74,9 @@
 	  	  		<tr>
 	  	  			<td align="center" class="left">
 	  	  				<div id="filters">
-	  	  					<input type="checkbox" id="Video" checked onclick="toggleType('Video')"/>Video (<?=getTypeCount('video');?>)
-	  	  					<input type="checkbox" id="Podcast" checked onclick="toggleType('Podcast')"/>Podcast (<?=getTypeCount('podcast');?>)
-	  	  					<input type="checkbox" id="Image" checked onclick="toggleType('Image')"/>Image (<?=getTypeCount('image');?>)
 	  	  					<input type="checkbox" id="Blog" checked onclick="toggleType('Blog')"/>Blog (<?=getTypeCount('blog');?>) 
 	  	  					<input type="checkbox" id="Message" checked onclick="toggleType('Message')"/>Message (<?=getTypeCount('message');?>)
+	  	  					<input type="checkbox" id="Recording" checked onclick="toggleType('Recording')"/>Recording (<?=getTypeCount('recording');?>)
 	  	  				</div>
 	  	  			</td>
 	  	  			<td class="right">&nbsp;</td>
@@ -148,11 +146,9 @@
           }
           // Markers have all been added, lets check to see if they should be visible
           checkReq('');
-          checkVisibility('Video');
-          checkVisibility('Podcast');
-          checkVisibility('Image');
           checkVisibility('Blog');
           checkVisibility('Message');
+          checkVisibility('Recording');
         }
       }
       request.send(null);
