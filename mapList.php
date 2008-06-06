@@ -102,7 +102,7 @@
 							if (strpos($url, 'http://') === FALSE) {
 								$url = "http://" . $url;
 							}
-							$titleStart = '<a href="'.$url.'" target="_blank">';
+							$titleStart = ' - <a href="'.$url.'" target="_blank">';
 							$titleEnd = '</a>'; 
 						}
 						if ($rr['title'] != "") {  
