@@ -94,12 +94,15 @@
 					<td><?=$rr['name']; ?></td>
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
 					<td>
-						<? $url = $rr['url']; ?>
+						<? $url = $rr['url']; 
+						if (strpos($url, 'http://') === FALSE) 
+							$url = "http://" . $url;
+						?>
 							<?=$rr['type'];?> - 
-							<a href="<? if (strpos($url, 'http://') === FALSE) $url = "http://" . $url;?><?=$url;?>" target="_blank">
-								<? if ($rr['title'] != "") { ?><?=$rr['title'];?>
-								<? } else { ?>
-								 <?=$url;}?>
+							<a href="<?=$url;?>" target="_blank">
+								<? if ($rr['title'] != "") {  echo $rr['title'];
+								 } else { 
+								 echo $url; ?>
 							</a><br/>
 							<?=$rr['content']; ?>
 					</td>
