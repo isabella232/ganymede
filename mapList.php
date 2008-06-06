@@ -94,7 +94,7 @@
 					<td><?=$rr['name']; ?></td>
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
 					<td>
-						<? echo ucfirst($rr['url']);
+						<? echo ucfirst($rr['type']);
 						$url = $rr['url'];
 						$titleStart = "";
 						$titleEnd = "";
