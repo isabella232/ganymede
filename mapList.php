@@ -94,9 +94,9 @@
 					<td><?=$rr['name']; ?></td>
 					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
 					<td>
-						<? echo ucfirst($rr['type']);
+						<? echo ucfirst($rr['type']) . " ";
 						$url = $rr['url'];
-						$titleStart = " - ";
+						$titleStart = "- ";
 						$titleEnd = "";
 						if ($url != "") {
 							if (strpos($url, 'http://') === FALSE) {
