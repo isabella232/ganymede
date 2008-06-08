@@ -37,7 +37,7 @@
 		}
 		
 		$content = $rr['content'];
-		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" location="<?=$location;?>" author="<?=$name;?>" title="<?=$title;?>" type="<?=$type;?>" <? if (isset($url)) { ?>url="<?=$url;?>" <? } ?>>
+		?><marker lat="<?=$location_lat;?>" lng="<?=$location_lng;?>" location="<?=$location;?>" author="<?=$name;?>" <? if ($title != "") { ?> title="<?=$title;?>" <? } ?> type="<?=$type;?>" <? if ($url != "") { ?> url="<?=$url;?>" <? } ?>>
 			<? if ($content != "") {?><![CDATA[<?=$content;?>]]><? } ?>
 		</marker> 
 		<?
