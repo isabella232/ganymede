@@ -235,6 +235,5 @@ function gMapStart() {
       alert("Sorry, the Google Maps API is not compatible with this browser");
     }	
 }
-}
   
 			
