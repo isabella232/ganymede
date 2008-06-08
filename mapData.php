@@ -4,7 +4,7 @@
 	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
 	$dbc = new DBConnection();
 	$dbh = $dbc->connect();
-	$query = "SELECT * from ganymede_spots as GS INNER JOIN ganymede_content as GC on GS.id = GC.id LIMIT 1";
+	$query = "SELECT * from ganymede_spots as GS INNER JOIN ganymede_content as GC on GS.id = GC.id";
 	$result = mysql_query ($query) or die ($query . mysql_error());
 	ob_start();
 	?>
