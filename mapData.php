@@ -25,7 +25,7 @@
 		$location = $location_city . ', ' . $location_country;
 		$email = $rr['email'];
 		$title = htmlspecialchars($rr['title']);
-		$url = $rr['url'];
+		$url = htmlspecialchars($rr['url']);
 		$type = ucfirst($rr['type']);
 		if (strpos($url, "http://") === FALSE) 
 		{
