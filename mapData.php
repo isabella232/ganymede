@@ -24,7 +24,8 @@
 		$location_lng = $rr['location_lng'] + $randLng;
 		$location = $location_city . ', ' . $location_country;
 		$email = $rr['email'];
-		$title = htmlspecialchars($rr['title']);
+		$title = $rr['title'];
+		$title = str_ireplace('&', 'and', $title);
 		$url = $rr['url'];
 		$type = ucfirst($rr['type']);
 		if (strpos($url, "http://") === FALSE) 
