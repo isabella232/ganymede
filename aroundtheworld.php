@@ -85,6 +85,9 @@
 				<li><a href="map.php">Ganymede Map</a></li>
 			</ul>
 		</div>
+		<div align="center">
+			<a href="/donate/"><img src="images/ganymede.gif"/></a>
+		</div>
 	</div>	
 	
 	
