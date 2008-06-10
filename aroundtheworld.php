@@ -33,8 +33,8 @@
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
-<div id="maincontent">
-	<div id="midcolumn">
+<div id="widecontainer">
+	<div id="midcolumnwide">
 		<h1>$pageTitle</h1>
 	
 		<p>We want to hear how you&#146;re using the Eclipse projects in the <a href="http://www.eclipse.org/ganymede/">Ganymede</a> release. 
@@ -77,7 +77,7 @@
 	</div>
 
 	<!-- remove the entire <div> tag to omit the right column!  -->
-	<div id="rightcolumn">
+	<div id="rightcolumnwide">
 		<div class="sideitem">
 			<h6>Ganymede Around the World</h6>
 			<ul>
