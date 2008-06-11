@@ -28,45 +28,40 @@
 	# Place your html content in a file called content/en_pagename.php
 
 	ob_start();
-	?>
+	?>	<link type="text/css" href="style.css" rel="stylesheet"/>
 		<body>
-			<div id="midcolumn">
-				<h2><?=$pageTitle; ?></h2><br/><br/>
-				<table width="100%" align="center">
+			<div id="ganymedeHeader">
+				<div id="headerGraphic">&nbsp;</div>
+			</div>
+			<div id="widecontent">
+			
+			<br/>
+				<table width="60%" align="center">
 					<tr>
-						<td align="right">
-							<a href="http://wiki.eclipse.org/Ganymede"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png"/></a>
-						</td>
-						<td align="left">
-							<a href="http://wiki.eclipse.org/Ganymede">Ganymede Development Wiki</a>
-						</td>
-						<td align="right">
-							<a href="/downloads/packages/"><img src="http://dev.eclipse.org/huge_icons/apps/system-installer.png"/></a>
-						</td>
-						<td align="left">
-							<a href="/downloads/packages/">Ganymede Milestone Releases</a>
+						<td colspan="3">
+							<p>Eclipse Ganymede is the annual release of Eclipse projects. Like last year’s Europa release, the Ganymede release is a coordinated release of different Eclipse project teams. This year, the annual release includes 24 projects. By releasing these projects at the same time, the goal is to eliminate uncertainty about version compatibility and make it easier to incorporate multiple projects into your environment.
+							<br/><br/><i>While Ganymede is about the simultaneous release of twenty four projects, it is not a unification of the projects - each project remains a separate open source project operating with its own project leadership, its own committers, and its own project plan.</i><br/><br/></p> 
 						</td>
 					</tr>
 					<tr>
-						<td align="right">
-							<a href="map.php"><img src="images/map.png"/></a>
+						<td align="center">
+							<a href="/downloads/packages/"><img src="http://dev.eclipse.org/huge_icons/actions/document-save.png"/></a><br/>
+							<a href="/downloads/packages/">Download Ganymede</a>
+						</td>					
+						<td align="center">
+							<a href="http://wiki.eclipse.org/Ganymede"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png"/></a><br/>
+							<a href="http://wiki.eclipse.org/Ganymede">Learn more about Ganymede</a>
 						</td>
-						<td align="left">
-							<a href="map.php">Ganymede Around the World</a>
-						</td>
-						<td align="right">
-							<a href="friends.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png"/></a>
-						</td>
-						<td align="left">
-							<a href="friends.php">Friends of Ganymede</a>
+						<td align="center">
+							<a href="map.php"><img src="images/map.png"/></a><br/><a href="map.php">Ganymede Buzz</a>
 						</td>
 					</tr>
 				</table>
-				<br/><br/><br/>
+				<br/><br/><br/><br/>
 			</div>
 		</body>
 	<?
 	$html = ob_get_clean();
 	# Generate the web page
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
