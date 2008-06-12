@@ -46,7 +46,7 @@ function projectTable($pillarType)
 		$url = $projectInfoIterator->projecturl;
 		
 	?>	<tr class="tableRow">
-			<td><b><?=$projectName;?> <?=$projectShortName;?></b></td>
+			<td><b><?=$projectName;?></b></td>
 			<td align="center"><a href="<?=$url;?>"><img src="images/homepage.gif"></a></td>
 			<td align="center">1.5</td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
