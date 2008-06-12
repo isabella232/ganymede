@@ -36,7 +36,7 @@ function projectTable($pillarType)
 		
 	?>	<tr class="tableRow">
 			<td><b><?=$projectName;?> <?=$projectShortNamel;?></b></td>
-			<td align="center"><a href="<?=$ ?>"><img src="images/homepage.gif"></a></td>
+			<td align="center"><a href="<? ?>"><img src="images/homepage.gif"></a></td>
 			<td align="center">1.5</td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/downloads/">Download</a></td>
