@@ -12,10 +12,10 @@ function findGanymedeRelease($releases)
 		if ($rr->date == "2008-06-25")
 		{
 			$retval['download'] =  $rr->download;
-			$retvla['version'] = $rr->name;
+			$retval['version'] = $rr->name;
 		}
 	}
-
+	return $retval;
 }
 
 function projectTable($pillarType)
@@ -55,8 +55,7 @@ function projectTable($pillarType)
 			<td align="center"><?=$releaseInfo['version'];?></td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
 			<td align="center"><a href="<?=$releaseInfo['download'];?>/">Download</a></td>
-		</tr> 
-	<?
+		</tr> <?
 	}
 	?> 
 	</table>
