@@ -44,7 +44,8 @@ function projectTable($pillarType)
 	<?
 	}
 	
-	
+	$releases = $projectInfoIterator->releases;
+	var_dump($releases);
 	?> 
 	</table>
 	<?
