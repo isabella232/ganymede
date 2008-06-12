@@ -4,6 +4,14 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/smartconnection.class.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
 
+function findGanymedeRelease($releases)
+{
+	foreach ($releases as $rr)
+	{
+		var_dump($rr);
+	}
+}
+
 function projectTable($pillarType)
 {
 	ob_start();
@@ -49,8 +57,8 @@ function projectTable($pillarType)
 	</table>
 	<?	
 	
-	$releases = $projectInfoIterator->releases;
-	echo "<pre>" . var_dump($releases) . "</pre>";
+	findGanymedeRelease($releases);
+	
 	$html = ob_get_contents();
 	ob_end_clean();
 	
