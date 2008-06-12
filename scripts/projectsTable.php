@@ -32,7 +32,7 @@ function projectTable($pillarType)
 			<td class="tableHeader" width="35%">Project Name</td>
 			<td class="tableHeader" width="10%" align="center">Project Summary</td>
 			<td class="tableHeader" width="12%" align="center">Version</td>
-			<td class="tableHeader" width="12%" align="center">New And Noteworthy</td>
+			<? /*<td class="tableHeader" width="12%" align="center">New And Noteworthy</td>*/ ?>
 			<td class="tableHeader" width="12%" align="center">Download</td>
 		</tr>
 	<?
@@ -57,7 +57,7 @@ function projectTable($pillarType)
 			<td><b><?=$projectName;?></b></td>
 			<td align="center"><a href=http://www.eclipse.org/projects/project_summary.php?projectid=<?=$projectid;?>"><img src="images/homepage.gif"></a></td>
 			<td align="center"><?=$releaseInfo['version'];?></td>
-			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
+			<? /*><td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td> */ ?>
 			<td align="center"><? if ($downloadurl != "") {?><a href="<?=$downloadurl;?>">Download</a> <? } ?></td>
 		</tr> <?
 	}
