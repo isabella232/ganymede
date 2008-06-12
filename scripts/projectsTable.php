@@ -41,11 +41,6 @@ function projectTable($pillarType)
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/downloads/">Download</a></td>
 		</tr> 
-		<tr>
-			<td colspan=5>
-				<pre><? var_dump($projectInfoIterator); ?></pre>
-			</td>
-		</tr>	
 	<?
 	}
 	
