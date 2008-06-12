@@ -6,13 +6,16 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/p
 
 function findGanymedeRelease($releases)
 {
+	$retval = array();
 	foreach ($releases as $rr)
 	{
 		if ($rr->date == "2008-06-25")
 		{
-			echo $rr->download;
+			$retval['download'] =  $rr->download;
+			$retvla['version'] = $rr->name;
 		}
 	}
+
 }
 
 function projectTable($pillarType)
@@ -44,24 +47,20 @@ function projectTable($pillarType)
 		$projectShortName = $projectInfoIterator->projectshortname;
 		$download = $projectInfoIterator->downloadsurl;
 		$url = $projectInfoIterator->projecturl;
-		
+		$releases = $projectInfoIterator->releases;
+		$releaseInfo = findGanymedeRelease($releases);
 	?>	<tr class="tableRow">
 			<td><b><?=$projectName;?></b></td>
 			<td align="center"><a href="<?=$url;?>"><img src="images/homepage.gif"></a></td>
-			<td align="center">1.5</td>
+			<td align="center"><?=$releaseInfo['version'];?></td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
-			<td align="center"><a href="http://www.eclipse.org/ajdt/downloads/">Download</a></td>
+			<td align="center"><a href="<?=$releaseInfo['download'];?>/">Download</a></td>
 		</tr> 
 	<?
 	}
-	
-
 	?> 
 	</table>
 	<?	
-	$releases = $projectInfoIterator->releases;
-	findGanymedeRelease($releases);
-	
 	$html = ob_get_contents();
 	ob_end_clean();
 	
