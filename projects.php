@@ -22,15 +22,13 @@
 	ob_start();
 	?>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
-	<div id="midcolumn">
-		<div id="headerBG">
-			<table cellspacing=0 class="headerBar release">
-	        	<tr>
-	        		<td align="right"><img src="images/tabDate.gif" align="right" id="dateTab""></td>
-				</tr>				
-			</table>
-		</div>		
+	<div id="ganymedeHeader">
+		<div id="headerGraphic">&nbsp;</div>
+	</div>
+	<div id="widecontent">
+		<div id="midcolumnwide">
 		<?=projectTable(GANYMEDE);?><br/><br/>
+		</div>
 	</div>
 
 <? 
