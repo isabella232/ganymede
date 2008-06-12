@@ -15,8 +15,8 @@
 	require_once ($documentRoot .'/ganymede/scripts/projectsTable.php');
 	
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Eclipse Europa Release Projects";
-	$pageKeywords	= "Eclipse Europa Simultaneous Release";
+	$pageTitle 		= "Eclipse Ganymede Release Projects";
+	$pageKeywords	= "eclipse ganymede, ganymede, ganymede release train";
 	$pageAuthor		= "Nathan Gervais";	
 	
 	ob_start();
