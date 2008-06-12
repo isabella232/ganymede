@@ -10,7 +10,7 @@ function ganymedeBlogs($count=10) {
 	echo "<ul>";
 	while ($rr = mysql_fetch_array($result))
 	{
-		$author = $rr['author'];
+		$author = $rr['name'];
 		$title  = $rr['title'];
 		$url    = $rr['url'];
 		?>
@@ -20,5 +20,6 @@ function ganymedeBlogs($count=10) {
 	<? }
 	echo "</ul>";
 	$output = ob_get_clean();
+	mb_convert_encoding($output, "HTML-ENTITIES", "UTF-8");
 	return $output;
 } ?>
