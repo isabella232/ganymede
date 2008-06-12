@@ -54,7 +54,7 @@ function projectTable($pillarType)
 			<td align="center"><a href="<?=$url;?>"><img src="images/homepage.gif"></a></td>
 			<td align="center"><?=$releaseInfo['version'];?></td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
-			<td align="center"><? if ($releaseInfo['download'] != "") {?><a href="<?=$releaseInfo['download'];?>/">Download</a> <? } ?></td>
+			<td align="center"><? if ($releaseInfo['download'] != "") {?><a href="<?=$releaseInfo['download'];?>">Download</a> <? } ?></td>
 		</tr> <?
 	}
 	?> 
