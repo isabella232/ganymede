@@ -54,7 +54,7 @@
 		</div>
 		
 		<div class="homeitem3col">
-			<h3>Ganymede Blogs</h3>
+			<h3>Ganymede Around the World Blogs</h3>
 			$ganymedeBlogs
 		</div>
 	</div>
