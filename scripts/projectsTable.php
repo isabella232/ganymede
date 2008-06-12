@@ -8,7 +8,7 @@ function findGanymedeRelease($releases)
 {
 	foreach ($releases as $rr)
 	{
-		if ($rr->date = "2008-06-25")
+		if ($rr->date == "2008-06-25")
 		{
 			echo $rr->download;
 		}
