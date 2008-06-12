@@ -32,7 +32,6 @@ function projectTable($pillarType)
 		$projectName = $projectInfoIterator->projectname;
 		$projectShortName = $projectInfoIterator->projectshortname;
 		$download = $projectInfoIterator->downloadsurl;
-		var_dump($projectInfoIterator);
 		
 	?>	<tr class="tableRow">
 			<td><b><?=$projectName;?> <?=$projectShortNamel;?></b></td>
