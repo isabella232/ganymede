@@ -22,6 +22,7 @@
 	ob_start();
 	?>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="header.css" media="screen" />
 	<div id="ganymedeHeader">
 		<div id="headerGraphic">&nbsp;</div>
 	</div>
