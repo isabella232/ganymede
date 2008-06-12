@@ -32,9 +32,10 @@
 	# Reference the $news variable to drop the HTML into your content...
 	$documentRoot = $_SERVER['DOCUMENT_ROOT'];
 	require_once('scripts/functions.php');
+	require_once('scripts/blogs.php');
 	$filepath = $documentRoot . '/community/news/2005inthenewsarchive.rss';
 	$eclipsenews = rss_to_news_html($filepath, 'ganymede',100);
-	
+	$ganymedeBlogs = ganymedeBlogs(10);
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
@@ -50,6 +51,11 @@
 		<div class="homeitem3col">
 			<h3>Community Buzz</h3>
 			$eclipsenews
+		</div>
+		
+		<div class="homeitem3col">
+			<h3>Ganymede Blogs</h3>
+			$ganymedeBlogs
 		</div>
 	</div>
 
