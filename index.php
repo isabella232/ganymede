@@ -29,6 +29,7 @@
 
 	ob_start();
 	?>	<link type="text/css" href="style.css" rel="stylesheet"/>
+		<link type="text/css" href="header.css" rel="stylesheet"/>
 		<body>
 			<div id="ganymedeHeader">
 				<div id="headerGraphic">&nbsp;</div>
@@ -53,7 +54,7 @@
 							<a href="http://wiki.eclipse.org/Ganymede">Learn more about Ganymede</a>
 						</td>
 						<td align="center">
-							<a href="map.php"><img src="images/map.png"/></a><br/><a href="map.php">Ganymede Buzz</a>
+							<a href="buzz.php"><img src="images/map.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
 						</td>
 					</tr>
 				</table>
