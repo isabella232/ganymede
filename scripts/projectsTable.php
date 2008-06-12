@@ -56,7 +56,7 @@ function projectTable($pillarType)
 	?> 
 	</table>
 	<?	
-	
+	$releases = $projectInfoIterator->releases;
 	findGanymedeRelease($releases);
 	
 	$html = ob_get_contents();
