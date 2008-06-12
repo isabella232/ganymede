@@ -44,11 +44,13 @@ function projectTable($pillarType)
 	<?
 	}
 	
-	$releases = $projectInfoIterator->releases;
-	echo "<pre>" . var_dump($releases) . "</pre>";
+
 	?> 
 	</table>
-	<?
+	<?	
+	
+	$releases = $projectInfoIterator->releases;
+	echo "<pre>" . var_dump($releases) . "</pre>";
 	$html = ob_get_contents();
 	ob_end_clean();
 	
