@@ -15,7 +15,7 @@ function ganymedeBlogs($count=10) {
 		$url    = $rr['url'];
 		?>
 		<li>
-			<a href="<?=$url;?>" target="_blank"><? if ($title != "") { echo $title; } else { $url; } ?></a> - <?=$author;?>
+			<a href="<?=$url;?>" target="_blank"><? if ($title != "") { echo $title; } else { echo $url; } ?></a> - <?=$author;?>
 		</li>
 	<? }
 	echo "</ul>";
