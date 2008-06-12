@@ -1,0 +1,308 @@
+.item_headline {
+	padding: 3px;
+}
+
+.visible .item_contents {
+	display: block;
+}
+
+.invisible .item_contents {
+	display: none;
+}
+
+.visible .item_menu {
+	display: block;
+}
+
+.invisible .item_menu {
+	display: none;
+}
+
+.visible a.norgie {
+	background: url('images/minus.gif') no-repeat;
+	padding-right: 2px;
+}
+
+.invisible a.norgie {
+	background: url('images/plus.gif') no-repeat;
+	padding-right: 2px;
+}
+
+.item_menu {
+	position: relative;
+	left: 5px;;
+	margin: 10px;
+	margin-left: 15px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.item_contents {
+	margin: 0px;;
+	background-color: #F8F8F8;;
+	padding: 5px;
+}
+
+a.norgie {
+	float: left;
+	clear: all;;
+	height: 20px;
+	width: 10px;
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
+body {
+	color: #000;
+}
+
+#midcolumn {
+	padding-top: 20px;
+	padding-left: 20px !important;
+}
+
+.plugins {
+	margin-bottom: 10px;
+	margin-top: 0px;
+	width: 100%;
+	float: left;
+	max-height: 300px;
+	height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.resources {
+	margin-bottom: 10px;
+	margin-top: 0px;
+	width: 100%;
+	float: left;
+	max-height: 300px;
+	height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.resourcesTable {
+	width: 100%;
+	border-bottom: 1px solid #49457C;
+}
+
+.resourcesHeaderDiv {
+	width: 100%;
+	float: left;
+}
+
+.resourcesHeader {
+	border-top: 2px solid #49457C;
+	background-image: url('images/bar.jpg');
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.resourcesData td {
+	border-top: 1px solid darkgray;
+	vertical-align: top;
+}
+
+.paddingLeft {
+	padding-left: 7px;
+}
+
+.headerBar {
+	height:120px;
+	padding: 0px;
+	width: 100%;
+	border-top: 3px solid #FF6700;
+
+}
+
+.coming {
+	background:#0B328B url(images/europaBanner.jpg) no-repeat scroll top left;
+}
+
+.release {
+	background:#0B328B url(images/europaBannerHere.jpg) no-repeat scroll top left;
+}
+
+.headerBar td {
+	//background-image: url('images/bar.jpg');
+	font-size: 170%;
+	color:#FFFFFF;
+	vertical-align:top;
+	padding:10px;
+	font-weight: bold;
+}
+
+.headerBar span {
+	font-size: 80%;
+	font-weight: normal;
+}
+
+.projectTable {
+	width: 100%;
+	border-bottom: 1px solid #49457C;
+}
+
+#epicPlugins .projectTable {
+	width: 100%;
+	border-bottom:0px;
+}
+
+#epicPlugins .plugins .projectTable {
+	width: 100%;
+	border-bottom: 1px solid #49457C;
+}
+
+
+.memberTable {
+	width: 100%;
+	border-bottom: 1px solid #49457C;
+}
+
+.tableHeader {
+	background-image: url('images/bar.jpg');
+	font-weight: bold;
+	border-top: 2px solid #49457C;
+	border-bottom: 1px solid #49457C;
+	font-size: 100%;
+}
+
+.tableHeaderTitle {
+	font-weight: bold;
+	font-size: 125%;
+	padding-top: 10px;
+}
+
+.tableRow td{
+	border-bottom: 1px solid #CCC;
+	padding-top:5px;
+}
+
+.members {
+	float: left;
+	width: 100%;
+}
+
+.box {
+	width: 35%;
+	float: right;
+	clear: none;
+}
+
+.box ol {
+	padding-left: 0px;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.box ol li {
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+.categoryLeft .box ol li,.categoryRight .box ol li {
+	padding: 0px;
+	padding-bottom: 10px;
+}
+
+.box ol li ul li {
+	background: none;
+}
+
+.boxHeader {
+	background-image: url(images/bar.jpg);
+	background-position: top left;
+	background-repeat: repeat-x;
+	border-top: 1px solid #AAA;
+	border-bottom: 1px solid #AAA;
+	padding: 5px;
+	color: #000;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.boxHeader a {
+	color: #4F4F4F;
+}
+
+.boxBody {
+	border: 1px solid #CCC;
+	border-top: 0px;
+	min-height: 30px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 3px;
+}
+
+.newsItems {
+	padding-top: 10px;
+	padding-left: 0px;
+}
+
+.newsItem {
+	display: inline;
+}
+
+.newsTitle {
+	font-weight: bold;
+	color: #653265;
+}
+
+.newsDate {
+	padding-left: 20px;
+	font-size: x-small;
+	color: #6F6F6F;
+}
+
+.newsBody {
+	padding-left: 25px;
+}
+
+.newsItems li {
+	list-style-image:
+		url(/eclipse.org-common/themes/Phoenix/images/arrow.gif);
+	list-style-position: inside;
+	padding-left: 5px;
+	padding-bottom: 15px;
+}
+
+.newsMore {
+	text-align: right;
+	font-size: 70%;
+	padding-right: 10px;
+	clear: all;
+}
+
+.newsQuote {
+	font-size: 90%;
+	color: #595791;
+	margin: 7px;
+	padding: 1px;
+	background: #F5F5FF;
+	border: 1px solid #CCCCCC;
+}
+
+.europaLink {
+	font-size:130%;
+	font-weight:bold;
+	
+}
+
+#dateTab {
+	margin:-10px;
+	padding:0px;	
+}
+
+#countdown {
+	padding:4px;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.bottomBorder td {
+	border-bottom:1px solid black;	
+}
