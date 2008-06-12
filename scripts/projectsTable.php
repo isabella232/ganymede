@@ -10,7 +10,7 @@ function projectTable($pillarType)
 	?>
 	<table cellspacing=0 class="projectTable">
 		<tr>
-			<td colspan=5 class="tableHeaderTitle">Eclipse Europa Projects</td>
+			<td colspan=5 class="tableHeaderTitle">Eclipse Ganymede Projects</td>
 		</tr>
 		<tr>
 			<td class="tableHeader" width="35%">Project Name</td>
@@ -32,10 +32,11 @@ function projectTable($pillarType)
 		$projectName = $projectInfoIterator->projectname;
 		$projectShortName = $projectInfoIterator->projectshortname;
 		$download = $projectInfoIterator->downloadsurl;
+		var_dump($projectInfoIterator);
 		
 	?>	<tr class="tableRow">
-			<td><b>AspectJ Development Tools (AJDT)</b></td>
-			<td align="center"><a href="http://www.eclipse.org/ajdt/"><img src="images/homepage.gif"></a></td>
+			<td><b><?=$projectName;?> <?=$projectShortNamel;?></b></td>
+			<td align="center"><a href="<?=$ ?>"><img src="images/homepage.gif"></a></td>
 			<td align="center">1.5</td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/downloads/">Download</a></td>
