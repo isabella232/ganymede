@@ -39,11 +39,11 @@
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
-	<style>
-		li.more {
-			display:none!important;
-		}
-	</style>
+	<link type="text/css" href="header.css" rel="stylesheet"/>
+	<body>
+	<div id="ganymedeHeader">
+		<div id="headerGraphic">&nbsp;</div>
+	</div>	
 	<div id="midcolumn">
 	
 		<h1>$pageTitle</h1>
