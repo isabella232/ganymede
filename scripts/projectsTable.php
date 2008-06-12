@@ -9,9 +9,11 @@ function findGanymedeRelease($releases)
 	$retval = array();
 	foreach ($releases as $rr)
 	{
-		if ($rr->date == "2008-06-25")
+		$earlydate = strtotime("2008-06-21");
+		$latedate = strtotime("2008-07-01");
+		$date = strtotime($rr->date);
+		if (($date >= $earlydate) && ($date <= $latedate))
 		{
-			$retval['download'] =  $rr->download;
 			$retval['version'] = $rr->name;
 		}
 	}
@@ -48,13 +50,14 @@ function projectTable($pillarType)
 		$download = $projectInfoIterator->downloadsurl;
 		$url = $projectInfoIterator->projecturl;
 		$releases = $projectInfoIterator->releases;
+		$downloadurl = $projectInfoIterator->downloadsurl;
 		$releaseInfo = findGanymedeRelease($releases);
 	?>	<tr class="tableRow">
 			<td><b><?=$projectName;?></b></td>
 			<td align="center"><a href="<?=$url;?>"><img src="images/homepage.gif"></a></td>
 			<td align="center"><?=$releaseInfo['version'];?></td>
 			<td align="center"><a href="http://www.eclipse.org/ajdt/whatsnew15/">New</a></td>
-			<td align="center"><? if ($releaseInfo['download'] != "") {?><a href="<?=$releaseInfo['download'];?>">Download</a> <? } ?></td>
+			<td align="center"><? if ($downloadurl != "") {?><a href="<?=$downloadurl;?>">Download</a> <? } ?></td>
 		</tr> <?
 	}
 	?> 
