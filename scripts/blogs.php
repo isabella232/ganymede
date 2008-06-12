@@ -4,7 +4,7 @@
 function ganymedeBlogs($count=10) {
 	$dbc = new DBConnection();
 	$dbh = $dbc->connect();
-	$query = "SELECT * from ganymede_spots as GS INNER JOIN ganymede_content as GC on GS.id = GC.id WHERE GC.type = 'Blog' ORDER by id DESC LIMIT $count";
+	$query = "SELECT * from ganymede_spots as GS INNER JOIN ganymede_content as GC on GS.id = GC.id WHERE GC.type = 'Blog' ORDER by GS.id DESC LIMIT $count";
 	$result = mysql_query ($query) or die ($query . mysql_error());
 	ob_start();
 	echo "<ul>";
