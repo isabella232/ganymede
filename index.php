@@ -35,7 +35,7 @@
 			<br/>
 				<table width="60%" align="center">
 					<tr>
-						<td colspan="3">
+						<td colspan="4">
 							<p>Eclipse Ganymede is the annual release of Eclipse projects.  This year, the annual release includes 24 projects. By releasing these projects at the same time, the goal is to eliminate uncertainty about version compatibility and make it easier to incorporate multiple projects into your environment.
 							<br/><br/><i>While Ganymede is about the simultaneous release of twenty four projects, it is not a unification of the projects - each project remains a separate open source project operating with its own project leadership, its own committers, and its own project plan.</i><br/><br/></p> 
 						</td>
@@ -50,7 +50,7 @@
 							<a href="http://wiki.eclipse.org/Ganymede">Learn more about Ganymede</a>
 						</td>
 						<td align="center">
-							<a href="buzz.php"><img src="images/map.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
+							<a href="buzz.php"><img src="http://dev.eclipse.org/huge_icons/devices/network-wireless.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
 						</td>
 						<td align="center">
 							<a href="map.php"><img src="images/map.png"/></a><br/><a href="map.php">Ganymede Around the World</a>
