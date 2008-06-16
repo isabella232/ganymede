@@ -42,16 +42,15 @@
 					</tr>
 					<tr>
 						<td align="center">
-							<a href="/downloads/packages/"><img src="http://dev.eclipse.org/huge_icons/actions/document-save.png"/></a><br/>
-							<a href="/downloads/packages/">Download Ganymede</a>
-						</td>					
-						<td align="center">
 							<a href="http://wiki.eclipse.org/Ganymede"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png"/></a><br/>
 							<a href="http://wiki.eclipse.org/Ganymede">Learn more about Ganymede</a>
 						</td>
 						<td align="center">
-							<a href="buzz.php"><img src="images/map.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
+							<a href="buzz.php"><img src="http://dev.eclipse.org/huge_icons/devices/network-wireless.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
 						</td>
+						<td align="center">
+							<a href="map.php"><img src="images/map.png"/></a><br/><a href="map.php">Ganymede Around the World</a>
+						</td>						
 					</tr>
 				</table>
 				<br/><br/><br/><br/>
