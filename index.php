@@ -30,27 +30,31 @@
 	ob_start();
 	?>	<link type="text/css" href="style.css" rel="stylesheet"/>
 		<body>
-			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/headerThin.php"); ?>
+			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/header.php"); ?>
 			<div id="widecontent">
 			<br/>
 				<table width="60%" align="center">
 					<tr>
 						<td colspan="3">
-							<p>Eclipse Ganymede is the annual release of Eclipse projects. This year, the annual release includes 24 projects. By releasing these projects at the same time, the goal is to eliminate uncertainty about version compatibility and make it easier to incorporate multiple projects into your environment.
+							<p>Eclipse Ganymede is the annual release of Eclipse projects.  This year, the annual release includes 24 projects. By releasing these projects at the same time, the goal is to eliminate uncertainty about version compatibility and make it easier to incorporate multiple projects into your environment.
 							<br/><br/><i>While Ganymede is about the simultaneous release of twenty four projects, it is not a unification of the projects - each project remains a separate open source project operating with its own project leadership, its own committers, and its own project plan.</i><br/><br/></p> 
 						</td>
 					</tr>
 					<tr>
 						<td align="center">
+							<a href="/downloads/packages/"><img src="http://dev.eclipse.org/huge_icons/actions/document-save.png"/></a><br/>
+							<a href="/downloads/packages/">Download Ganymede</a>
+						</td>					
+						<td align="center">
 							<a href="http://wiki.eclipse.org/Ganymede"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png"/></a><br/>
 							<a href="http://wiki.eclipse.org/Ganymede">Learn more about Ganymede</a>
 						</td>
 						<td align="center">
-							<a href="buzz.php"><img src="http://dev.eclipse.org/huge_icons/devices/network-wireless.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
+							<a href="buzz.php"><img src="images/map.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
 						</td>
 						<td align="center">
 							<a href="map.php"><img src="images/map.png"/></a><br/><a href="map.php">Ganymede Around the World</a>
-						</td>						
+						</td>								
 					</tr>
 				</table>
 				<br/><br/><br/><br/>
