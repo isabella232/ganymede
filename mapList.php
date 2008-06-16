@@ -80,6 +80,7 @@
 	?>
 	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<body>
+		<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/header.php"); ?>
 		<div id="midcolumn">
   			<h1><?=$pageTitle;?></h1><br/>
   			<?=displayPager($start, $pageValue, $count);?>
