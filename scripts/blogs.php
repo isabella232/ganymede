@@ -17,7 +17,13 @@ function ganymedeBlogs($count=10) {
 		<li>
 			<a href="<?=$url;?>" target="_blank"><? if ($title != "") { echo $title; } else { echo $url; } ?></a> - <?=$author;?>
 		</li>
-	<? }
+	<? } ?>
+	<li class="more">
+		<div class="more">
+			<a href="mapList.php">Read More</a>
+		</div>
+	</li>	
+	<?
 	echo "</ul>";
 	$output = ob_get_clean();
 	mb_convert_encoding($output, "HTML-ENTITIES", "UTF-8");
