@@ -4,6 +4,7 @@ table.list tr td {
 	padding-top:2px;
 	padding-bottom:5px;
 	border-bottom:1px solid #bbb;
+	padding-left:5px;	
 }
 
 table.list {
@@ -89,9 +90,7 @@ table.list tr.header {
 	padding-bottom:10px;	
 }
 
-table.list tr td {
-	padding-left:5px;	
-}
+
 ///////////////////////////////////////////////////////
 
 .dialog {
