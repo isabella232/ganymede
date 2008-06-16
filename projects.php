@@ -22,7 +22,7 @@
 	ob_start();
 	?>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
-	<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/header.php"); ?>
+			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/headerThin.php"); ?>
 	<div id="widecontent">
 		<div id="midcolumnwide">
 		<?=projectTable(GANYMEDE);?><br/><br/>
