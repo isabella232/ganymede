@@ -1,0 +1,21 @@
+/////////////////////////////////////// Header CSS
+#ganymedeHeader {
+	width:100%;	
+	clear:both;
+	font-size: 1px;
+}
+
+#headerGraphic {
+	background:transparent url("/ganymede/images/ganymedeTile.jpg") top left repeat-x;
+	text-align:left;
+	height:178px;
+	border-bottom:1px solid #000;
+	overflow:hidden;
+	width:100%;
+}
+
+#headerGraphic img {
+	margin:0px;
+	padding:0px;
+	
+}
