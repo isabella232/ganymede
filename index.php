@@ -29,13 +29,9 @@
 
 	ob_start();
 	?>	<link type="text/css" href="style.css" rel="stylesheet"/>
-		<link type="text/css" href="header.css" rel="stylesheet"/>
 		<body>
-			<div id="ganymedeHeader">
-				<div id="headerGraphic">&nbsp;</div>
-			</div>
+			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/header.php"); ?>
 			<div id="widecontent">
-			
 			<br/>
 				<table width="60%" align="center">
 					<tr>
