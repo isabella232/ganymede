@@ -37,25 +37,23 @@
 	$eclipsenews = rss_to_news_html($filepath, 'ganymede',100);
 	$ganymedeBlogs = ganymedeBlogs(10);
 	# Paste your HTML content between the EOHTML markers!	
-	$html = <<<EOHTML
+	ob_start();
+	?>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
-	<link type="text/css" href="header.css" rel="stylesheet"/>
 	<body>
-	<div id="ganymedeHeader">
-		<div id="headerGraphic">&nbsp;</div>
-	</div>	
+		<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/header.php"); ?>	
 	<div id="midcolumn">
 	
-		<h1>$pageTitle</h1>
+		<h1><?=$pageTitle;?></h1>
 				
 		<div class="homeitem3col">
 			<h3>Community Buzz</h3>
-			$eclipsenews
+			<?=$eclipsenews;?>
 		</div>
 		
 		<div class="homeitem3col">
 			<h3>Ganymede Around the World Blogs</h3>
-			$ganymedeBlogs
+			<?=$ganymedeBlogs;?>
 		</div>
 	</div>
 	<div id="rightcolumn">
@@ -69,8 +67,8 @@
 	</div>
 </div>
 
-EOHTML;
-
+<?	
+	$html = ob_get_clean();
 	$html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
