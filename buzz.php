@@ -41,7 +41,6 @@
 	?>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
 	<body>
-			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/headerThin.php"); ?>
 	<div id="midcolumn">
 	
 		<h1><?=$pageTitle;?></h1>
@@ -71,5 +70,6 @@
 	$html = ob_get_clean();
 	$html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
 	# Generate the web page
+	$App->Promotion = TRUE;
 	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>

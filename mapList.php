@@ -55,7 +55,6 @@
 	else 
 		$start = 0;
 	$pageValue = 25;
-		
 	$pager = " LIMIT $start, $pageValue";
 	
 	# Place your html content in a file called content/en_pagename.php
@@ -80,7 +79,6 @@
 	?>
 	<link type="text/css" href="style.css" rel="stylesheet"/>
 	<body>
-			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/headerThin.php"); ?>
 		<div id="midcolumn">
   			<h1><?=$pageTitle;?></h1><br/>
   			<?=displayPager($start, $pageValue, $count);?>
@@ -140,5 +138,6 @@
 	<?
 	$html = ob_get_clean();
 	# Generate the web page
+	$App->Promotion = TRUE;
 	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>

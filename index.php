@@ -30,7 +30,6 @@
 	ob_start();
 	?>	<link type="text/css" href="style.css" rel="stylesheet"/>
 		<body>
-			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/headerThin.php"); ?>
 			<div id="widecontent">
 			<br/>
 				<table width="60%" align="center">
@@ -63,5 +62,6 @@
 	<?
 	$html = ob_get_clean();
 	# Generate the web page
+	$App->Promotion = TRUE;
 	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>

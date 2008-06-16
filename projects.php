@@ -22,7 +22,6 @@
 	ob_start();
 	?>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
-			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/headerThin.php"); ?>
 	<div id="widecontent">
 		<div id="midcolumnwide">
 		<?=projectTable(GANYMEDE);?><br/><br/>
@@ -34,5 +33,6 @@ $html = ob_get_contents();
 ob_end_clean();
 
 	# Generate the web page
+	$App->Promotion = TRUE;
 	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>		
