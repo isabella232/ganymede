@@ -53,7 +53,7 @@
 							<a href="buzz.php"><img src="http://dev.eclipse.org/huge_icons/devices/network-wireless.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
 						</td>
 						<td align="center">
-							<a href="map.php"><img src="images/map.png"/></a><br/><a href="map.php">Ganymede Around the World</a>
+							<a href="map.php"><img src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png"/></a><br/><a href="map.php">Ganymede Around the World</a>
 						</td>								
 					</tr>
 				</table>
