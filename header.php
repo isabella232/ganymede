@@ -3,6 +3,7 @@
 		<div id="headerGraphic">
 		<map name="ganymedeHeaderIMap">
 			 <area shape="rect" coords="163,178,454,260" href="/downloads/packages/">
+			 <area shape="rect" coords="80,83,447,148" href="/ganymede">
 		</map>
 		<img src="/ganymede/images/ganymedeHeader.jpg" usemap="#ganymedeHeaderIMap"></div>
 </div>
