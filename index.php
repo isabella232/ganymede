@@ -30,7 +30,7 @@
 	ob_start();
 	?>	<link type="text/css" href="style.css" rel="stylesheet"/>
 		<body>
-			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/header.php"); ?>
+			<? include ($_SERVER['DOCUMENT_ROOT'] . "/ganymede/headerThin.php"); ?>
 			<div id="widecontent">
 			<br/>
 				<table width="60%" align="center">
