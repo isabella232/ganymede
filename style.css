@@ -1,16 +1,3 @@
-/////////////////////////////////////// Header CSS
-#ganymedeHeader {
-	width:100%;	
-
-}
-
-#headerGraphic {
-	background:#351e58 url("images/ganymedeHeader.jpg") top left no-repeat;
-	text-align:left;
-	height:200px;
-	border-bottom:1px solid #CF5D07;
-}
-
 /////////////////////////////////////// Map CSS
 table.list tr td {
 	vertical-align: top;
