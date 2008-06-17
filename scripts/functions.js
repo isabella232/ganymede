@@ -16,7 +16,7 @@ function updateTable(e)
 	var url = "fetch/" + e + ".php";
 	var exdate = new Date();
 	exdate.setDate(exdate.getDate()+7);
-	document.cookie = "activeTab=" + escape(e) + ((7==null) ? "" : ";expires="+exdate.toGMTString());
+	document.cookie = "activeTabGanymede=" + escape(e) + ((7==null) ? "" : ";expires="+exdate.toGMTString());
 	ajaxObject.open("GET", url, true);
 	ajaxObject.onreadystatechange = updatePage;
 	ajaxObject.send(null);
