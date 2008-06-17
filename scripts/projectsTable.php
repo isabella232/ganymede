@@ -43,7 +43,7 @@ function projectTable($pillarType)
 	{
 		$projectInfoIterator = $projectInfoList->getItemAt($i);
 		$projectName = $projectInfoIterator->projectname;
-		$projectid = $projectInfoIterator->mainkeys;
+		$projectid = $projectInfoIterator->projectid;
 		$projectShortName = $projectInfoIterator->projectshortname;
 		$download = $projectInfoIterator->downloadsurl;
 		$url = $projectInfoIterator->projecturl;
