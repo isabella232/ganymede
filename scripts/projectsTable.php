@@ -42,9 +42,8 @@ function projectTable($pillarType)
 	for ($i = 0; $i < $numProjects; $i++)
 	{
 		$projectInfoIterator = $projectInfoList->getItemAt($i);
-		var_dump ($projectInfoIterator);
 		$projectName = $projectInfoIterator->projectname;
-		$projectid = $projectInfoIterator->projectID;
+		$projectid = $projectInfoIterator->mainkeys;
 		$projectShortName = $projectInfoIterator->projectshortname;
 		$download = $projectInfoIterator->downloadsurl;
 		$url = $projectInfoIterator->projecturl;
