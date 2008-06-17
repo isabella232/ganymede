@@ -28,7 +28,6 @@
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
 	
-	$url = strtolower($url);
 	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
 	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
 	$retVal = mysql_insert_id($dbh);
