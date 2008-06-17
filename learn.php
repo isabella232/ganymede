@@ -39,7 +39,7 @@
 			<h1 class="inline"><?=$pageTitle; ?></h1>
 		</div>
 		<div id="intro">
-			<p>Here you can find Webinars, Demos, Articles, and other resources that will help you become an Ganymed expert. </p>
+			<p>Here you can find Webinars, Demos, Articles, and other resources that will help you become an Ganymede expert. </p>
 		</div>
 		<div id="dataBox">
 		<div id="tabSelection">
@@ -59,8 +59,7 @@
 		<hr class="clearer"/>
 		</div>
 	</div>
-<?	$html = ob_get_contents();
-	ob_end_clean();
+<?	$html = ob_get_clean();
 
 	# Generate the web page
 	// Date in the past
@@ -72,5 +71,6 @@
 	header("cache-Control: post-check=0, pre-check=0", false);
 	// HTTP/1.0
 	header("Pragma: no-cache"); 
+	$App->Promotion = TRUE;
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 	
