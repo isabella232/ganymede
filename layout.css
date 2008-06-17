@@ -383,3 +383,8 @@ body {
 	height:0px;	
 	border-bottom:1px solid #DDD;
 }
+
+.inline	{
+	display:inline;
+	margin:10px;
+}
