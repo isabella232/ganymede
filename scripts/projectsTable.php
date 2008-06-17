@@ -53,7 +53,7 @@ function projectTable($pillarType)
 	?>	<tr class="tableRow">
 			<td><b><?=$projectName;?></b></td>
 			<td align="center"><?=$releaseInfo['version'];?></td>
-			<td align="center"><a href=http://www.eclipse.org/projects/project_summary.php?projectid=<?=$projectid;?>"><img src="images/homepage.gif"></a></td>
+			<td align="center"><a href="http://www.eclipse.org/projects/project_summary.php?projectid=<?=$projectid;?>"><img src="images/homepage.gif"></a></td>
 			<td align="center"><? if ($downloadurl != "") {?><a href="<?=$downloadurl;?>">Download</a> <? } ?></td>
 		</tr> <?
 	}
