@@ -306,3 +306,80 @@ body {
 .bottomBorder td {
 	border-bottom:1px solid black;	
 }
+
+.homeitem, .homeitem3col {
+	border:1px solid #CCCCCC;	
+}
+
+.homeitem h3, .homeitem3col h3 {
+	background:transparent url(/eclipse.org-common/themes/Phoenix/images/bar.jpg) repeat scroll;
+	background-position:0 -20px;
+	color:#333366;
+	font-size:110%;
+	font-weight:bold;
+	border-bottom:1px solid #DDDDDD;
+}
+
+#tabSelection {
+	width:100%;
+	height:22px;
+	display:block;
+}
+
+#tabSelection ul {
+}
+
+#tabSelection ul li {
+	list-style: none;
+	display:inline;
+	margin:0;
+	padding:0;
+
+}
+#tabSelection ul li a {
+	background:transparent url("images/formatTab.png") no-repeat top left;	
+	display:block;	
+	text-decoration:none;
+	height:22px;
+	width:204px;
+	float:left;
+	text-align: center;
+	padding-top:3px;
+	margin-bottom:-5px;
+	cursor: pointer;
+}
+
+#tabSelection ul li a.active {
+	text-decoration:underline;	
+} 
+
+
+#tabData {
+	border:1px solid #CCC;
+	width:100%;	
+
+}
+
+#tabData .webinars {
+	width:100%;
+	padding:0;
+	margin:0;	
+}
+
+#tabData .webinars tr.header td {
+	background:transparent url(/eclipse.org-common/themes/Phoenix/images/bar.jpg) repeat scroll;
+	background-position:0 -40px;
+	border-bottom:1px solid #DDD;
+	font-weight:bold;
+}
+
+#tabData .webinars tr td {
+	font-size:90%;
+	padding-left:5px;
+	height:20px;
+}
+
+#tabData .webinars tr td.hidden {
+	height:0px;	
+	border-bottom:1px solid #DDD;
+}
