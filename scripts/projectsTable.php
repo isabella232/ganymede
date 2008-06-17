@@ -24,7 +24,7 @@ function projectTable($pillarType)
 {
 	ob_start();
 	?>
-	<table cellspacing=0 class="projectTable">
+	<table cellspacing=0 class="webinars">
 		<tr class="header">
 			<td width="35%">Project Name</td>
 			<td width="12%" align="center">Version</td>
