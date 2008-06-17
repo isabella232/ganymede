@@ -72,5 +72,5 @@
 	// HTTP/1.0
 	header("Pragma: no-cache"); 
 	$App->Promotion = TRUE;
-	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
+	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 	

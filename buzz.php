@@ -71,5 +71,5 @@
 	$html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
 	# Generate the web page
 	$App->Promotion = TRUE;
-	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
+	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
