@@ -35,11 +35,11 @@
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
 	<div id="midcolumn">
 		<div class="title">
-			<img align="absbottom" src="http://dev.eclipse.org/large_icons/mimetypes/application-certificate.png"/> 
+			<img align="absbottom" src="http://dev.eclipse.org/large_icons/actions/system-search.png"/> 
 			<h1 class="inline"><?=$pageTitle; ?></h1>
 		</div>
 		<div id="intro">
-			<p>Here you can find Webinars, Demos, Articles, and other resources that will help you become an Ganymede expert. </p>
+			<p>Browse our Ganymede Demos from <a href="http://live.eclipse.org" target="_blank">Eclipse Live, or view the list of Ganymede Projects.</p>
 		</div>
 		<div id="dataBox">
 		<div id="tabSelection">
