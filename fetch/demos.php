@@ -15,7 +15,7 @@
 			INNER JOIN category_node as cat_node on cat_node.nid = cn.nid
 			INNER JOIN node as nn on nn.nid = cat_node.cid
       		INNER JOIN node_content_resource as ncr on ncr.nid = cn.nid
-			WHERE cn.cid = 542 AND cat_node.cid IN (18, 19, 20) ORDER by n.created desc";
+			WHERE cn.cid = 542 AND cat_node.cid IN (18, 19, 20) AND n.status = 1 ORDER by n.created desc";
 	$result = mysql_query($sql);
 	
 	while ($rr = mysql_fetch_array($result))
