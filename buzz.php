@@ -42,8 +42,8 @@
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
 	<body>
 	<div id="midcolumn">
-	
-		<h1><?=$pageTitle;?></h1>
+		<img src="http://dev.eclipse.org/large_icons/devices/network-wireless.png">
+		<h1 class="inline"><?=$pageTitle;?></h1>
 				
 		<div class="homeitem3col">
 			<h3>Community Buzz</h3>
