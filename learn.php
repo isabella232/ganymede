@@ -31,7 +31,7 @@
 	$cookie = @$_COOKIE['activeTabGanymede'];
 	ob_start();
 	?>
-	<script type="text/javascript" src="functions.js"></script>
+	<script type="text/javascript" src="scripts/functions.js"></script>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
 	<div id="midcolumn">
 		<div class="title">
@@ -72,5 +72,5 @@
 	// HTTP/1.0
 	header("Pragma: no-cache"); 
 	$App->Promotion = TRUE;
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 	
