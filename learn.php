@@ -39,13 +39,13 @@
 			<h1 class="inline"><?=$pageTitle; ?></h1>
 		</div>
 		<div id="intro">
-			<p>Browse our Ganymede Demos from <a href="http://live.eclipse.org" target="_blank">Eclipse Live, or view the list of Ganymede Projects.</p>
+			<p>Browse our Ganymede Demos from <a href="http://live.eclipse.org" target="_blank">Eclipse Live</a>, or view the list of Ganymede Projects.</p>
 		</div>
 		<div id="dataBox">
 		<div id="tabSelection">
 			<ul>
-				<li><a <? if ($cookie == "demos") echo "class=\"active\""; ?> id="webinar" onClick="updateTable('demos');SetActive('demos', 'projects');">Ganymede Demos</a></li>
-				<li><a <? if ($cookie == "projects") echo "class=\"active\""; ?>id="resources" onClick="updateTable('projects');SetActive('projects', 'demos');">Ganymede Projects</a></li>
+				<li><a <? if ($cookie == "demos") echo "class=\"active\""; ?> id="demos" onClick="updateTable('demos');SetActive('demos', 'projects');">Demos</a></li>
+				<li><a <? if ($cookie == "projects") echo "class=\"active\""; ?>id="projects" onClick="updateTable('projects');SetActive('projects', 'demos');">Projects</a></li>
 			</ul>
 		</div>
 		<div id="tabData">
