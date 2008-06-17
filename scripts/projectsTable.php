@@ -25,15 +25,12 @@ function projectTable($pillarType)
 	ob_start();
 	?>
 	<table cellspacing=0 class="projectTable">
-		<tr>
-			<td colspan=5 class="tableHeaderTitle">Eclipse Ganymede Projects</td>
-		</tr>
-		<tr>
-			<td class="tableHeader" width="35%">Project Name</td>
-			<td class="tableHeader" width="12%" align="center">Version</td>
-			<td class="tableHeader" width="10%" align="center">Project Summary</td>
+		<tr class="header">
+			<td width="35%">Project Name</td>
+			<td width="12%" align="center">Version</td>
+			<td width="10%" align="center">Project Summary</td>
 			<? /*<td class="tableHeader" width="12%" align="center">New And Noteworthy</td>*/ ?>
-			<td class="tableHeader" width="12%" align="center">Download</td>
+			<td width="12%" align="center">Download</td>
 		</tr>
 	<?
 	$projectInfoList = new projectInfoList();
