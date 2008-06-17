@@ -23,15 +23,13 @@ function updateTable(e)
 	
 }
 
-function SetActive(e,f,g)
+function SetActive(e,f)
 {
 	var x = document.getElementById(e);
 	var y = document.getElementById(f);
-	var z = document.getElementById(g);
 	
 	x.className = ("active");
 	y.className = ("");
-	z.className = ("");
 	
 }
 
