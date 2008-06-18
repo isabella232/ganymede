@@ -58,7 +58,7 @@
 		3rd place: an Eclipse shirt and $20 to your favourite open source organization or free service provider<br>
 		4th-10th place: an Eclipse shirt<br>
 		
-		<font size=0.4px>Note: Individuals are allowed to submit multiple entries, but only one prize per person will be awarded.</font>
+		<font size=0.4px><br>Note: Individuals are allowed to submit multiple entries, but only one prize per person will be awarded.</font>
 		</p>
 		
 		<p>
