@@ -49,24 +49,10 @@
 		
 		<p>
 		<strong>Prizes</strong><br>
-		<table>
-			<tr>
-				<td>1st place:</td>
-				<td>an Eclipse jacket and $50 to your favourite open source organization or free service provider</td>
-			</tr>
-			<tr>
-				<td>2nd place:</td>
-				<td>an Eclipse jacket and $30 to your favourite open source organization or free service provider</td>
-			</tr>
-			<tr>
-				<td>3rd place:</td>
-				<td>an Eclipse shirt and $20 to your favourite open source organization or free service provider</td>
-			</tr>
-			<tr>
-				<td>4th-10th place:</td>
-				<td>an Eclipse shirt</td>
-			</tr>
-		</table>
+		1st place: an Eclipse jacket and $50 to your favourite open source organization or free service provider<br>
+		2nd place: an Eclipse jacket and $30 to your favourite open source organization or free service provider<br>
+		3rd place: an Eclipse shirt and $20 to your favourite open source organization or free service provider<br>
+		4th-10th place: an Eclipse shirt
 		</p>
 		
 		<p>
@@ -99,45 +85,47 @@
 		<table>
 			<tr height="250">	
 				<td valign="top" width="277"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105326" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105326"  height="200" width="267" border="0"></a><br>
-				<b>Kill Bill</b></td>
+				<b>Kill Bill, Vol. 1</b></td>
+				<td valign="top" width="260"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105327" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105327"  height="200" width="250" border="0"></a><br>
+				<b>Kill Bill, Vol. 2</b></td>
 				<td valign="top" width="138"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104070" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104070" height="200" width="128" border="0"></a><br>
 				<b>Kung Fu Panda</b></td>	
 				<td valign="top" width="167"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" height="200" width="157" border="0"></a><br>
 				<b>Lord Of The Rings</b></td>
-				<td valign="top" width="140"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" height="200" width="130" border="0"></a><br>
-				<b>Lost in Translation</b></td>
-				<td valign="top" width="144"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" height="200" width="134" border="0"></a><br>
-				<b>Mars Attacks</b></td>
 			</tr>
 		</table>
 		<table>
 			<tr height="250">
+				<td valign="top" width="140"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" height="200" width="130" border="0"></a><br>
+				<b>Lost in Translation</b></td>
+				<td valign="top" width="144"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" height="200" width="134" border="0"></a><br>
+				<b>Mars Attacks</b></td>
 				<td valign="top" width="243"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" height="200" width="233" border="0"></a><br>
 				<b>Prepare yourself for Ganymede</b></td>
 				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" height="200" width="135" border="0"></a><br>
 				<b>Ratatouille</b></td>	
 				<td valign="top" width="277"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105324" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105324"  height="200" width="267" border="0"></a><br>
 				<b>Sin City</b></td>
-				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" height="200" width="135" border="0"></a><br>
-				<b>Sunshine</b></td>				
-				<td valign="top" width="148"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" height="200" width="138" border="0"></a><br>
-				<b>The Blues Brothers</b></td>		
 			</tr>
 		</table>
 		<table>
 			<tr height="250">
+				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" height="200" width="135" border="0"></a><br>
+				<b>Sunshine</b></td>				
+				<td valign="top" width="148"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" height="200" width="138" border="0"></a><br>
+				<b>The Blues Brothers</b></td>
 				<td valign="top" width="270"><a href="http://bp3.blogger.com/_i21-98vOfTA/SD92SQANorI/AAAAAAAAAVc/tl4Qo4LYiBM/s200/Day_The_Net_Stood_Still.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SD92SQANorI/AAAAAAAAAVc/tl4Qo4LYiBM/s200/Day_The_Net_Stood_Still.png" height="200" width="260" border="0"></a><br>
 				<b>The Day the Earth Stood Still</b></td>
 				<td valign="top" width="151"><a href="http://bp3.blogger.com/_i21-98vOfTA/SD8eTQANopI/AAAAAAAAAVM/3PnY8S9Ho9s/s200/smthing_gany.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SD8eTQANopI/AAAAAAAAAVM/3PnY8S9Ho9s/s200/smthing_gany.png" height="200" width="141" border="0"></a><br>
 				<b>There&#146;s Something About Mary</b></td>
 				<td valign="top" width="232"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" height="200" width="222" border="0"></a><br>
 				<b>Train about to Leave</b></td>
-				<td valign="top" width="210"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" height="200" width="200" border="0"></a><br>
-				<b>Train to Catch</b></td>
 			</tr>
 		</table>
 		<table>
 			<tr height="250">		
+				<td valign="top" width="210"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" height="200" width="200" border="0"></a><br>
+				<b>Train to Catch</b></td>
 				<td valign="top" width="163"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103391" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103391" height="200" width="153" border="0"></a><br>
 				<b>Transformers</b></td>
 				<td valign="top" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102974" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102974" height="200" width="141" border="0"></a><br>
