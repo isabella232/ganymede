@@ -48,11 +48,25 @@
 		</p>
 		
 		<p>
-		<h3>Prizes</h3>
-		1st place: an Eclipse jacket and $50 to your favourite open source organization or free service provider<br>
-		2nd place: an Eclipse jacket and $30 to your favourite open source organization or free service provider<br>
-		3rd place: an Eclipse shirt and $20 to your favourite open source organization or free service provider<br>
-		4th-10th place: an Eclipse shirt
+		<strong>Prizes</strong><br>
+		<table>
+			<tr>
+				<td>1st place:</td>
+				<td>an Eclipse jacket and $50 to your favourite open source organization or free service provider</td>
+			</tr>
+			<tr>
+				<td>2nd place:</td>
+				<td>an Eclipse jacket and $30 to your favourite open source organization or free service provider</td>
+			</tr>
+			<tr>
+				<td>3rd place:</td>
+				<td>an Eclipse shirt and $20 to your favourite open source organization or free service provider</td>
+			</tr>
+			<tr>
+				<td>4th-10th place:</td>
+				<td>an Eclipse shirt</td>
+			</tr>
+		</table>
 		</p>
 		
 		<p>
