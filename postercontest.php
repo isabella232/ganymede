@@ -41,7 +41,7 @@
 		Eclipse community members are showing off their Photoshop and Gimp skills by redesigning movie posters to showcase
 		Ganymede.  Review the poster submissions below and reward a hard working designer by
 		<a href="http://www.surveymonkey.com/s.aspx?sm=Jz7pU_2bHvyMaAidVDaEiXow_3d_3d" target="blank">voting for your favourite</a>.
-		Click on any poster to see its full-size version.  Voting is open June 18-24, 2008.
+		Click on any poster to see its full-size version.  Voting is open June&nbsp;18-24, 2008.
 		</p>
 
 		<p><h2><a href="http://www.surveymonkey.com/s.aspx?sm=Jz7pU_2bHvyMaAidVDaEiXow_3d_3d" target="blank">VOTE HERE</a></h2></p>
