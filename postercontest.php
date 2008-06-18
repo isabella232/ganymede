@@ -39,11 +39,15 @@
 
 		<p>
 		Eclipse community members are showing off their Photoshop and Gimp skills by redesigning movie posters to showcase
-		Ganymede.  Reward a hard working designer by voting for your favourite poster!  Voting is open June 18-24, 2008.
+		Ganymede.  Review the poster submissions below and reward a hard working designer by
+		<a href="http://www.surveymonkey.com/s.aspx?sm=Jz7pU_2bHvyMaAidVDaEiXow_3d_3d" target="blank">voting for your favourite</a>.
+		Click on any poster to see its full-size version.  Voting is open June 18-24, 2008.
 		</p>
+
+		<p><h2><a href="http://www.surveymonkey.com/s.aspx?sm=Jz7pU_2bHvyMaAidVDaEiXow_3d_3d" target="blank">VOTE HERE</a></h2></p>
 		
 		<p>
-		A very special thank you to Eclipse committer to <a href="http://divby0.blogspot.com/2008/05/ganymede-poster-contest.html">Nick Boldt</a>
+		A very special thank you to Eclipse committer <a href="http://divby0.blogspot.com/2008/05/ganymede-poster-contest.html">Nick Boldt</a>
 		for creating, organizing and sponsoring the Ganymede poster contest.
 		</p>
 		
@@ -52,7 +56,9 @@
 		1st place: an Eclipse jacket and $50 to your favourite open source organization or free service provider<br>
 		2nd place: an Eclipse jacket and $30 to your favourite open source organization or free service provider<br>
 		3rd place: an Eclipse shirt and $20 to your favourite open source organization or free service provider<br>
-		4th-10th place: an Eclipse shirt
+		4th-10th place: an Eclipse shirt<br>
+		
+		<font size=0.4px>Note: Individuals are allowed to submit multiple entries, but only one prize per person will be awarded.</font>
 		</p>
 		
 		<p>
