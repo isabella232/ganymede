@@ -45,8 +45,8 @@
 							<a href="/downloads/packages/">Download Ganymede</a>
 						</td>					
 						<td align="center">
-							<a href="http://wiki.eclipse.org/Ganymede"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png"/></a><br/>
-							<a href="http://wiki.eclipse.org/Ganymede">Learn more about Ganymede</a>
+							<a href="learn.php"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png"/></a><br/>
+							<a href="learn.php">Learn more about Ganymede</a>
 						</td>
 						<td align="center">
 							<a href="buzz.php"><img src="http://dev.eclipse.org/huge_icons/devices/network-wireless.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
