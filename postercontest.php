@@ -91,7 +91,7 @@
 				<td valign="top" width="167"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" height="200" width="157" border="0"></a><br>
 				<b>Lord Of The Rings</b></td>
 				<td valign="top" width="140"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" height="200" width="130" border="0"></a><br>
-				<b>Lost in Translation</b></td>
+				<b>Lost In Translation</b></td>
 				<td valign="top" width="144"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" height="200" width="134" border="0"></a><br>
 				<b>Mars Attacks</b></td>
 			</tr>
@@ -99,7 +99,7 @@
 		<table>
 			<tr height="250">
 				<td valign="top" width="260"><a href="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" target="blank"><img src="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" height="200" width="250" border="0"></a><br>
-				<b>Objects on Mirrors</b></p></td>
+				<b>Objects on mirrors</b></p></td>
 				<td valign="top" width="243"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" height="200" width="233" border="0"></a><br>
 				<b>Prepare yourself for Ganymede</b></td>
 				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" height="200" width="135" border="0"></a><br>
