@@ -60,7 +60,7 @@
 			<tr height="250">
 				<td valign="top" width="148"><a href="http://bp3.blogger.com/_i21-98vOfTA/SD-AtQANotI/AAAAAAAAAVs/YoAOZpvpuE8/s200/Attack_of_the_15_Projects.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SD-AtQANotI/AAAAAAAAAVs/YoAOZpvpuE8/s200/Attack_of_the_15_Projects.png" height="200" width="138" border="0"></a><br>
 				<b>Attack of the 50 Foot Woman</b></td>	
-				<td valign="top" width="260"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103023" height="200" width="250" border="0"></a><br>
+				<td valign="top" width="260"><a href="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" target="blank"><img src="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" height="200" width="250" border="0"></a><br>
 				<b>Closer than they Appear</b></p></td>
 				<td valign="top" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" height="200" width="141" border="0"></a><br>
 				<b>Community created... Ganymede!</b></td>
