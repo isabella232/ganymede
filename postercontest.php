@@ -38,7 +38,8 @@
 		<h1>$pageTitle</h1>
 
 		<p>
-		Eclipse community members are showing off their Photoshop and Gimp skills by redesigning movie posters to showcase
+		Eclipse community members are showing off their Photoshop and Gimp skills by redesigning movie posters and other
+		graphics to showcase
 		Ganymede.  Review the poster submissions below and reward a hard working designer by
 		<a href="http://www.surveymonkey.com/s.aspx?sm=Jz7pU_2bHvyMaAidVDaEiXow_3d_3d" target="blank">voting for your favourite</a>.
 		Click on any poster to see its full-size version.  Voting is open until June 24, 2008, 5:00 pm EDT.
