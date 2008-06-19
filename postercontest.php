@@ -41,7 +41,7 @@
 		Eclipse community members are showing off their Photoshop and Gimp skills by redesigning movie posters to showcase
 		Ganymede.  Review the poster submissions below and reward a hard working designer by
 		<a href="http://www.surveymonkey.com/s.aspx?sm=Jz7pU_2bHvyMaAidVDaEiXow_3d_3d" target="blank">voting for your favourite</a>.
-		Click on any poster to see its full-size version.  Voting is open June&nbsp;18-24, 2008.
+		Click on any poster to see its full-size version.  Voting is open until June 24, 2008, 5:00 pm EDT.
 		</p>
 
 		<p><h2><a href="http://www.surveymonkey.com/s.aspx?sm=Jz7pU_2bHvyMaAidVDaEiXow_3d_3d" target="blank">VOTE HERE</a></h2></p>
@@ -68,7 +68,7 @@
 				<b>Attack of the 50 Foot Woman</b></td>	
 				<td valign="top" width="112"><a href="http://bp0.blogger.com/_i21-98vOfTA/SFIT5xQhm9I/AAAAAAAAAWs/BfKXpprXpeA/s400/children-of-the-code.png" target="blank"><img src="http://bp0.blogger.com/_i21-98vOfTA/SFIT5xQhm9I/AAAAAAAAAWs/BfKXpprXpeA/s400/children-of-the-code.png" height="200" width="102" border="0"></a><br>
 				<b>Children of the Corn</b></td>
-				<td valign="top" width="140"><a href="http://bp1.blogger.com/_i21-98vOfTA/SFIT6BQhm-I/AAAAAAAAAW0/FALIOzx_fMo/s1600-h/children-of-the-code-ganymede.png" target="blank"><img src="http://bp1.blogger.com/_i21-98vOfTA/SFIT6BQhm-I/AAAAAAAAAW0/FALIOzx_fMo/s1600-h/children-of-the-code-ganymede.png" height="200" width="130" border="0"></a><br>
+				<td valign="top" width="140"><a href="http://bp1.blogger.com/_i21-98vOfTA/SFIT6BQhm-I/AAAAAAAAAW0/FALIOzx_fMo/s400/children-of-the-code-ganymede.png" target="blank"><img src="http://bp1.blogger.com/_i21-98vOfTA/SFIT6BQhm-I/AAAAAAAAAW0/FALIOzx_fMo/s400/children-of-the-code-ganymede.png" height="200" width="130" border="0"></a><br>
 				<b>Children of the Corn II</b></td>
 				<td valign="top" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102944" height="200" width="141" border="0"></a><br>
 				<b>Community created... Ganymede!</b></td>
@@ -96,64 +96,67 @@
 			<tr height="250">	
 				<td valign="top" width="268"><a href="http://bp0.blogger.com/_i21-98vOfTA/SD98ggANosI/AAAAAAAAAVk/z01lgDfe5gA/s200/p2_Came_From_Beneath_Equinox.png" target="blank"><img src="http://bp0.blogger.com/_i21-98vOfTA/SD98ggANosI/AAAAAAAAAVk/z01lgDfe5gA/s200/p2_Came_From_Beneath_Equinox.png" height="200" width="258" border="0"></a><br>
 				<b>It Came from Beneath the Sea</b></td>
-				<td valign="top" width="277"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105326" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105326"  height="200" width="267" border="0"></a><br>
+				<td valign="top" width="277"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105349" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105349"  height="200" width="267" border="0"></a><br>
 				<b>Kill Bill, Vol. 1</b></td>
-				<td valign="top" width="260"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105327" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105327"  height="200" width="250" border="0"></a><br>
+				<td valign="top" width="277"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105326" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105326"  height="200" width="267" border="0"></a><br>
 				<b>Kill Bill, Vol. 2</b></td>
-				<td valign="top" width="138"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104070" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104070" height="200" width="128" border="0"></a><br>
-				<b>Kung Fu Panda</b></td>	
 			</tr>
 		</table>
 		<table>
 			<tr height="250">
+				<td valign="top" width="260"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105350" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105350"  height="200" width="250" border="0"></a><br>
+				<b>Kill Bill, Vol. 3</b></td>
+				<td valign="top" width="138"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104070" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104070" height="200" width="128" border="0"></a><br>
+				<b>Kung Fu Panda</b></td>
 				<td valign="top" width="167"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102971" height="200" width="157" border="0"></a><br>
 				<b>Lord Of The Rings</b></td>
 				<td valign="top" width="140"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103050" height="200" width="130" border="0"></a><br>
 				<b>Lost In Translation</b></td>
 				<td valign="top" width="144"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103199" height="200" width="134" border="0"></a><br>
 				<b>Mars Attacks</b></td>
-				<td valign="top" width="260"><a href="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" target="blank"><img src="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" height="200" width="250" border="0"></a><br>
-				<b>Objects on mirrors</b></p></td>
-				<td valign="top" width="243"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" height="200" width="233" border="0"></a><br>
-				<b>Prepare yourself for Ganymede</b></td>
 			</tr>
 		</table>
 		<table>
 			<tr height="250">
+
+				<td valign="top" width="260"><a href="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" target="blank"><img src="http://www.eclipse.org/ganymede/images/GanymedeMoon1Poster.jpg" height="200" width="250" border="0"></a><br>
+				<b>Objects on mirrors</b></p></td>
+				<td valign="top" width="243"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104052" height="200" width="233" border="0"></a><br>
+				<b>Prepare yourself for Ganymede</b></td>
 				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103040" height="200" width="135" border="0"></a><br>
 				<b>Ratatouille</b></td>	
 				<td valign="top" width="277"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=105324" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=105324"  height="200" width="267" border="0"></a><br>
 				<b>Sin City</b></td>
-				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" height="200" width="135" border="0"></a><br>
-				<b>Sunshine</b></td>				
-				<td valign="top" width="148"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" height="200" width="138" border="0"></a><br>
-				<b>The Blues Brothers</b></td>
-				<td valign="top" width="270"><a href="http://bp3.blogger.com/_i21-98vOfTA/SD92SQANorI/AAAAAAAAAVc/tl4Qo4LYiBM/s200/Day_The_Net_Stood_Still.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SD92SQANorI/AAAAAAAAAVc/tl4Qo4LYiBM/s200/Day_The_Net_Stood_Still.png" height="200" width="260" border="0"></a><br>
-				<b>The Day the Earth Stood Still</b></td>
 			</tr>
 		</table>
 		<table>
 			<tr height="250">		
+				<td valign="top" width="145"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103043" height="200" width="135" border="0"></a><br>
+				<b>Sunshine</b></td>	
+				<td valign="top" width="148"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=104165" height="200" width="138" border="0"></a><br>
+				<b>The Blues Brothers</b></td>
+				<td valign="top" width="270"><a href="http://bp3.blogger.com/_i21-98vOfTA/SD92SQANorI/AAAAAAAAAVc/tl4Qo4LYiBM/s200/Day_The_Net_Stood_Still.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SD92SQANorI/AAAAAAAAAVc/tl4Qo4LYiBM/s200/Day_The_Net_Stood_Still.png" height="200" width="260" border="0"></a><br>
+				<b>The Day the Earth Stood Still</b></td>
 				<td valign="top" width="151"><a href="http://bp3.blogger.com/_i21-98vOfTA/SD8eTQANopI/AAAAAAAAAVM/3PnY8S9Ho9s/s200/smthing_gany.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SD8eTQANopI/AAAAAAAAAVM/3PnY8S9Ho9s/s200/smthing_gany.png" height="200" width="141" border="0"></a><br>
 				<b>There&#146;s Something About Mary</b></td>
 				<td valign="top" width="232"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103022" height="200" width="222" border="0"></a><br>
 				<b>Train about to Leave</b></td>
+			</tr>
+		</table>
+		
+		<table>
+			<tr height="250">		
 				<td valign="top" width="210"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103021" height="200" width="200" border="0"></a><br>
 				<b>Train to Catch</b></td>
 				<td valign="top" width="163"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103391" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103391" height="200" width="153" border="0"></a><br>
 				<b>Transformers</b></td>
 				<td valign="top" width="151"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=102974" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=102974" height="200" width="141" border="0"></a><br>
 				<b>Uncle Eclipse</b></td>
-			</tr>
-		</table>
-		
-		<table>
-			<tr height="250">		
 				<td valign="top" width="161"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103019" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103019" height="200" width="151" border="0"></a><br>
 				<b>Wall E</b></td>
 				<td valign="top" width="142"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103044" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103044" height="200" width="132" border="0"></a><br>
 				<b>300</b></td>
-				<td valign="top" width="210"><a href="http://bp3.blogger.com/_i21-98vOfTA/SFITehQhm8I/AAAAAAAAAWk/dKynQpV7vmo/s1600/ide-science.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SFITehQhm8I/AAAAAAAAAWk/dKynQpV7vmo/s1600/ide-science.png" height="200" width="200" border="0"></a><br>
+				<td valign="top" width="210"><a href="http://bp3.blogger.com/_i21-98vOfTA/SFITehQhm8I/AAAAAAAAAWk/dKynQpV7vmo/s400/ide-science.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SFITehQhm8I/AAAAAAAAAWk/dKynQpV7vmo/s400/ide-science.png" height="200" width="200" border="0"></a><br>
 				<b>Weird Science</b></td>
 			</tr>
 		</table>
