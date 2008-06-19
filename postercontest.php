@@ -158,10 +158,10 @@
 				<b>Uncle Eclipse</b></td>
 				<td valign="top" width="161"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103019" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103019" height="200" width="151" border="0"></a><br>
 				<b>Wall E</b></td>
-				<td valign="top" width="142"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103044" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103044" height="200" width="132" border="0"></a><br>
-				<b>300</b></td>
 				<td valign="top" width="210"><a href="http://bp3.blogger.com/_i21-98vOfTA/SFITehQhm8I/AAAAAAAAAWk/dKynQpV7vmo/s400/ide-science.png" target="blank"><img src="http://bp3.blogger.com/_i21-98vOfTA/SFITehQhm8I/AAAAAAAAAWk/dKynQpV7vmo/s400/ide-science.png" height="200" width="200" border="0"></a><br>
 				<b>Weird Science</b></td>
+				<td valign="top" width="142"><a href="https://bugs.eclipse.org/bugs/attachment.cgi?id=103044" target="blank"><img src="https://bugs.eclipse.org/bugs/attachment.cgi?id=103044" height="200" width="132" border="0"></a><br>
+				<b>300</b></td>
 			</tr>
 		</table>
 								
