@@ -118,7 +118,11 @@ function rss_to_news_html($file_name, $category, $count) {
 		echo '<!-- Error in NewsFeed - $file_name - '. $e->getMessage() . " -->";
 	}		
 	?>
-
+			<li class="more">
+				<div class="more">
+					<a href="buzzmore.php">Read More</a>
+				</div>
+			</li>	
 		</ul>
 	<?
 	$html = ob_get_contents();
