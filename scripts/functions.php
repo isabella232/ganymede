@@ -1,5 +1,5 @@
 <?php 
-function rss_to_news_html($file_name, $category, $count) {
+function rss_to_news_html($file_name, $category, $count, $readmore=TRUE) {
 	$rss = simplexml_load_file($file_name);
 	ob_start();
 	?>
@@ -116,13 +116,15 @@ function rss_to_news_html($file_name, $category, $count) {
 	}
 	catch (Exception $e){
 		echo '<!-- Error in NewsFeed - $file_name - '. $e->getMessage() . " -->";
-	}		
+	}
+	if ($readmore == TRUE){		
 	?>
 			<li class="more">
 				<div class="more">
 					<a href="buzzmore.php">Read More</a>
 				</div>
 			</li>	
+	<? } ?>
 		</ul>
 	<?
 	$html = ob_get_contents();
