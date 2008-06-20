@@ -34,7 +34,7 @@
 	require_once('scripts/functions.php');
 	require_once('scripts/blogs.php');
 	$filepath = $documentRoot . '/community/news/2005inthenewsarchive.rss';
-	$eclipsenews = rss_to_news_html($filepath, 'ganymede',100);
+	$eclipsenews = rss_to_news_html($filepath, 'ganymede',100, false);
 	$ganymedeBlogs = ganymedeBlogs(10);
 	# Paste your HTML content between the EOHTML markers!	
 	ob_start();
