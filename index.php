@@ -55,7 +55,7 @@
 							<a href="map.php"><img src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png"/></a><br/><a href="map.php">Ganymede Around the World</a>
 						</td>		
 						<td align="center">
-							<a href="friends.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png"/></a><br/><a href="map.php">Friends of Ganymede</a>
+							<a href="/donate/"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png"/></a><br/><a href="map.php">Friends of Eclipse</a>
 						</td>													
 					</tr>
 				</table>
