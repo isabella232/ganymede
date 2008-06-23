@@ -35,8 +35,8 @@
 				<table width="60%" align="center">
 					<tr>
 						<td colspan="4">
-							<p>Eclipse Ganymede is the annual release of Eclipse projects.  This year, the annual release includes 23 projects. By releasing these projects at the same time, the goal is to eliminate uncertainty about version compatibility and make it easier to incorporate multiple projects into your environment.
-							<br/><br/><i>While Ganymede is about the simultaneous release of twenty three projects, it is not a unification of the projects - each project remains a separate open source project operating with its own project leadership, its own committers, and its own project plan.</i><br/><br/></p> 
+							<p>Eclipse Ganymede is the annual release of Eclipse projects; this year including 23 projects.  Some highlights of the release include the new p2 provisioning platform, new Equinox security features, new Ecore modeling tools, support for SOA and much more.  Use the links below to download and discover more about the projects in the Ganymede release.
+							<br/><br/></p> 
 						</td>
 					</tr>
 					<tr>
