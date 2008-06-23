@@ -39,7 +39,7 @@
 			<h1 class="inline"><?=$pageTitle; ?></h1>
 		</div>
 		<div id="intro">
-			<p>Browse our Ganymede Demos from <a href="http://live.eclipse.org" target="_blank">Eclipse Live</a>, or view the list of Ganymede Projects.</p>
+			<p>Browse our Ganymede Demos from <a href="http://live.eclipse.org" target="_blank">Eclipse Live</a> or view the list of Ganymede Projects.</p>
 		</div>
 		<div id="dataBox">
 		<div id="tabSelection">
