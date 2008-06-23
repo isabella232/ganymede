@@ -40,21 +40,21 @@
 						</td>
 					</tr>
 					<tr>
-						<td align="center">
+						<td align="center" valign="top">
 							<a href="/downloads/packages/"><img src="http://dev.eclipse.org/huge_icons/actions/document-save.png"/></a><br/>
 							<a href="/downloads/packages/">Download Ganymede</a>
 						</td>					
-						<td align="center">
+						<td align="center" valign="top">
 							<a href="learn.php"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png"/></a><br/>
 							<a href="learn.php">Learn&nbsp;more about&nbsp;Ganymede</a>
 						</td>
-						<td align="center">
+						<td align="center" valign="top">
 							<a href="buzz.php"><img src="http://dev.eclipse.org/huge_icons/devices/network-wireless.png"/></a><br/><a href="buzz.php">Ganymede Buzz</a>
 						</td>
-						<td align="center">
+						<td align="center" valign="top">
 							<a href="map.php"><img src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png"/></a><br/><a href="map.php">Ganymede&nbsp;Around the&nbsp;World</a>
 						</td>		
-						<td align="center">
+						<td align="center" valign="top">
 							<a href="/donate/"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png"/></a><br/><a href="map.php">Friends of Eclipse</a>
 						</td>													
 					</tr>
