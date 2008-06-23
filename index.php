@@ -32,9 +32,9 @@
 		<body>
 			<div id="widecontent">
 			<br/>
-				<table width="60%" align="center">
+				<table width="70%" align="center">
 					<tr>
-						<td colspan="4">
+						<td colspan="5">
 							<p>Eclipse Ganymede is the annual release of Eclipse projects; this year including 23 projects.  Some highlights of the release include the new p2 provisioning platform, new Equinox security features, new Ecore modeling tools, support for SOA and much more.  Use the links below to download and discover more about the projects in the Ganymede release.
 							<br/><br/></p> 
 						</td>
@@ -53,7 +53,10 @@
 						</td>
 						<td align="center">
 							<a href="map.php"><img src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png"/></a><br/><a href="map.php">Ganymede Around the World</a>
-						</td>								
+						</td>		
+						<td align="center">
+							<a href="friends.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png"/></a><br/><a href="map.php">Friends of Ganymede</a>
+						</td>													
 					</tr>
 				</table>
 				<br/><br/><br/><br/>
