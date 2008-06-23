@@ -36,7 +36,7 @@
 					<tr>
 						<td colspan="4">
 							<p>Eclipse Ganymede is the annual release of Eclipse projects.  This year, the annual release includes 23 projects. By releasing these projects at the same time, the goal is to eliminate uncertainty about version compatibility and make it easier to incorporate multiple projects into your environment.
-							<br/><br/><i>While Ganymede is about the simultaneous release of twenty four projects, it is not a unification of the projects - each project remains a separate open source project operating with its own project leadership, its own committers, and its own project plan.</i><br/><br/></p> 
+							<br/><br/><i>While Ganymede is about the simultaneous release of twenty three projects, it is not a unification of the projects - each project remains a separate open source project operating with its own project leadership, its own committers, and its own project plan.</i><br/><br/></p> 
 						</td>
 					</tr>
 					<tr>
