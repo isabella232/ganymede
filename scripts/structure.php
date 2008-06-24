@@ -54,7 +54,7 @@
 		$start = $_GET['start'];
 	else 
 		$start = 0;
-	$pageValue = 25;
+	$pageValue = 2500;
 	$pager = " LIMIT $start, $pageValue";
 	
 	# Place your html content in a file called content/en_pagename.php
