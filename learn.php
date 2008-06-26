@@ -44,8 +44,8 @@
 		<div id="dataBox">
 		<div id="tabSelection">
 			<ul>
-				<li><a <? if ($cookie == "demos") echo "class=\"active\""; ?> id="demos" onClick="updateTable('demos');SetActive('demos', 'projects');">Demos</a></li>
 				<li><a <? if ($cookie == "projects") echo "class=\"active\""; ?>id="projects" onClick="updateTable('projects');SetActive('projects', 'demos');">Projects</a></li>
+				<li><a <? if ($cookie == "demos") echo "class=\"active\""; ?> id="demos" onClick="updateTable('demos');SetActive('demos', 'projects');">Demos</a></li>
 			</ul>
 		</div>
 		<div id="tabData">
@@ -53,7 +53,7 @@
 				if ($cookie != "")
 					include ('fetch/'.$cookie. '.php');
 				else
-					include ('fetch/demos.php'); 
+					include ('fetch/projects.php'); 
 			?>
 		</div>
 		<hr class="clearer"/>
