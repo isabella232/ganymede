@@ -60,6 +60,7 @@
 			<h6>Related Links</h6>
 			<ul>
 				<li><a href="map.php">Ganymede Around the World</a></li>
+				<li><a href="postercontest.php">Ganymede Poster Contest</a></li>
 				<li><a href="friends.php">Friends of Ganymede</a></li>
 			</ul>
 		</div>
