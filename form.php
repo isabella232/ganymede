@@ -77,7 +77,7 @@
 							<td><input type="text" name="email" id="email"/></td>
 						</tr>
 						<tr>
-							<td><?=$security->EasySecureQuestion("text", 20); ?>=<span id="urlReq"class="required">*</span></td>
+							<td><span id="urlReq"class="required"><?=$security->EasySecureQuestion("text", 20); ?>=</span></td>
 							<td><input type="text" name="useranswer"/></td>
 						<tr>
 							<td colspan="2" style="font-size:80%;">To be included in the <a href="./aroundtheworld.php">Ganymede Around the World Contest</a> be sure to provide us with your email address.</td>
