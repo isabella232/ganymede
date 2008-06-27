@@ -24,9 +24,12 @@
 	extract($_POST);
 	
 	# Place your html content in a file called content/en_pagename.php
+	//require_once($_SERVER['DOCUMENT_ROOT'] ."/eclipse.org-common/system/smartconnection.class.php");
 	require_once("/home/data/httpd/eclipse-php-classes/system/dbconnection_rw.class.php");
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
+	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/form_security.class.php');
+	$security = new FormSecurity();
 	
 	ob_start();
 	?>
