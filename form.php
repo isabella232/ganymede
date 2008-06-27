@@ -77,7 +77,7 @@
 							<td><input type="text" name="email" id="email"/></td>
 						</tr>
 						<tr>
-							<td>Human Validation: <?=$security->EasySecurityQuestion("text", 20); ?></td>
+							<td>Human Validation: <?=$security->EasySecureQuestion("text", 20); ?></td>
 							<td><input type="text" name="useranswer"/></td>
 						<tr>
 							<td colspan="2" style="font-size:80%;">To be included in the <a href="./aroundtheworld.php">Ganymede Around the World Contest</a> be sure to provide us with your email address.</td>
