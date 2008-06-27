@@ -27,7 +27,7 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 
-	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/form_security.php');
+	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/form_security.class.php');
 	$security = new FormSecurity();
 	
 	?>
