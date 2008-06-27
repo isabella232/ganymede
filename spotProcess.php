@@ -28,20 +28,29 @@
 	$dbc = new DBConnectionRW();
 	$dbh = $dbc->connect();
 	
-	$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
-	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
-	$retVal = mysql_insert_id($dbh);
-	$query = "INSERT INTO ganymede_content (id, type, content, url, title) VALUES ($retVal, '$type', '$content', '$url', '$title')";
-	mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
 	ob_start();
 	?>
-	<div id="midcolumn">
-		<h1>Ganymede Around the World</h1>
-		<p>Thank you for supporting Ganymede Around the World.  You will be brought back to the map in 5 seconds. Click <a href="map.php">here</a> if you are not forwarded.</p>
-	</div>
+			<div id="midcolumn">
+			<h1>Ganymede Around the World</h1>
 	<?
+	if ($security->Verify( $useranswer , "text", $securityanswer) == 1)	{
+		$query = "INSERT INTO ganymede_spots (id, name, location_city, location_state, location_country, location_lat, location_lng, email) VALUES ('', '$name', '$city', '$state', '$country', $lat, $lng, '$email')";
+		mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
+		$retVal = mysql_insert_id($dbh);
+		$query = "INSERT INTO ganymede_content (id, type, content, url, title) VALUES ($retVal, '$type', '$content', '$url', '$title')";
+		$App->AddExtraHtmlHeader('<META HTTP-EQUIV="Refresh" CONTENT="5; URL=map.php">');
+		mysql_query($query, $dbh);// or die($query . " - " .mysql_error());
+		?>
+			<p>Thank you for supporting Ganymede Around the World.  You will be brought back to the map in 5 seconds. Click <a href="map.php">here</a> if you are not forwarded.</p>
+		<?
+	}
+	else {
+		?>
+			<p>Your answer to the security question was incorrect, please go back and answer it correctly.</p>
+		<?
+	}
+	?> </div><?
 	$html = ob_get_clean();
-	$App->AddExtraHtmlHeader('<META HTTP-EQUIV="Refresh" CONTENT="5; URL=map.php">');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>	

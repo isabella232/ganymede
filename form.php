@@ -27,10 +27,8 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 
-	//include($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/classes/projects/projectInfoList.class.php");
-	//$projectInfoList = new projectInfoList();
-	//$projectInfoList->selectProjectInfoList('','simultaneousrelease', 'ganymede', 1);
-	//$projectInfoList->alphaSortList();
+	include ($_SERVER['DOUCMENT_ROOT'] . '/eclipse.org-common/system/form_security.php');
+	$security = new FormSecurity();
 	
 	?>
 			<div class="form">
@@ -79,6 +77,9 @@
 							<td><input type="text" name="email" id="email"/></td>
 						</tr>
 						<tr>
+							<td>Human Validation: <?=$security->EasySecurityQuestion("text", 20); ?></td>
+							<td><input type="text" name="useranswer"/></td>
+						<tr>
 							<td colspan="2" style="font-size:80%;">To be included in the <a href="./aroundtheworld.php">Ganymede Around the World Contest</a> be sure to provide us with your email address.</td>
 						</tr>
 						<!--  <tr>
@@ -122,6 +123,7 @@
 							<td>
 								<input type="hidden" id="lat" name="lat" value="0"/>
 								<input type="hidden" id="lng" name="lng" value="0"/>
+								<input type="hidden" name="securityanswer" value="<?=$security->getStoredCrypt();?>"/>
 								<input type="button" value="Submit" onclick="fetchLocation();"/>
 							</td>
 						</tr>						
