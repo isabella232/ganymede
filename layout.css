@@ -19,12 +19,12 @@
 }
 
 .visible a.norgie {
-	background: url('images/minus.gif') no-repeat;
+	background: url('/ganymede/images/minus.gif') no-repeat;
 	padding-right: 2px;
 }
 
 .invisible a.norgie {
-	background: url('images/plus.gif') no-repeat;
+	background: url('/ganymede/images/plus.gif') no-repeat;
 	padding-right: 2px;
 }
 
