@@ -149,15 +149,6 @@ function checkVisibility(type)
   		}
   	}
 }
-  
-function t(i, j) {
-	var e = document.getElementById(i);
- 	var f = document.getElementById(j);
- 	var t = e.className;
- 	if (t.match('invisible')) { t = t.replace(/invisible/gi, 'visible'); }
- 	else { t = t.replace(/visible/gi, 'invisible'); }
- 	e.className = t;
-	f.className = t;
-}
+
   
 			
