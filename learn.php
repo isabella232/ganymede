@@ -31,7 +31,7 @@
 	$cookie = @$_COOKIE['activeTabGanymede'];
 	ob_start();
 	?>
-	<script type="text/javascript" src="functions.js"></script>
+	<script type="text/javascript" src="scripts/functions.js"></script>
 	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
 	<div id="midcolumn">
 		<div class="title">
