@@ -20,7 +20,7 @@
 	
 	while ($rr = mysql_fetch_array($result))
 	{
-		$title = $rr['title'];
+		$title = mb_convert_encoding($rr['title'], "HTML-ENTITIES");
 		$format = $rr['format'];
 		$id = $rr['nid'];
 		$abstract = strip_tags($rr['abstract']);
