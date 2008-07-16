@@ -23,7 +23,7 @@
 		$title = mb_convert_encoding($rr['title'], "HTML-ENTITIES");
 		$format = $rr['format'];
 		$id = $rr['nid'];
-		$abstract = strip_tags($rr['abstract']);
+		$abstract = strip_tags($rr['abstract'], "<div><p>");
 		$url = 'http://live.eclipse.org/node/'. $id;
 		?>		<tr>
 					<td>
