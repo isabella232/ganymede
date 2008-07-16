@@ -23,8 +23,7 @@
 		$title = $rr['title'];
 		$format = $rr['format'];
 		$id = $rr['nid'];
-		$abstract = $rr['abstract'];
-		$abstract = str_ireplace('<img height="10" src="/files/images/adobeconnect.jpg"/>', '', $abstract);
+		$abstract = strip_tags($rr['abstract']);
 		$url = 'http://live.eclipse.org/node/'. $id;
 		?>		<tr>
 					<td>
