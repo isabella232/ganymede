@@ -16,6 +16,7 @@
 	$Nav->addCustomNav("Learn more about Ganymede", "/ganymede/learn.php", "_self", 1);
 	$Nav->addCustomNav("Ganymede Buzz", "/ganymede/buzz.php", "_self", 1);
 	$Nav->addCustomNav("Ganymede Around the World", "/ganymede/map.php", "_self", 1);
-	
+	$App->setPromotionPath("/ganymede/headerThin.php");
+	$App->Promotion = TRUE;
 
 ?>
