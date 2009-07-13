@@ -40,8 +40,8 @@
 					</tr>
 					<tr>
 						<td align="center" valign="top">
-							<a href="/downloads/packages/"><img src="http://dev.eclipse.org/huge_icons/actions/document-save.png"/></a><br/>
-							<a href="/downloads/packages/">Download Ganymede</a>
+							<a href="/downloads/packages/release/ganymede/sr2"><img src="http://dev.eclipse.org/huge_icons/actions/document-save.png"/></a><br/>
+							<a href="/downloads/packages/release/ganymede/sr2">Download Ganymede</a>
 						</td>					
 						<td align="center" valign="top">
 							<a href="learn.php"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png"/></a><br/>
