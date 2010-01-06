@@ -34,8 +34,10 @@
 				<table width="70%" align="center">
 					<tr>
 						<td colspan="5">
-							<p>Eclipse Ganymede is the annual release of Eclipse projects; this year including 23 projects.  Some highlights of the release include the new p2 provisioning platform, new Equinox security features, new Ecore modeling tools, support for SOA and much more.  Use the links below to download and discover more about the projects in the Ganymede release.
-							<br/><br/></p> 
+							<p>Eclipse Ganymede is the annual release of Eclipse projects in 2008; this year including 23 projects.  Some highlights of the release include the new p2 provisioning platform, new Equinox security features, new Ecore modeling tools, support for SOA and much more.  Use the links below to download and discover more about the projects in the Ganymede release.
+							<br/><br/></p>
+							<p>Click <a href="http://wiki.eclipse.org/Simultaneous_Release">here</a> to find out about the newest Eclipse Simultaneous Release</p>
+							 
 						</td>
 					</tr>
 					<tr>
