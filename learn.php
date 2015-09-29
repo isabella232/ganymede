@@ -1,76 +1,36 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();	$theme = "Phoenix";include($App->getProjectCommon());   # All on the same line to unclutter the user's desktop'
+<?php
+/*******************************************************************************
+ * Copyright(c) 2015 Eclipse Foundation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *    Nathan Gervais (Eclipse Foundation) - Initial implementation
+ *    Eric Poirier (Eclipse Foundation)
+ *******************************************************************************/
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
 
-	#*****************************************************************************
-	#
-	# index.php
-	#
-	# Author: 	 	Nathan Gervais
-	# Date:			2008-04-21
-	#
-	# Description: Ganymede Landing Page
-	#
-	#****************************************************************************
-	
-	#
-	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Learn more about Ganymede";
-	$pageKeywords	= "eclipse ganymede, ganymede, ganymede release train";
-	$pageAuthor		= "Eclipse Foundation, Inc.";
-	
-	# Add page-specific Nav bars here
-	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank)
-	# $Nav->addCustomNav("My Link", "mypage.php", "_self");
-	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank");
+$App = new App();
+$Nav = new Nav();
+$Menu = new Menu();
+include($App->getProjectCommon()); // All on the same line to unclutter the user's desktop'
 
-	# End: page-specific settings
-	#
-	
-	# Place your html content in a file called content/en_pagename.php
 
-	$documentRoot = $_SERVER['DOCUMENT_ROOT'];
-	$cookie = @$_COOKIE['activeTabGanymede'];
-	ob_start();
-	?>
-	<script type="text/javascript" src="scripts/functions.js"></script>
-	<link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
-	<div id="midcolumn">
-		<div class="title">
-			<img align="absbottom" src="http://dev.eclipse.org/large_icons/actions/system-search.png"/> 
-			<h1 class="inline"><?=$pageTitle; ?></h1>
-		</div>
-		<div id="intro">
-			<p>Browse our Ganymede Demos from <a href="http://live.eclipse.org" target="_blank">Eclipse Live</a> or view the list of Ganymede Projects.</p>
-		</div>
-		<div id="dataBox">
-		<div id="tabSelection">
-			<ul>
-				<li><a <? if ($cookie == "projects") echo "class=\"active\""; ?>id="projects" onClick="updateTable('projects');SetActive('projects', 'demos');">Projects</a></li>
-				<li><a <? if ($cookie == "demos") echo "class=\"active\""; ?> id="demos" onClick="updateTable('demos');SetActive('demos', 'projects');">Demos</a></li>
-			</ul>
-		</div>
-		<div id="tabData">
-			<? 
-				if ($cookie != "")
-					include ('fetch/'.$cookie. '.php');
-				else
-					include ('fetch/projects.php'); 
-			?>
-		</div>
-		<hr class="clearer"/>
-		</div>
-	</div>
-<?	$html = ob_get_clean();
+// Begin: page-specific settings. Change these.
+$pageTitle 		= "Learn more about Ganymede";
+$pageKeywords	= "eclipse ganymede, ganymede, ganymede release train";
+$pageAuthor		= "Eclipse Foundation, Inc.";
 
-	# Generate the web page
-	// Date in the past
-	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-	// always modified
-	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
-	// HTTP/1.1
-	header("cache-Control: no-store, no-cache, must-revalidate");
-	header("cache-Control: post-check=0, pre-check=0", false);
-	// HTTP/1.0
-	header("Pragma: no-cache"); 
-	$App->Promotion = TRUE;
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
-	
+// Place your html content in a file called content/en_pagename.php
+ob_start();
+include("content/en_" . $App->getScriptName());
+$html = ob_get_clean();
+
+# Generate the web page
+$App->AddExtraHtmlHeader('<link type="text/css" href="/ganymede/style.css" rel="stylesheet"/>');
+$App->AddExtraHtmlHeader('<link type="text/css" href="/ganymede/layout.css" rel="stylesheet"/>');
+$App->generatePage(NULL, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);

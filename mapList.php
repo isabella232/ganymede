@@ -1,143 +1,37 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu(); $theme = "Phoenix";	   # All on the same line to unclutter the user's desktop'
+<?php
+/*******************************************************************************
+ * Copyright(c) 2015 Eclipse Foundation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *    Nathan Gervais (Eclipse Foundation) - Initial implementation
+ *    Eric Poirier (Eclipse Foundation)
+ *******************************************************************************/
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
 
-	#*****************************************************************************
-	#
-	# index.php
-	#
-	# Author: 	 	Nathan Gervais
-	# Date:			2008-04-21
-	#
-	# Description: Ganymede Landing Page
-	#
-	#****************************************************************************
-	
-	#
-	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Ganymede Around the World";
-	$pageKeywords	= "eclipse ganymede, ganymede, ganymede around the world";
-	$pageAuthor		= "Nathan Gervais";
-	header("Cache-control: no-cache");
-	# Add page-specific Nav bars here
-	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank)
-	# $Nav->addCustomNav("My Link", "mypage.php", "_self");
-	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank");
+$App = new App();
+$Nav = new Nav();
+$Menu = new Menu();
+include($App->getProjectCommon()); // All on the same line to unclutter the user's desktop'
 
-	# End: page-specific settings
-	#
-	function displayPager($_start, $_pageValue, $_pageCount)
-	{
-		ob_start();
-		?>
-		<table width="700">
-				<tr>
-					<td align="left">
-				<?
-					if ($_start >= $_pageValue)
-					{
-						?><a href="mapList.php?start=<?=$_start-$_pageValue;?>"><< Previous Page</a><?
-					}
-				?>&nbsp;</td>
-					<td align="right">
-				<?
-					if (($_start + $_pageValue) < $_pageCount)
-					{
-						?><a href="mapList.php?start=<?=$_start+$_pageValue;?>">Next Page >></a><?
-					}
-				?>
-					</td>
-				</tr>
-			</table>
-		<?
-		return ob_get_clean();
-	}	
-	if (isset($_GET['start']))
-		$start = $_GET['start'];
-	else 
-		$start = 0;
-	$pageValue = 25;
-	$pager = " LIMIT $start, $pageValue";
-	
-	# Place your html content in a file called content/en_pagename.php
-	include ($_SERVER['DOCUMENT_ROOT'] . '/eclipse.org-common/system/smartconnection.class.php');
-	$dbc = new DBConnection();
-	$dbh = $dbc->connect();
-	
-	if (isset($_GET['sort'])) {
-		$sortBy = " ORDER BY " . $_GET['sort'] . " ASC";
-	}
-	else 
-		$sortBy = " ORDER BY GS.id DESC";
-	
-	$sql = "SELECT count(*) AS count FROM ganymede_spots";
-	$result = mysql_fetch_array(mysql_query($sql));
-	$count = $result['count'];
-		
-	$sql = "SELECT * FROM ganymede_spots AS GS INNER JOIN ganymede_content AS GC ON GS.id = GC.id" . $sortBy . $pager;
-	$result = mysql_query($sql);
-	
-	ob_start();
-	?>
-	<link type="text/css" href="style.css" rel="stylesheet"/>
-	<body>
-		<div id="midcolumn">
-  			<h1><?=$pageTitle;?></h1><br/>
-  			<?=displayPager($start, $pageValue, $count);?>
-			<table cellspacing=0 cellpadding=0 class="list" width="700">
-				<tr class="header">	
-					<td width="200"><a href="<?$_SERVER['PHP_SELF'];?>?sort=name">Name</a></td>
-					<td width="200"><a href="<?$_SERVER['PHP_SELF'];?>?sort=location_country">Location</a></td>
-					<td width="300">Content</td>
-				</tr>
-				<? while ($rr = mysql_fetch_array($result)) { ?>
-				<tr>
-					<td><?=$rr['name']; ?></td>
-					<td><?=$rr['location_city'];?>, <?=$rr['location_country'];?></td>
-					<td>
-						<? echo ucfirst($rr['type']) . " ";
-						$url = $rr['url'];
-						if ($url == "http://") {
-							$url = "";	
-						}
-						if ($url != "") {
-							if (strpos($url, 'http://') === FALSE) {
-								$url = "http://" . $url;
-							}
-						}
-						
-						if (($rr['title'] == "") && ($url == "")) { //We have no title or URL -> Break
-							echo "<br/>";
-						}
-						elseif (($url == "") && ($rr['title'] !="")) { // We have no url field -> echo Title 
-							echo " - " . $rr['title']. '<br/>';
-						}
-						elseif (($rr['title'] == "") && ($url !="")) { // We have no title field -> echo URL
-							echo ' - <a href="'.$url.'" target="_blank">' .$url. '</a><br/>'; 								
-						}
-						else { //We must have both.
-							echo ' - <a href="'.$url.'" target="_blank">' .$rr['title']. '</a><br/>'; 
-						}
-						echo $rr['content'];
-						?>
-					</td>
-				</tr>
-				<? } ?>	
-			</table>
-			<?=displayPager($start, $pageValue, $count);?><br/><br/>
-		</div>
-		<div id="rightcolumn">
-			<div class="sideitem">
-				<h6>Ganymede Around the World</h6>
-					<ul>
-						<li><a href="./">Ganymede</a></li>
-						<li><a href="./map.php">Ganymede Map</a></li>
-						<li><a href="./aroundtheworld.php">Contest Details</a></li>
-					</ul>
-			</div>
-		</div>
- 	</body>
-	<?
-	$html = ob_get_clean();
-	# Generate the web page
-	$App->Promotion = TRUE;
-	$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
-?>
+
+// Begin: page-specific settings. Change these.
+$pageTitle 		= "Ganymede Around the World";
+$pageKeywords	= "eclipse ganymede, ganymede, ganymede around the world";
+$pageAuthor		= "Nathan Gervais";
+header("Cache-control: no-cache");
+
+// Place your html content in a file called content/en_pagename.php
+ob_start();
+include("content/en_" . $App->getScriptName());
+$html = ob_get_clean();
+
+# Generate the web page
+$App->AddExtraHtmlHeader('<link type="text/css" href="/ganymede/style.css" rel="stylesheet"/>');
+$App->AddExtraHtmlHeader('<link type="text/css" href="/ganymede/layout.css" rel="stylesheet"/>');
+$App->generatePage(NULL, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);

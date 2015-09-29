@@ -151,3 +151,11 @@ padding-bottom:0px;
 }
 
 
+#headerGraphic {
+    background: transparent url("/ganymede/images/ganymedeTile.jpg") top left repeat-x;
+    text-align: left;
+    height: 178px;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    width: 100%;
+}
