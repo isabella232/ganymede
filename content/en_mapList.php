@@ -1,24 +1,25 @@
 <?php
-/*******************************************************************************
- * Copyright(c) 2015 Eclipse Foundation and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://eclipse.org/legal/epl-v10.html
+/**
+ * Copyright (c) 2015, 2018 Eclipse Foundation.
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
  *
  * Contributors:
- *    Nathan Gervais (Eclipse Foundation) - Initial implementation
- *    Eric Poirier (Eclipse Foundation)
- *******************************************************************************/
+ *   Nathan Gervais (Eclipse Foundation) - Initial implementation
+ *   Eric Poirier (Eclipse Foundation)
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
 ?>
 <div id="midcolumn">
-  <h1>Ganymede Around the World</h1>
-  <br />
-  <table class="list">
+  <h1><?php print $pageTitle; ?></h1>
+  <table class="table table-striped">
     <tr class="header">
-      <td><a href="?sort=name">Name</a></td>
-      <td><a href="?sort=location_country">Location</a></td>
-      <td>Content</td>
+      <th><a href="?sort=name">Name</a></th>
+      <th><a href="?sort=location_country">Location</a></th>
+      <th>Content</th>
     </tr>
     <tr>
       <td>Juan Pino Rodr�guez</td>
@@ -879,7 +880,7 @@
     <tr>
       <td>Bug'sBeni</td>
       <td>Brussel, Belgium</td>
-      <td>Blog - <a href="http://www.eclipse.org" target="_blank">Java
+      <td>Blog - <a href="/" target="_blank">Java
           Power Man</a><br />Well let's have a look on this nice IDE...
         Is it good or not ? Anyway the real answer in couple of years ;)
       </td>
@@ -2674,7 +2675,7 @@
     <tr>
       <td>sylvain m</td>
       <td>la madeleine, france</td>
-      <td>Blog - <a href="http://www.eclipse.org" target="_blank">http://www.eclipse.org</a><br />
+      <td>Blog - <a href="/" target="_blank">/</a><br />
       </td>
     </tr>
     <tr>
@@ -2812,7 +2813,7 @@
     <tr>
       <td>Habin</td>
       <td>Trivandrum, India</td>
-      <td>Recording - <a href="http://www.eclipse.org" target="_blank">http://www.eclipse.org</a><br />
+      <td>Recording - <a href="/" target="_blank">/</a><br />
       </td>
     </tr>
     <tr>
@@ -3297,7 +3298,7 @@
     <tr>
       <td>Dimitar Dyankov</td>
       <td>Santa Barbara, USA</td>
-      <td>Blog - <a href="http://www.eclipse.org" target="_blank">Eclipse
+      <td>Blog - <a href="/" target="_blank">Eclipse
           Ganymede</a><br />thanks!
       </td>
     </tr>
@@ -4030,7 +4031,7 @@
     <tr>
       <td>Shravan Singh</td>
       <td>Mumbai, India</td>
-      <td>Message <br />http://www.eclipse.org/stp/ this has made my
+      <td>Message <br />//stp/ this has made my
         life. Thanks eclipse for these wonderful moons.
       </td>
     </tr>
@@ -4153,7 +4154,7 @@
         href="http://sandakith.wordpress.com/2008/06/23/eclipse-ganymede-poster-contest/"
         target="_blank"> Eclipse Ganymede Poster Contest </a><br />Next
         Eclipse WTP 3.0 Poster Contest You can vote from here,
-        http://www.eclipse.org/ganymede/postercontest.php There are some
+        //ganymede/postercontest.php There are some
         cool stuff to look at, Enjoy !!
       </td>
     </tr>
@@ -4185,7 +4186,7 @@
     <tr>
       <td>Ali Alauoubiy</td>
       <td>Edinburgh, UK</td>
-      <td>Blog - <a href="http://www.eclipse.org" target="_blank">Mr</a><br />
+      <td>Blog - <a href="/" target="_blank">Mr</a><br />
       </td>
     </tr>
     <tr>
@@ -4464,7 +4465,7 @@
     <tr>
       <td>Jochen Krause</td>
       <td>Karlsruhe, Germany</td>
-      <td>Message - <a href="http://eclipse.org/rap" target="_blank">RAP
+      <td>Message - <a href="/rap" target="_blank">RAP
           brings Ajax to Eclipse RCP</a><br />The Rich Ajax Platform
         (RAP) employs an architecture and usage similar the Rich Client
         Platform (RCP) and offers developers the opportunity to
@@ -4868,7 +4869,7 @@
         target="_blank">Eclipse Communication Framework</a><br />I'm the
         project lead for ECF, the Eclipse Communication Framework. I'm
         hoping people appreciate what ECF already provides, and ask for
-        more at http://www.eclipse.org/ecf.
+        more at //ecf.
       </td>
     </tr>
     <tr>
@@ -5383,7 +5384,7 @@
       <td>David Sciamma</td>
       <td>Toulouse, France</td>
       <td>Message - <a
-        href="http://www.eclipse.org/modeling/emft/?project=ecoretools#ecoretools"
+        href="//modeling/emft/?project=ecoretools#ecoretools"
         target="_blank">Ecore Tools powa !</a><br />We are organizing a
         Ganymede Demo Camp in Toulouse : come to share with the Eclipse
         community and to see Ecore Tools in action !

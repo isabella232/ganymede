@@ -1,161 +1,169 @@
 table.list tr td {
-	vertical-align: top;
-	padding-top:2px;
-	padding-bottom:5px;
-	border-bottom:1px solid #bbb;
-	padding-left:5px;	
-}
-
-table.list {
+  vertical-align: top;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bbb;
+  padding-left: 5px;
 }
 
 table.list tr.header {
-	font-weight:bold;	
+  font-weight: bold;
 }
 
 .required {
-	color:red;
-	text-align:right;
+  color: red;
+  text-align: right;
 }
 
 .expandProjects {
-	font-size:80%;
+  font-size: 80%;
 }
 
 #selectProjects {
-	font-size:90%;
+  font-size: 90%;
 }
 
 .invisible {
-	display:none;
+  display: none;
 }
+
 .visible {
-	display:inline;
+  display: inline;
 }
 
 .infoWindow {
-   min-height: 90px;
-   max-width:250px;
+  min-height: 90px;
+  max-width: 250px;
 }
 
 #map {
-	border:1px solid #CCC;
-	margin:0 8px 10px;	
+  border: 1px solid #CCC;
+  margin: 0 8px 10px;
 }
 
 .mapDiv {
-	width:900px;	
-	margin-left: 20px;
+  width: 900px;
+  margin-left: 20px;
 }
+
 .formBox {
-	border:1px solid #CCC;
-	background:#FCFCFC;
-	font-size:90%;	
-	padding:5px;	
+  border: 1px solid #CCC;
+  background: #FCFCFC;
+  font-size: 90%;
+  padding: 5px;
 }
 
 .dialogTable h2 {
-	color:#333366;	
+  color: #333366;
 }
 
 .form {
-	width:280px;
+  width: 280px;
 }
 
 .form h5 {
-	margin-top:10px;
-	font-size:100%;
-	color:#000000;
-	display:inline;	
+  margin-top: 10px;
+  font-size: 100%;
+  color: #000000;
+  display: inline;
 }
 
 .geoIP {
-	width:900px;
-	text-align:right;
-	font-size:80%;	
+  width: 900px;
+  text-align: right;
+  font-size: 80%;
 }
 
 .left {
-
+  
 }
 
 .right {
-	padding-left:5px;	
+  padding-left: 5px;
 }
 
 .contestText {
-	font-size:90%;
-	width:700px;
-	padding-bottom:10px;	
+  font-size: 90%;
+  width: 700px;
+  padding-bottom: 10px;
 }
-
 
 ///////////////////////////////////////////////////////
-
 .dialog {
-color:#FFFFFF;
-margin:0px auto 0.5em 28px;
-max-width:760px;
-min-width:8em;
-position:relative;
-z-index:1;
+  color: #FFFFFF;
+  margin: 0px auto 0.5em 28px;
+  max-width: 760px;
+  min-width: 8em;
+  position: relative;
+  z-index: 1;
 }
+
 .dialog .dialogContent, .dialog .t, .dialog .b, .dialog .b div {
-background:transparent url('/ganymede/images/dialogB.png') no-repeat scroll right top;
+  background: transparent url('/ganymede/images/dialogB.png') no-repeat
+    scroll right top;
 }
 
 .dialog .dialogContent {
-padding:0px 12px 0px 0px;
-position:relative;
-}
-.dialog .t {
-background-position:left top;
-height:100%;
-left:0px;
-margin-left:-28px;
-position:absolute;
-top:0px;
-width:28px;
-}
-.dialog .b {
-position:relative;
-width:100%;
-}
-.dialog .b, .dialog .b div {
-font-size:1px;
-height:35px;
-}
-.dialog .b {
-background-position:right bottom;
-}
-.dialog .b div {
-background-position:left bottom;
-margin-left:-28px;
-position:relative;
-width:28px;
-}
-.dialog .hd, .dialog .bd, .dialog .ft {
-position:relative;
-}
-.dialog .wrapper {
-max-height:1000px;
-overflow:auto;
-position:static;
-}
-.dialog h1, .dialog p {
-margin:0px;
-padding:0.5em 0px;
-}
-.dialog h1 {
-padding-bottom:0px;
+  padding: 0px 12px 0px 0px;
+  position: relative;
 }
 
+.dialog .t {
+  background-position: left top;
+  height: 100%;
+  left: 0px;
+  margin-left: -28px;
+  position: absolute;
+  top: 0px;
+  width: 28px;
+}
+
+.dialog .b {
+  position: relative;
+  width: 100%;
+}
+
+.dialog .b, .dialog .b div {
+  font-size: 1px;
+  height: 35px;
+}
+
+.dialog .b {
+  background-position: right bottom;
+}
+
+.dialog .b div {
+  background-position: left bottom;
+  margin-left: -28px;
+  position: relative;
+  width: 28px;
+}
+
+.dialog .hd, .dialog .bd, .dialog .ft {
+  position: relative;
+}
+
+.dialog .wrapper {
+  max-height: 1000px;
+  overflow: auto;
+  position: static;
+}
+
+.dialog h1, .dialog p {
+  margin: 0px;
+  padding: 0.5em 0px;
+}
+
+.dialog h1 {
+  padding-bottom: 0px;
+}
 
 #headerGraphic {
-    background: transparent url("/ganymede/images/ganymedeTile.jpg") top left repeat-x;
-    text-align: left;
-    height: 178px;
-    border-bottom: 1px solid #000;
-    overflow: hidden;
-    width: 100%;
+  background: transparent url("/ganymede/images/ganymedeTile.jpg") top
+    left repeat-x;
+  text-align: left;
+  height: 178px;
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+  width: 100%;
 }
